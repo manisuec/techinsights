@@ -1,216 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode - Tech Insights</title>
   <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-<meta name="author"
-  content="Manish Prasad" /><meta name="description" content="This is a short guide to configure VS Code for a consistent and reusable development set-up.
-ESLint Setup ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable." /><meta name="keywords"
-  content="tech, blog, manisuec" />
+  <meta name="theme-color" content="#f8f5ec" />
+  <meta name="msapplication-navbutton-color" content="#f8f5ec">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-
-
-
-
-<meta name="generator" content="Hugo 0.71.1 with theme even" />
-
-
-<link rel="canonical" href="http://localhost:1313/post/2018-08-24-eslint-prettier-vscode-setup/" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-<link href="/sass/main.min.c83fc49c171a1772facda0502e4f8609273ba37a696d524cc8684910bc5f4f29.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
-
-
-<meta property="og:title" content="Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode" />
-<meta property="og:description" content="This is a short guide to configure VS Code for a consistent and reusable development set-up.
+  <meta name="author" content="Manish Prasad" />
+  <meta name="description"
+    content="This is a short guide to configure VS Code for a consistent and reusable development set-up.
 ESLint Setup ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/2018-08-24-eslint-prettier-vscode-setup/" />
-<meta property="article:published_time" content="2018-08-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2018-08-24T00:00:00+00:00" />
-<meta itemprop="name" content="Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode">
-<meta itemprop="description" content="This is a short guide to configure VS Code for a consistent and reusable development set-up.
+  <meta name="keywords" content="tech, blog, manisuec" />
+
+
+
+
+
+
+  <meta name="generator" content="Hugo 0.71.1 with theme even" />
+
+
+  <link rel="canonical" href="https://manisuec.blogpost/2018-08-24-eslint-prettier-vscode-setup/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+  <link href="/sass/main.min.c83fc49c171a1772facda0502e4f8609273ba37a696d524cc8684910bc5f4f29.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css"
+    integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+  <meta property="og:title" content="Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode" />
+  <meta property="og:description"
+    content="This is a short guide to configure VS Code for a consistent and reusable development set-up.
+ESLint Setup ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://manisuec.blogpost/2018-08-24-eslint-prettier-vscode-setup/" />
+  <meta property="article:published_time" content="2018-08-24T00:00:00+00:00" />
+  <meta property="article:modified_time" content="2018-08-24T00:00:00+00:00" />
+  <meta itemprop="name" content="Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode">
+  <meta itemprop="description"
+    content="This is a short guide to configure VS Code for a consistent and reusable development set-up.
 ESLint Setup ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable.">
-<meta itemprop="datePublished" content="2018-08-24T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-08-24T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="504">
+  <meta itemprop="datePublished" content="2018-08-24T00:00:00&#43;00:00" />
+  <meta itemprop="dateModified" content="2018-08-24T00:00:00&#43;00:00" />
+  <meta itemprop="wordCount" content="504">
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode"/>
-<meta name="twitter:description" content="This is a short guide to configure VS Code for a consistent and reusable development set-up.
-ESLint Setup ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable."/>
+  <meta itemprop="keywords" content="" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode" />
+  <meta name="twitter:description"
+    content="This is a short guide to configure VS Code for a consistent and reusable development set-up.
+ESLint Setup ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable." />
 
-<!--[if lte IE 9]>
+  <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
 <![endif]-->
 
-<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
   <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <![endif]-->
 </head>
+
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Tech Insights</a>
+    <div class="mobile-header-logo">
+      <a href="/" class="logo">Tech Insights</a>
+    </div>
+    <div class="mobile-navbar-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
+  <nav id="mobile-menu" class="mobile-menu slideout-menu">
+    <ul class="mobile-menu-list">
+      <a href="/">
         <li class="mobile-menu-item">Home</li>
       </a><a href="/post">
         <li class="mobile-menu-item">Posts</li>
       </a><a href="/about/">
         <li class="mobile-menu-item">About</li>
       </a>
-  </ul>
-</nav>
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div style="background-image: url('/img/bg-min.jpg'); height: 7.5rem; width: 100%; vertical-align: middle;">
-  <div class="logo-wrapper">
-    <a href="/" class="logo">Tech Insights</a>
-    <span class="author">by manisuec</span>
-  </div>
-
-  <nav class="site-navbar">
-    <ul id="menu" class="menu">
-      <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post">Posts</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">About</a>
-      </li>
     </ul>
   </nav>
-</div>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+      <div style="background-image: url('/img/bg-min.jpg'); height: 7.5rem; width: 100%; vertical-align: middle;">
+        <div class="logo-wrapper">
+          <a href="/" class="logo">Tech Insights</a>
+          <span class="author">by manisuec</span>
+        </div>
+
+        <nav class="site-navbar">
+          <ul id="menu" class="menu">
+            <li class="menu-item">
+              <a class="menu-item-link" href="/">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="/post">Posts</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="/about/">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
           <article class="post">
-    
-    <header class="post-header">
-      <h1 class="post-title">Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode</h1>
 
-      <div class="post-meta">
-        <span class="post-time"> Aug 24, 2018 </span>
-        
-          <span class="more-meta"> 504 words </span>
-          <span class="more-meta"> 3 mins read </span>
-        
-      </div>
-    </header>
+            <header class="post-header">
+              <h1 class="post-title">Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode</h1>
 
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#tip">Tip</a></li>
-  </ul>
-</nav>
-  </div>
-</div>
-    <div class="post-content">
-      <p>This is a short guide to configure VS Code for a consistent and reusable development set-up.</p>
-<h1 id="eslint-setup">ESLint Setup</h1>
-<p>ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable.</p>
-<p>Install ESLint locally and create a .eslintrc.json config file by running the below commands in the workspace folder —</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+              <div class="post-meta">
+                <span class="post-time"> Aug 24, 2018 </span>
+
+                <span class="more-meta"> 504 words </span>
+                <span class="more-meta"> 3 mins read </span>
+
+              </div>
+            </header>
+
+            <div class="post-toc" id="post-toc">
+              <h2 class="post-toc-title">Contents</h2>
+              <div class="post-toc-content always-active">
+                <nav id="TableOfContents">
+                  <ul>
+                    <li><a href="#tip">Tip</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="post-content">
+              <p>This is a short guide to configure VS Code for a consistent and reusable development set-up.</p>
+              <h1 id="eslint-setup">ESLint Setup</h1>
+              <p>ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is
+                frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines.
+                The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint
+                is designed to have all rules completely pluggable.</p>
+              <p>Install ESLint locally and create a .eslintrc.json config file by running the below commands in the
+                workspace folder —</p>
+              <div class="highlight">
+                <div class="chroma">
+                  <table class="lntable">
+                    <tr>
+                      <td class="lntd">
+                        <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ npm install eslint --save-dev
+</span></code></pre>
+                      </td>
+                      <td class="lntd">
+                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">$ npm install eslint --save-dev
 $ ./node_modules/.bin/eslint --init
-</code></pre></td></tr></table>
-</div>
-</div><p>I prefer local setup for each project however, it can be installed globally too. Run the below commands for a global installation and generating a .eslintrc.json config file —</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <p>I prefer local setup for each project however, it can be installed globally too. Run the below commands
+                for a global installation and generating a .eslintrc.json config file —</p>
+              <div class="highlight">
+                <div class="chroma">
+                  <table class="lntable">
+                    <tr>
+                      <td class="lntd">
+                        <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ npm install -g eslint
+</span></code></pre>
+                      </td>
+                      <td class="lntd">
+                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">$ npm install -g eslint
 $ eslint --init
-</code></pre></td></tr></table>
-</div>
-</div><p>Few configuration related questions will be asked, choose the options appropriately according to your preferences</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <p>Few configuration related questions will be asked, choose the options appropriately according to your
+                preferences</p>
+              <div class="highlight">
+                <div class="chroma">
+                  <table class="lntable">
+                    <tr>
+                      <td class="lntd">
+                        <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">? How would you like to configure ESLint? Use a popular style guide
+</span></code></pre>
+                      </td>
+                      <td class="lntd">
+                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">? How would you like to configure ESLint? Use a popular style guide
 ? Which style guide do you want to follow? Standard
 ? What format do you want your config file to be in? JSON
-</code></pre></td></tr></table>
-</div>
-</div><p>Install ESLint VS Code extension using command <code>ext install vscode-eslint</code>. For more information and configuration settings refer <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a></p>
-<h1 id="prettier-setup">Prettier Setup</h1>
-<p>Prettier is an opinionated code formatter with support for JavaScript, including ES2017. It removes all original styling* and ensures that all outputted code conforms to a consistent style.</p>
-<p>Run below command to install Prettier</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ npm install --save-dev prettier
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="integrating-with-eslint">Integrating with ESLint</h1>
-<p>ESLint can run Prettier for you, just add Prettier as an ESLint rule using</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>eslint-config-prettier</strong> is a config that disables rules that conflict with Prettier.</p>
-<p><strong>eslint-plugin-prettier</strong> is a plugin that adds a rule that formats content using Prettier.</p>
-<p><strong>eslint-plugin-prettier</strong> exposes a &ldquo;recommended&rdquo; configuration that configures both eslint-plugin-prettier and eslint-config-prettier in a single step.</p>
-<p>Add below lines in ‘.eslintrc.json’</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <p>Install ESLint VS Code extension using command <code>ext install vscode-eslint</code>. For more
+                information and configuration settings refer <a
+                  href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a></p>
+              <h1 id="prettier-setup">Prettier Setup</h1>
+              <p>Prettier is an opinionated code formatter with support for JavaScript, including ES2017. It removes all
+                original styling* and ensures that all outputted code conforms to a consistent style.</p>
+              <p>Run below command to install Prettier</p>
+              <div class="highlight">
+                <div class="chroma">
+                  <table class="lntable">
+                    <tr>
+                      <td class="lntd">
+                        <pre class="chroma"><code><span class="lnt">1
+</span></code></pre>
+                      </td>
+                      <td class="lntd">
+                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">$ npm install --save-dev prettier
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <h1 id="integrating-with-eslint">Integrating with ESLint</h1>
+              <p>ESLint can run Prettier for you, just add Prettier as an ESLint rule using</p>
+              <div class="highlight">
+                <div class="chroma">
+                  <table class="lntable">
+                    <tr>
+                      <td class="lntd">
+                        <pre class="chroma"><code><span class="lnt">1
+</span></code></pre>
+                      </td>
+                      <td class="lntd">
+                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">$ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <p><strong>eslint-config-prettier</strong> is a config that disables rules that conflict with Prettier.
+              </p>
+              <p><strong>eslint-plugin-prettier</strong> is a plugin that adds a rule that formats content using
+                Prettier.</p>
+              <p><strong>eslint-plugin-prettier</strong> exposes a &ldquo;recommended&rdquo; configuration that
+                configures both eslint-plugin-prettier and eslint-config-prettier in a single step.</p>
+              <p>Add below lines in ‘.eslintrc.json’</p>
+              <div class="highlight">
+                <div class="chroma">
+                  <table class="lntable">
+                    <tr>
+                      <td class="lntd">
+                        <pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -222,9 +287,10 @@ $ eslint --init
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">{
+</span></code></pre>
+                      </td>
+                      <td class="lntd">
+                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">{
   &#34;extends&#34;: [
     &#34;prettier&#34;,
     &#34;plugin:prettier/recommended&#34;
@@ -236,116 +302,155 @@ $ eslint --init
     &#34;prettier/prettier&#34;: &#34;error&#34;
   }
 }
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>‘eslint-config-prettier’</strong> also ships with a little CLI tool to help you check if your configuration contains any rules that are unnecessary or conflict with Prettier.</p>
-<p>Add this srcipt in ‘package.json’</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">&#34;eslint-check&#34;: &#34;eslint --print-config .eslintrc.json | eslint-config-prettier-check&#34;
-</code></pre></td></tr></table>
-</div>
-</div><p>Then run <code>npm run eslint-check</code></p>
-<h1 id="importance">Importance</h1>
-<p>Prettier essentially compliments ESLint rules concerning styling. They both help in ensuring a consistent and clean code. This speeds up the development process by improving the quality of code-reviews. Developers will focus more on implementation detail rather than complain about syntax errors and different coding styles. For more information read <a href="https://prettier.io/docs/en/why-prettier.html">Why Prettier?</a></p>
-<h2 id="tip">Tip</h2>
-<p>a) Pre-commit hook can be set-up so that the code is always formatted before the commit. <a href="https://gist.github.com/cadebward/c26e218220d653385d876f9a81308140">Pre-commit hook</a></p>
-<p>b) Enable auto fix: View → Command Pallete → Open User Settings → add: <code>&quot;eslint.autoFixOnSave&quot;: true</code> line to the settings</p>
-<h1 id="conclusion">Conclusion</h1>
-<p>This sets up VS Code with ESLint and Prettier for development with a consistent configuration.</p>
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <p><strong>‘eslint-config-prettier’</strong> also ships with a little CLI tool to help you check if your
+                configuration contains any rules that are unnecessary or conflict with Prettier.</p>
+              <p>Add this srcipt in ‘package.json’</p>
+              <div class="highlight">
+                <div class="chroma">
+                  <table class="lntable">
+                    <tr>
+                      <td class="lntd">
+                        <pre class="chroma"><code><span class="lnt">1
+</span></code></pre>
+                      </td>
+                      <td class="lntd">
+                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">&#34;eslint-check&#34;: &#34;eslint --print-config .eslintrc.json | eslint-config-prettier-check&#34;
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <p>Then run <code>npm run eslint-check</code></p>
+              <h1 id="importance">Importance</h1>
+              <p>Prettier essentially compliments ESLint rules concerning styling. They both help in ensuring a
+                consistent and clean code. This speeds up the development process by improving the quality of
+                code-reviews. Developers will focus more on implementation detail rather than complain about syntax
+                errors and different coding styles. For more information read <a
+                  href="https://prettier.io/docs/en/why-prettier.html">Why Prettier?</a></p>
+              <h2 id="tip">Tip</h2>
+              <p>a) Pre-commit hook can be set-up so that the code is always formatted before the commit. <a
+                  href="https://gist.github.com/cadebward/c26e218220d653385d876f9a81308140">Pre-commit hook</a></p>
+              <p>b) Enable auto fix: View → Command Pallete → Open User Settings → add:
+                <code>&quot;eslint.autoFixOnSave&quot;: true</code> line to the settings</p>
+              <h1 id="conclusion">Conclusion</h1>
+              <p>This sets up VS Code with ESLint and Prettier for development with a consistent configuration.</p>
 
-    </div>
+            </div>
 
-    <div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">Author</span>
-    <span
-      class="item-content">Manish Prasad</span>
-  </p>
-  
-  
-  
-</div><footer class="post-footer">
-      
-      <nav class="post-nav">
-        <a class="prev" href="/post/2019-10-12-imagegrid-materialui-react/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Image Grid using Material UI in React</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/2018-08-18-clustering-and-ipc-nodejs/">
-            <span class="next-text nav-default">Clustering &amp; Inter Process Communication (IPC) in NodeJS</span>
-            <span class="next-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-      </nav>
-    </footer>
-  </article>
+            <div class="post-copyright">
+              <p class="copyright-item">
+                <span class="item-title">Author</span>
+                <span class="item-content">Manish Prasad</span>
+              </p>
+
+
+
+            </div>
+            <footer class="post-footer">
+
+              <nav class="post-nav">
+                <a class="prev" href="/post/2019-10-12-imagegrid-materialui-react/">
+                  <i class="iconfont icon-left"></i>
+                  <span class="prev-text nav-default">Image Grid using Material UI in React</span>
+                  <span class="prev-text nav-mobile">Prev</span>
+                </a>
+                <a class="next" href="/post/2018-08-18-clustering-and-ipc-nodejs/">
+                  <span class="next-text nav-default">Clustering &amp; Inter Process Communication (IPC) in
+                    NodeJS</span>
+                  <span class="next-text nav-mobile">Next</span>
+                  <i class="iconfont icon-right"></i>
+                </a>
+              </nav>
+            </footer>
+          </article>
         </div>
-        
 
 
 
 
-<script src="https://utteranc.es/client.js"
-  repo="manisuec/manisuec/manisuec.github.io" issue-term="pathname"
-  theme="github-light" crossorigin="anonymous" async>
-  </script>
-<noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by
-    utterances.</a></noscript>
+
+        <script src="https://utteranc.es/client.js" repo="manisuec/manisuec/manisuec.github.io" issue-term="pathname"
+          theme="github-light" crossorigin="anonymous" async>
+          </script>
+        <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by
+            utterances.</a></noscript>
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="social-links">
-  <a href="mailto:manishvaishu25@gmail.com" class="iconfont icon-email" title="email"></a>
-  <a href="https://twitter.com/_manish25" class="iconfont icon-twitter" title="twitter"></a>
-  <a href="https://github.com/manisuec" class="iconfont icon-github" title="github"></a>
-  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
+        <a href="mailto:manishvaishu25@gmail.com" class="iconfont icon-email" title="email"></a>
+        <a href="https://twitter.com/_manish25" class="iconfont icon-twitter" title="twitter"></a>
+        <a href="https://github.com/manisuec" class="iconfont icon-github" title="github"></a>
+        <a href="https://manisuec.blogindex.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+      </div>
 
-<div class="copyright">
-  <span class="copyright-year"> Copyright
-    &copy;
-    2019
-    
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span
-      class="author">Manish Prasad</span>
-  </span>
-</div>
+      <div class="copyright">
+        <span class="copyright-year"> Copyright
+          &copy;
+          2019
+
+          <span class="heart">
+            <i class="iconfont icon-heart"></i>
+          </span>
+          <span class="author">Manish Prasad</span>
+        </span>
+      </div>
     </footer>
 
     <div class="back-to-top" id="back-to-top">
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js"
+    integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js"
+    integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+  <script></script>
+  <script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js"
+    integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js"
+    integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script>
+  <script></script>
+  <script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js"
+    integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js"
+    integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js"
+    integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js"
+    integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css"
+    integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
 
 
 
-<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+  <script type="text/javascript"
+    src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
 
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-111859472-2', 'auto');
-	ga('set', 'anonymizeIp', true);
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+  <script type="application/javascript">
+    var doNotTrack = false;
+    if (!doNotTrack) {
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+      ga('create', 'UA-111859472-2', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    }
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 
@@ -354,4 +459,5 @@ if (!doNotTrack) {
 
 
 </body>
+
 </html>

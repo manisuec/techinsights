@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Tech Insights</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://manisuec.blogpost/</link>
     <description>Recent content in Posts on Tech Insights</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://manisuec.blogpost/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Streams: An underrated but very powerful concept in NodeJS</title>
-      <link>http://localhost:1313/post/2020-03-02-streams-nodejs/</link>
+      <link>https://manisuec.blogpost/2020-03-02-streams-nodejs/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2020-03-02-streams-nodejs/</guid>
+      <guid>https://manisuec.blogpost/2020-03-02-streams-nodejs/</guid>
       <description>A stream is an abstract interface for working with streaming data in Node.js. Streams have gained the reputation that it is hard to work with and harder to understand. However, it is a highly underrated but very powerful concept in Node.js. This article will help in understanding of streams, how to work with them and where to use this module.
 Streams: Introduction The official documentation of Node.js defines stream as an abstract interface for working with streaming data.</description>
     </item>
     
     <item>
       <title>Image Grid using Material UI in React</title>
-      <link>http://localhost:1313/post/2019-10-12-imagegrid-materialui-react/</link>
+      <link>https://manisuec.blogpost/2019-10-12-imagegrid-materialui-react/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-10-12-imagegrid-materialui-react/</guid>
+      <guid>https://manisuec.blogpost/2019-10-12-imagegrid-materialui-react/</guid>
       <description>A simple example of a scrollable image grid using Material UI in ReactJS. We had a requirement for a scrollable image grid which will load images lazily. We started with the Grid List example provided in Material UI.
 We added a few more capabilities
  Load images lazily On clicking the tile, bigger size image is displayed with download option.  Few screenshots of the image grid
@@ -35,20 +35,20 @@ We added a few more capabilities
     
     <item>
       <title>Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode</title>
-      <link>http://localhost:1313/post/2018-08-24-eslint-prettier-vscode-setup/</link>
+      <link>https://manisuec.blogpost/2018-08-24-eslint-prettier-vscode-setup/</link>
       <pubDate>Fri, 24 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-08-24-eslint-prettier-vscode-setup/</guid>
+      <guid>https://manisuec.blogpost/2018-08-24-eslint-prettier-vscode-setup/</guid>
       <description>This is a short guide to configure VS Code for a consistent and reusable development set-up.
 ESLint Setup ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable.</description>
     </item>
     
     <item>
       <title>Clustering &amp; Inter Process Communication (IPC) in NodeJS</title>
-      <link>http://localhost:1313/post/2018-08-18-clustering-and-ipc-nodejs/</link>
+      <link>https://manisuec.blogpost/2018-08-18-clustering-and-ipc-nodejs/</link>
       <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-08-18-clustering-and-ipc-nodejs/</guid>
+      <guid>https://manisuec.blogpost/2018-08-18-clustering-and-ipc-nodejs/</guid>
       <description>Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores. Clustering improves your app’s performance and lets you achieve zero downtime (hot) deployments easily. Also keep in mind that number of workers that can be created is not limited by the number of CPU cores of the machine.</description>
     </item>
     
