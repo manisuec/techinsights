@@ -1,15 +1,15 @@
 ---
 background: /img/posts/04.jpg
-date: "2020-03-02T00:00:00Z"
+date: '2020-03-02T00:00:00Z'
 title: 'Streams: An underrated but very powerful concept in NodeJS'
+tags: ['nodejs', 'streams', 'data processing']
 ---
 
 A stream is an abstract interface for working with streaming data in Node.js. Streams have gained the reputation that it is hard to work with and harder to understand. However, it is a highly underrated but very powerful concept in Node.js. This article will help in understanding of streams, how to work with them and where to use this module.
 
 ## Streams: Introduction
 
-
-The official documentation of Node.js defines stream as an abstract interface for working with streaming data. It is one of the fundamental concept in Node.js  and is very powerful when working with large amounts of data, e.g., reading a very large file size. Streams are memory efficient as there is no need to load large amount of data in memory instead read chunks of data piece by piece and process the contents. Also, since one doesn't have to wait for all the data to load first, it is time efficient too.
+The official documentation of Node.js defines stream as an abstract interface for working with streaming data. It is one of the fundamental concept in Node.js and is very powerful when working with large amounts of data, e.g., reading a very large file size. Streams are memory efficient as there is no need to load large amount of data in memory instead read chunks of data piece by piece and process the contents. Also, since one doesn't have to wait for all the data to load first, it is time efficient too.
 
 For a complete introduction of Stream module and its related apis, read the [official documentation.](https://nodejs.org/dist/latest-v12.x/docs/api/stream.html)
 
@@ -62,9 +62,9 @@ const filterData = (fn, options = {}) =>
     },
   });
 ```
-   
+
 Similarly, create a transform data stream to add field 'risk' with value as 'high' for 'loan_amount' > 5000 else value as 'low'.
-  
+
 ```
 const riskProfile = elem => {
   elem.risk_profile = elem.loan_amount > 5000 ? 'high' : 'low';

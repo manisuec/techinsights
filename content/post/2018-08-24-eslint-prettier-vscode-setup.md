@@ -1,7 +1,8 @@
 ---
 background: /img/posts/02.png
-date: "2018-08-24T00:00:00Z"
+date: '2018-08-24T00:00:00Z'
 title: 'Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode'
+tags: ['javascript', 'eslint', 'prettier', 'vscode']
 ---
 
 This is a short guide to configure VS Code for a consistent and reusable development set-up.
@@ -36,7 +37,7 @@ Install ESLint VS Code extension using command `ext install vscode-eslint`. For 
 
 # Prettier Setup
 
-Prettier is an opinionated code formatter with support for JavaScript, including ES2017. It removes all original styling* and ensures that all outputted code conforms to a consistent style.
+Prettier is an opinionated code formatter with support for JavaScript, including ES2017. It removes all original styling\* and ensures that all outputted code conforms to a consistent style.
 
 Run below command to install Prettier
 
@@ -77,23 +78,23 @@ Add below lines in ‘.eslintrc.json’
 
 **‘eslint-config-prettier’** also ships with a little CLI tool to help you check if your configuration contains any rules that are unnecessary or conflict with Prettier.
 
-
 Add this srcipt in ‘package.json’
 
 ```
 "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check"
 ```
 
-Then run ```npm run eslint-check```
+Then run `npm run eslint-check`
 
 # Importance
 
 Prettier essentially compliments ESLint rules concerning styling. They both help in ensuring a consistent and clean code. This speeds up the development process by improving the quality of code-reviews. Developers will focus more on implementation detail rather than complain about syntax errors and different coding styles. For more information read [Why Prettier?](https://prettier.io/docs/en/why-prettier.html)
 
 ## Tip
+
 a) Pre-commit hook can be set-up so that the code is always formatted before the commit. [Pre-commit hook](https://gist.github.com/cadebward/c26e218220d653385d876f9a81308140)
 
-b) Enable auto fix: View → Command Pallete → Open User Settings → add: ```"eslint.autoFixOnSave": true``` line to the settings
+b) Enable auto fix: View → Command Pallete → Open User Settings → add: `"eslint.autoFixOnSave": true` line to the settings
 
 # Conclusion
 

@@ -1,7 +1,8 @@
 ---
 background: /img/posts/01.png
-date: "2018-08-18T00:00:00Z"
+date: '2018-08-18T00:00:00Z'
 title: Clustering & Inter Process Communication (IPC) in NodeJS
+tags: ['nodejs', 'ipc', 'clustering']
 ---
 
 # Introduction
