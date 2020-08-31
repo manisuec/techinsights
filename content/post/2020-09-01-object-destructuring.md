@@ -16,10 +16,10 @@ In essence, it is a convenient way to extract value/values from data stored in (
 ## Use Cases
 
 1. [**Access object properties and array items**](#usecase_1)
-- [**Create a shallow copy of objects**](#usecase_2)
-- [**Swap values**](#usecase_3)
-- [**Subset of a object's properties**](#usecase_4)
-- [**Get properties like length of array, function name, number of arguments etc.**](#usecase_5)
+2. [**Create a shallow copy of objects**](#usecase_2)
+3. [**Swap values**](#usecase_3)
+4. [**Subset of a object's properties**](#usecase_4)
+5. [**Get properties like length of array, function name, number of arguments etc.**](#usecase_5)
 
 ### <a name="usecase_1"></a> Access object properties and array items
 
