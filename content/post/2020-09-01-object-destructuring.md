@@ -1,6 +1,7 @@
 ---
-date: '2020-09-01T00:00:00Z'
+layout: post
 title: 'ES6 Destructuring'
+date: '2020-09-01T00:00:00Z'
 tags: ['javascript', 'es6', 'destructuring']
 ---
 
