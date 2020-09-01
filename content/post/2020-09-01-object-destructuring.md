@@ -21,7 +21,7 @@ In essence, it is a convenient way to extract value/values from data stored in (
 4. [**Subset of a object's properties**](#usecase_4)
 5. [**Get properties like length of array, function name, number of arguments etc.**](#usecase_5)
 
-### Access object properties and array items {"usecase_1"}
+### **Access object properties and array items** {"usecase_1"}
 
 ```javascript
 const colors = ['red', 'blue'];
@@ -58,7 +58,7 @@ const f2 = ([ foo = "defaultFoo", bar ]) => {
 f2([ ,'bar' ]);
 ```
 
-### Create a shallow copy of objects {"usecase_2"}
+### **Create a shallow copy of objects** {"usecase_2"}
 Using `... rest operator` and destructuring shallow copy of objects or array.
 
 ```javascript
@@ -77,7 +77,7 @@ const {password, ...newUser} = user;
 newUser // => { name: 'User X', age: 25 }
 ```
 
-### Swap values {"usecase_3"}
+### **Swap values** {"usecase_3"}
 Variables can be swapped without need for a temp variable
 
 ```javascript
@@ -94,7 +94,7 @@ const c = [1, 2, 3, 4];
 console.log(c); // => [ 3, 2, 1, 4 ]
 ```
 
-### Subset of a object's properties {"usecase_4"}
+### **Subset of a object's properties** {"usecase_4"}
 
 [Using destructuring assignment and ',' operator](https://stackoverflow.com/a/54613019)
 
@@ -123,7 +123,7 @@ const obj = (([a, b, c]) => ({a, b, c}))(arr);
 console.log(obj); // => { a: 'a', b: 'b', c: 'c' }
 ``` 
 
-### Get properties like length of array, function name, number of arguments etc. {"usecase_5"}
+### **Get properties like length of array, function name, number of arguments etc.** {"usecase_5"}
 
 ```javascript
 let arr = [1, 2, 3, 4, 5];
