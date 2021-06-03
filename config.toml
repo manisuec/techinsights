@@ -99,6 +99,8 @@ copyright = ""            # default: author.name ↓        #
 
   uglyURLs = false          # please keep same with uglyurls setting
 
+  images = ["https://d33wubrfki0l68.cloudfront.net/2aa8902b2448ad8845e4ee05a99416b76fa8c1d8/f9a85/img/bg-about.jpg"]
+
   [params.publicCDN]        # load these files from public cdn                          
     enable = true
     jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
@@ -125,7 +127,7 @@ copyright = ""            # default: author.name ↓        #
 
   [params.utterances]       # https://utteranc.es/
     owner = "manisuec"              # Your GitHub ID
-    repo = "manisuec/hugo"          # The repo to store comments
+    repo = "hugo"           # The repo to store comments
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = ""              # Your GitHub ID
