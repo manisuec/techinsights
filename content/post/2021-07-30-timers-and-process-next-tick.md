@@ -12,18 +12,18 @@ Timers and process.nextTick() are core concepts of Nodejs. It is important to un
 Let’s look at a code snippet first:
 
 ```
-setTimeout(() => {
-  console.log('setTimeout'); 
+setTimeout(() => { 
   process.nextTick(() => {
     console.log('setTimeout --> nextTick');
   });
+  console.log('setTimeout');
 }, 0);
 
 setImmediate(() => {
-  console.log('setImmediate');
   process.nextTick(() => {
     console.log('setImmediate --> nextTick');
   });
+  console.log('setImmediate');
 });
 
 process.nextTick(() => {
@@ -86,7 +86,7 @@ setImmediate --> nextTick
 
 
 ## Conclusion
-They all appear to do the same thing but one should use them depending on the situation. 
+They all appear to do the same thing but one should use them depending on the situation. I would strongly recommend to read [Understand Event Loop in Nodejs](https://manisuec.blog/post/2021-08-11-understand-event-loop-in-nodejs/) for better understanding.
 
 The [official documentation](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#check) states:
 
