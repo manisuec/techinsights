@@ -14,7 +14,7 @@ Can you guess what will be the output of the below code snippet?
 If yes; congratulations, you understand Event Loop completely.
 If not; I would request you to read and understand details of each phase and then try to figure out the output.
 
-```
+```javascript
 const fs = require('fs');
 
 console.log('start');

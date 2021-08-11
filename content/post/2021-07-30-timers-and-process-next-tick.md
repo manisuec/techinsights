@@ -11,7 +11,7 @@ Timers and process.nextTick() are core concepts of Nodejs. It is important to un
 
 Let’s look at a code snippet first:
 
-```
+```javascript
 setTimeout(() => { 
   process.nextTick(() => {
     console.log('setTimeout --> nextTick');
