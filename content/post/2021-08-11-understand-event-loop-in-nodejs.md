@@ -2,6 +2,7 @@
 layout: post
 title: 'Understand Event Loop in Nodejs'
 date: 2021-08-11 00:00:00 +0530
+images: ['/img/posts/eventloop.png']
 tags: ['nodejs', 'javascript', 'eventloop']
 ---
 
