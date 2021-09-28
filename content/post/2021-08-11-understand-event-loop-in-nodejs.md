@@ -75,7 +75,7 @@ The Event Loop is composed of six phases, which are repeated for as long as the 
 - **check:** `setImmediate()` callbacks are invoked here.
 - **close callbacks:** some close callbacks, e.g. `socket.on('close', ...)`.
 
-For detailed difference between timers and process.nextTick() read [Understand the difference between setImmediate(), setTimeout() and process.nextTick()](https://manisuec.blog/post/2021-07-30-timers-and-process-next-tick/)
+For detailed difference between timers and process.nextTick() read [Understand the difference between setImmediate(), setTimeout() and process.nextTick()](https://techinsights.manisuec.com/post/2021-07-30-timers-and-process-next-tick/)
 
 
 ![Event Loop](/img/posts/eventloop.png)
