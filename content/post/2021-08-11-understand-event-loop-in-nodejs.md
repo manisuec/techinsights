@@ -125,7 +125,7 @@ nextTick 2
 setInterval 0
 ```
 
-The next phase is `poll` phase but since it some time is required to read data from file hence event loop will enter into `check` phase. Since, there is a callback registered by `setImmediate()`, it will gets executed.
+The next phase is `poll` phase but since some time is required to read data from file hence event loop will enter into `check` phase. Since, there is a callback registered by `setImmediate()`, it will gets executed.
 
 ```
 setImmediate

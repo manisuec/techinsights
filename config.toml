@@ -18,7 +18,7 @@ pygmentsCodefencesGuessSyntax = true
 hasCJKLanguage = false
 paginate = 5                                            
 disqusShortname = ""      # disqus_shortname
-googleAnalytics = "UA-111859472-2"      # UA-XXXXXXXX-X
+googleAnalytics = "G-YZX0J3052R"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        #
 
 [author]                  # essential                     #
