@@ -13,7 +13,7 @@ A single instance of Node.js runs in a single thread. This does not allow to tak
 
 Run the below code
 
-```
+```javascript
 'use strict';
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
@@ -27,7 +27,7 @@ for (let i = 0; i < numCPUs; ++i) {
 }
 ```
 
-```
+```javascript
 $ node cluster.js
 Master process is running with pid: 21559
 Worker started with pid: 21570
@@ -42,7 +42,7 @@ That’s how easy it is. Cluster module lets you fork multiple child processes (
 
 The worker processes spawned can communicate with the parent via IPC (Inter Process Communication) channel which allows messages to be passed back and forth between the parent and child. Cluster module makes use of ‘process.send()’ and process.on(‘message’) to communicate between two processes.
 
-```
+```javascript
 process.on('message', message => {
   console.log('Message from parent:', message);
 process.send('Message from worker');
@@ -51,7 +51,7 @@ process.send('Message from worker');
 
 One can dedicate specific workers to do specific tasks. Expensive tasks which are either I/O intensive or CPU intensive can have dedicated worker process/processes. The master can delegate the tasks to dedicated workers. Initialize worker with custom id.
 
-```
+```javascript
 for (let i = 0; i < numCPUs; ++i) {
   const customId = i + 100;
   const worker = cluster.fork({ workerId: customId });
@@ -60,18 +60,19 @@ for (let i = 0; i < numCPUs; ++i) {
 
 Worker process ‘env’ is not exposed to master. One approach is to maintain a map of cluster with required info.
 
-```
+```javascript
 const clusterMap = {};
+
 for (let i = 0; i < numCPUs; ++i) {
   const customId = i + 100;
   const worker = cluster.fork({ customId: id });
-clusterMap[worker.id] = customId;
+  clusterMap[worker.id] = customId;
 }
 ```
 
 Master can delegate tasks to specific worker something like this
 
-```
+```javascript
 if (clusterMap[worker.id] === customId) {
   worker.send({msg: 'Message from master', task: taskArg});
 }
@@ -79,8 +80,9 @@ if (clusterMap[worker.id] === customId) {
 
 Similarly, message communicated between master and worker can be customized to delegate tasks. e.g.
 
-```
+```javascript
 process.send({msgType: 'EMAIL', message: emailContent});
+
 worker.on('message', function (message) {
   // each worker is listning to 'message' event
   // and then perform relevant tasks.
@@ -97,14 +99,17 @@ worker.on('message', function (message) {
 
 Complete code snippet
 
-```
+```javascript
 'use strict';
+
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
+
 if (cluster.isMaster) {
   console.log('Master process is running with pid:', process.pid);
-const clusterMap = {};
+  const clusterMap = {};
   let count = 0; // Used to avoid infinite loop
+  
 for (let i = 0; i < numCPUs; ++i) {
     const customId = i + 100;
     const worker = cluster.fork({ workerId: customId });
@@ -112,6 +117,7 @@ clusterMap[worker.id] = customId;
 worker.send({ msg: 'Hello from Master' });
 worker.on('message', msg => {
       console.log('Message from worker:', clusterMap[worker.id], msg);
+      
       if (clusterMap[worker.id] === 101 && !count++) {
         // Message from master for worker 101 to do specific task with taskArg
         const taskArg = { params: { name: 'xyz' }, task: 'email' }; // dummy arg
@@ -136,6 +142,7 @@ worker.on('message', msg => {
     'and id:',
     process.env.workerId
   );
+  
 process.on('message', msg => {
     console.log('Message from master:', msg);
     process.send({
@@ -153,9 +160,11 @@ Based on the above understanding of Node.js clustering and IPC, processes can co
 
 # Summary
 
-Clustering is a must have for any Node.js production app. It helps to scale according to the number of CPU cores available on the machine. It is also easier to manage as there is no dependency on any external module/service. Implementing inter process communication is also very easy. IPC using Node.js cluster module is in memory and hence scalability becomes an issue. Performance also takes a hit when there are too many messages. Management of process state has to be done by yourself.
+Clustering is a must have for any Node.js production app. It helps to scale horizontally according to the number of CPU cores available on the machine. It is also easier to manage as there is no dependency on any external module/service.
+
+Implementing inter process communication is also very easy. IPC using Node.js cluster module is in memory and hence scalability becomes an issue. Performance also takes a hit when there are too many messages. Management of process state has to be done by yourself.
 
 [PM2](http://pm2.keymetrics.io) with use of message broker like [RabbitMQ](https://www.rabbitmq.com) can also be used to manage the processes and inter process communications which provides more flexibility with the only downside of adding external dependency. It also helps in horizontal scaling and provides a flexible architecture.
 [‘node-ipc’](http://riaevangelist.github.io/node-ipc/) is a Node.js module for local and remote Inter Process Communication with full support for Linux, Mac and Windows. It also supports all forms of socket communication from low level unix and windows sockets to UDP and secure TLS and TCP sockets.
 
-You can read more about Node.js cluster module here: <https://nodejs.org/docs/latest/api/cluster.html#cluster_cluster>
+Read more about [Node.js cluster module](https://nodejs.org/docs/latest/api/cluster.html#cluster_cluster)
