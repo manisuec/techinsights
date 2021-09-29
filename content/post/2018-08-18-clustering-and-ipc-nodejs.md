@@ -5,11 +5,11 @@ title: Clustering & Inter Process Communication (IPC) in NodeJS
 tags: ['nodejs', 'ipc', 'clustering']
 ---
 
-# Introduction
+## Introduction
 
 A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging [‘cluster module’](https://nodejs.org/dist/latest-v10.x/docs/api/cluster.html) one can take advantage of multiple CPU cores. Clustering improves your app’s performance and lets you achieve zero downtime (hot) deployments easily. Also keep in mind that number of workers that can be created is not limited by the number of CPU cores of the machine. Clustering is a must-have for any Node.js production app and there is no reason not to use it.
 
-# Clustering
+## Clustering
 
 Run the below code
 
@@ -41,7 +41,7 @@ Worker started with pid: 21577
 
 That’s how easy it is. Cluster module lets you fork multiple child processes (using [child_process.fork()](https://nodejs.org/dist/latest-v10.x/docs/api/child_process.html#child_process_child_process_fork_modulepath_args_options)). Making use of the events ‘online’, ‘disconnect’, ‘listening’, ‘message’, ‘error’ and ‘exit’ emitted by worker process, the state of worker process can be easily managed; however, this is not further explained in this article.
 
-# Inter Process Communication (IPC)
+## Inter Process Communication (IPC)
 
 The worker processes spawned can communicate with the parent via IPC (Inter Process Communication) channel which allows messages to be passed back and forth between the parent and child. Cluster module makes use of ‘process.send()’ and process.on(‘message’) to communicate between two processes.
 
@@ -161,7 +161,7 @@ Based on the above understanding of Node.js clustering and IPC, processes can co
 - One-to-one: Typically used for one to one notification or request/response.
 - One-to-many: Typically used for publish/subscribe.
 
-# Summary
+## Summary
 
 Clustering is a must have for any Node.js production app. It helps to scale horizontally according to the number of CPU cores available on the machine. It is also easier to manage as there is no dependency on any external module/service.
 
