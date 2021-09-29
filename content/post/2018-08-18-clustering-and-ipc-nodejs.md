@@ -22,7 +22,7 @@ const numCPUs = require('os').cpus().length;
 if (cluster.isMaster) {
   console.log('Master process is running with pid:', process.pid);
   
-for (let i = 0; i < numCPUs; ++i) {
+  for (let i = 0; i < numCPUs; ++i) {
     cluster.fork();
   }
 } else {
