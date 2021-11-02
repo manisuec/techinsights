@@ -90,17 +90,16 @@ const fooTask = async ({signal}) => {
 
 const timeOut = async () => {
   try {
-    await setTimeoutPromise(10, undefined, {signal: abortTimeout.signal });
+    await setTimeoutPromise(10, undefined, { signal: abortTimeout.signal });
     console.log('operation taking more time than expected');
     console.log('signal ---> abort fooTask');
     abortFooTask.abort();
   } catch (err) {
-  	 if (err.name === 'AbortError') {
+    if (err.name === 'AbortError') {
       console.log('The timeout was aborted');
-  	 }
+    }
   }
 };
-
 
 const start = async () =>  {
   await Promise.race([
