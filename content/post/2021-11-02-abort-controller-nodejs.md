@@ -134,7 +134,6 @@ I have used `setTimeout` to simulate the operations.
  ```
 
 
-
 ## Conclusion
 
 `AbortController` and `AbortSignal` are now part of Nodejs core APIs. They provide a more graceful way of cancelling async operations.
