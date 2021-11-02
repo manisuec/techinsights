@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Async Operations with AbortController in Nodejs'
+title: 'Async Operations with AbortController & AbortSignal in Nodejs'
 date: 2021-11-02 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1635836633/1_zfv_iZJYdjBUL2K1Y6k9yw_zjq7f8.jpg']
 tags: ['nodejs', 'javascript', 'async', 'abortcontroller', 'abortsignal']
