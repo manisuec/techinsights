@@ -1,85 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Clustering &amp; Inter Process Communication (IPC) in NodeJS - Tech Insights</title>
   <meta name="renderer" content="webkit" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-  <meta name="theme-color" content="#f8f5ec" />
-  <meta name="msapplication-navbutton-color" content="#f8f5ec">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-  <meta name="author" content="Manish Prasad" />
-  <meta name="description"
-    content="Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores. Clustering improves your app’s performance and lets you achieve zero downtime (hot) deployments easily. Also keep in mind that number of workers that can be created is not limited by the number of CPU cores of the machine." />
-  <meta name="keywords" content="tech, blog, manisuec" />
-
+<meta name="author"
+  content="Manish Prasad" /><meta name="description" content="Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores." /><meta name="keywords"
+  content="tech, blog, manisuec" />
 
 
 
 
 
-  <meta name="generator" content="Hugo 0.71.1 with theme even" />
+
+<meta name="generator" content="Hugo 0.87.0 with theme even" />
 
 
-  <link rel="canonical" href="https://manisuec.blogpost/2018-08-18-clustering-and-ipc-nodejs/" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-  <link href="/sass/main.min.c83fc49c171a1772facda0502e4f8609273ba37a696d524cc8684910bc5f4f29.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css"
-    integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
-
-
-  <meta property="og:title" content="Clustering &amp; Inter Process Communication (IPC) in NodeJS" />
-  <meta property="og:description"
-    content="Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores. Clustering improves your app’s performance and lets you achieve zero downtime (hot) deployments easily. Also keep in mind that number of workers that can be created is not limited by the number of CPU cores of the machine." />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://manisuec.blogpost/2018-08-18-clustering-and-ipc-nodejs/" />
-  <meta property="article:published_time" content="2018-08-18T00:00:00+00:00" />
-  <meta property="article:modified_time" content="2018-08-18T00:00:00+00:00" />
-  <meta itemprop="name" content="Clustering &amp; Inter Process Communication (IPC) in NodeJS">
-  <meta itemprop="description"
-    content="Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores. Clustering improves your app’s performance and lets you achieve zero downtime (hot) deployments easily. Also keep in mind that number of workers that can be created is not limited by the number of CPU cores of the machine.">
-  <meta itemprop="datePublished" content="2018-08-18T00:00:00&#43;00:00" />
-  <meta itemprop="dateModified" content="2018-08-18T00:00:00&#43;00:00" />
-  <meta itemprop="wordCount" content="947">
+<link rel="canonical" href="https://techinsights.manisuec.com/post/2018-08-18-clustering-and-ipc-nodejs/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
-  <meta itemprop="keywords" content="" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Clustering &amp; Inter Process Communication (IPC) in NodeJS" />
-  <meta name="twitter:description"
-    content="Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores. Clustering improves your app’s performance and lets you achieve zero downtime (hot) deployments easily. Also keep in mind that number of workers that can be created is not limited by the number of CPU cores of the machine." />
+<link rel="stylesheet" href="/sass/main.min.551913c5169069e3e6f4dbcb14407e274c743ac9627cbda2cc3325c3127b0578.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
-  <!--[if lte IE 9]>
+
+<meta property="og:title" content="Clustering &amp; Inter Process Communication (IPC) in NodeJS" />
+<meta property="og:description" content="Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://techinsights.manisuec.com/post/2018-08-18-clustering-and-ipc-nodejs/" /><meta property="og:image" content="https://d33wubrfki0l68.cloudfront.net/2aa8902b2448ad8845e4ee05a99416b76fa8c1d8/f9a85/img/bg-about.jpg"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-08-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-08-18T00:00:00+00:00" />
+
+<meta itemprop="name" content="Clustering &amp; Inter Process Communication (IPC) in NodeJS">
+<meta itemprop="description" content="Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores."><meta itemprop="datePublished" content="2018-08-18T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-08-18T00:00:00+00:00" />
+<meta itemprop="wordCount" content="954"><meta itemprop="image" content="https://d33wubrfki0l68.cloudfront.net/2aa8902b2448ad8845e4ee05a99416b76fa8c1d8/f9a85/img/bg-about.jpg"/>
+<meta itemprop="keywords" content="nodejs,ipc,clustering," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://d33wubrfki0l68.cloudfront.net/2aa8902b2448ad8845e4ee05a99416b76fa8c1d8/f9a85/img/bg-about.jpg"/>
+
+<meta name="twitter:title" content="Clustering &amp; Inter Process Communication (IPC) in NodeJS"/>
+<meta name="twitter:description" content="Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores."/>
+
+<!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
 <![endif]-->
 
-  <!--[if lt IE 9]>
+<!--[if lt IE 9]>
   <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
-    <div class="mobile-header-logo">
-      <a href="/" class="logo">Tech Insights</a>
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Tech Insights</a>
+    <div class="author">by manisuec</div>
     </div>
     <div class="mobile-navbar-icon">
       <span></span>
@@ -87,249 +79,103 @@
       <span></span>
     </div>
   </div>
-  <nav id="mobile-menu" class="mobile-menu slideout-menu">
-    <ul class="mobile-menu-list">
-      <a href="/">
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
         <li class="mobile-menu-item">Home</li>
       </a><a href="/post">
         <li class="mobile-menu-item">Posts</li>
       </a><a href="/about/">
         <li class="mobile-menu-item">About</li>
       </a>
-    </ul>
-  </nav>
+  </ul>
+</nav>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
-      <div style="background-image: url('/img/bg-min.jpg'); height: 7.5rem; width: 100%; vertical-align: middle;">
-        <div class="logo-wrapper">
-          <a href="/" class="logo">Tech Insights</a>
-          <span class="author">by manisuec</span>
-        </div>
+        <div
+  style="background-image: url('/img/bg-min.jpg'); height: 7.5rem; width: 100%; vertical-align: middle; background-size: cover;">
+  <div class="logo-wrapper">
+    <a href="/" class="logo">Tech Insights</a>
+    <span class="author">by manisuec</span>
+  </div>
 
-        <nav class="site-navbar">
-          <ul id="menu" class="menu">
-            <li class="menu-item">
-              <a class="menu-item-link" href="/">Home</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item-link" href="/post">Posts</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item-link" href="/about/">About</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <nav class="site-navbar">
+    <ul id="menu" class="menu">
+      <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post">Posts</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
     </header>
 
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
           <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Clustering &amp; Inter Process Communication (IPC) in NodeJS</h1>
 
-            <header class="post-header">
-              <h1 class="post-title">Clustering &amp; Inter Process Communication (IPC) in NodeJS</h1>
+      <div class="post-meta">
+        <span class="post-time"> Aug 18, 2018 </span>
+        
+          <span class="more-meta"> 954 words </span>
+          <span class="more-meta"> 5 mins read </span>
+        
+        <span>
 
-              <div class="post-meta">
-                <span class="post-time"> Aug 18, 2018 </span>
 
-                <span class="more-meta"> 947 words </span>
-                <span class="more-meta"> 5 mins read </span>
 
-              </div>
-            </header>
-
-            <div class="post-toc" id="post-toc">
-              <h2 class="post-toc-title">Contents</h2>
-              <div class="post-toc-content always-active">
-                <nav id="TableOfContents"></nav>
-              </div>
-            </div>
-            <div class="post-content">
-              <h1 id="introduction">Introduction</h1>
-              <p>A single instance of Node.js runs in a single thread. This does not allow to take advantage of
-                multi-core systems automatically. However, by leveraging <a
-                  href="https://nodejs.org/dist/latest-v10.x/docs/api/cluster.html">‘cluster module’</a> one can take
-                advantage of multiple CPU cores. Clustering improves your app’s performance and lets you achieve zero
-                downtime (hot) deployments easily. Also keep in mind that number of workers that can be created is not
-                limited by the number of CPU cores of the machine. Clustering is a must-have for any Node.js production
-                app and there is no reason not to use it.</p>
-              <h1 id="clustering">Clustering</h1>
-              <p>Run the below code</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">&#39;use strict&#39;;
-const cluster = require(&#39;cluster&#39;);
-const numCPUs = require(&#39;os&#39;).cpus().length;
-if (cluster.isMaster) {
-  console.log(&#39;Master process is running with pid:&#39;, process.pid);
-for (let i = 0; i &lt; numCPUs; ++i) {
-    cluster.fork();
-  }
-} else {
-  console.log(&#39;Worker started with pid:&#39;, process.pid);
+<style>
+#share-buttons {display: inline-block; vertical-align: middle; }
+#share-buttons > div {
+position: relative;
+height: 40px; 
+width: 32px; 
+float: left; 
+text-align: center;
+font-size: 1rem;
 }
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">$ node cluster.js
-Master process is running with pid: 21559
-Worker started with pid: 21570
-Worker started with pid: 21571
-Worker started with pid: 21565
-Worker started with pid: 21577
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>That’s how easy it is. Cluster module lets you fork multiple child processes (using <a
-                  href="https://nodejs.org/dist/latest-v10.x/docs/api/child_process.html#child_process_child_process_fork_modulepath_args_options">child_process.fork()</a>).
-                Making use of the events ‘online’, ‘disconnect’, ‘listening’, ‘message’, ‘error’ and ‘exit’ emitted by
-                worker process, the state of worker process can be easily managed; however, this is not further
-                explained in this article.</p>
-              <h1 id="inter-process-communication-ipc">Inter Process Communication (IPC)</h1>
-              <p>The worker processes spawned can communicate with the parent via IPC (Inter Process Communication)
-                channel which allows messages to be passed back and forth between the parent and child. Cluster module
-                makes use of ‘process.send()’ and process.on(‘message’) to communicate between two processes.</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">process.on(&#39;message&#39;, message =&gt; {
-  console.log(&#39;Message from parent:&#39;, message);
-process.send(&#39;Message from worker&#39;);
-});
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>One can dedicate specific workers to do specific tasks. Expensive tasks which are either I/O intensive
-                or CPU intensive can have dedicated worker process/processes. The master can delegate the tasks to
-                dedicated workers. Initialize worker with custom id.</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">for (let i = 0; i &lt; numCPUs; ++i) {
-  const customId = i + 100;
-  const worker = cluster.fork({ workerId: customId });
-}
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>Worker process ‘env’ is not exposed to master. One approach is to maintain a map of cluster with
-                required info.</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">const clusterMap = {};
-for (let i = 0; i &lt; numCPUs; ++i) {
-  const customId = i + 100;
-  const worker = cluster.fork({ customId: id });
-clusterMap[worker.id] = customId;
-}
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>Master can delegate tasks to specific worker something like this</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">if (clusterMap[worker.id] === customId) {
-  worker.send({msg: &#39;Message from master&#39;, task: taskArg});
-}
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>Similarly, message communicated between master and worker can be customized to delegate tasks. e.g.</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt"> 1
+#share-buttons > div > svg {height: 20px; fill: #0077b5; margin-top: 10px;}
+#share-buttons > div:hover {cursor: pointer;}
+#share-buttons > div.twitter:hover > svg {fill: #55ACEE;}
+#share-buttons > div.linkedin:hover > svg {fill: #0077b5;}
+</style>
+<div id="share-buttons">
+  <div class="twitter" title="Share this on Twitter" onclick="window.open('https://twitter.com/share?url=https:\/\/techinsights.manisuec.com\/post\/2018-08-18-clustering-and-ipc-nodejs\/&text=Clustering \u0026 Inter Process Communication (IPC) in NodeJS&hashtags=tech,blog,techinsights&via=_manish25');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></div>
+</div>
+</span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#clustering">Clustering</a></li>
+    <li><a href="#inter-process-communication-ipc">Inter Process Communication (IPC)</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="introduction">Introduction</h2>
+<p>A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging <a href="https://nodejs.org/dist/latest-v10.x/docs/api/cluster.html">‘cluster module’</a> one can take advantage of multiple CPU cores. Clustering improves your app’s performance and lets you achieve zero downtime (hot) deployments easily. Also keep in mind that number of workers that can be created is not limited by the number of CPU cores of the machine. Clustering is a must-have for any Node.js production app and there is no reason not to use it.</p>
+<h2 id="clustering">Clustering</h2>
+<p>Run the below code</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -342,35 +188,148 @@ clusterMap[worker.id] = customId;
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">process.send({msgType: &#39;EMAIL&#39;, message: emailContent});
-worker.on(&#39;message&#39;, function (message) {
-  // each worker is listning to &#39;message&#39; event
-  // and then perform relevant tasks.
-  switch (message.msgType) {
-    case &#39;EMAIL&#39;:
-      // Code to send email
-      break;
-    default:
-      // default action
-      break;
-  }
-});
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>Complete code snippet</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">cluster</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;cluster&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">numCPUs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;os&#39;</span><span class="p">).</span><span class="nx">cpus</span><span class="p">().</span><span class="nx">length</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">cluster</span><span class="p">.</span><span class="nx">isMaster</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Master process is running with pid:&#39;</span><span class="p">,</span> <span class="nx">process</span><span class="p">.</span><span class="nx">pid</span><span class="p">);</span>
+  
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">numCPUs</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">cluster</span><span class="p">.</span><span class="nx">fork</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Worker started with pid:&#39;</span><span class="p">,</span> <span class="nx">process</span><span class="p">.</span><span class="nx">pid</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span> <span class="nx">node</span> <span class="nx">cluster</span><span class="p">.</span><span class="nx">js</span>
+<span class="nx">Master</span> <span class="nx">process</span> <span class="nx">is</span> <span class="nx">running</span> <span class="kd">with</span> <span class="nx">pid</span><span class="o">:</span> <span class="mi">21559</span>
+<span class="nx">Worker</span> <span class="nx">started</span> <span class="kd">with</span> <span class="nx">pid</span><span class="o">:</span> <span class="mi">21570</span>
+<span class="nx">Worker</span> <span class="nx">started</span> <span class="kd">with</span> <span class="nx">pid</span><span class="o">:</span> <span class="mi">21571</span>
+<span class="nx">Worker</span> <span class="nx">started</span> <span class="kd">with</span> <span class="nx">pid</span><span class="o">:</span> <span class="mi">21565</span>
+<span class="nx">Worker</span> <span class="nx">started</span> <span class="kd">with</span> <span class="nx">pid</span><span class="o">:</span> <span class="mi">21577</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>That’s how easy it is. Cluster module lets you fork multiple child processes (using <a href="https://nodejs.org/dist/latest-v10.x/docs/api/child_process.html#child_process_child_process_fork_modulepath_args_options">child_process.fork()</a>). Making use of the events ‘online’, ‘disconnect’, ‘listening’, ‘message’, ‘error’ and ‘exit’ emitted by worker process, the state of worker process can be easily managed; however, this is not further explained in this article.</p>
+<h2 id="inter-process-communication-ipc">Inter Process Communication (IPC)</h2>
+<p>The worker processes spawned can communicate with the parent via IPC (Inter Process Communication) channel which allows messages to be passed back and forth between the parent and child. Cluster module makes use of ‘process.send()’ and process.on(‘message’) to communicate between two processes.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="nx">message</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Message from parent:&#39;</span><span class="p">,</span> <span class="nx">message</span><span class="p">);</span>
+<span class="nx">process</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;Message from worker&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>One can dedicate specific workers to do specific tasks. Expensive tasks which are either I/O intensive or CPU intensive can have dedicated worker process/processes. The master can delegate the tasks to dedicated workers. Initialize worker with custom id.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">numCPUs</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">customId</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="kr">const</span> <span class="nx">worker</span> <span class="o">=</span> <span class="nx">cluster</span><span class="p">.</span><span class="nx">fork</span><span class="p">({</span> <span class="nx">workerId</span><span class="o">:</span> <span class="nx">customId</span> <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Worker process ‘env’ is not exposed to master. One approach is to maintain a map of cluster with required info.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">clusterMap</span> <span class="o">=</span> <span class="p">{};</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">numCPUs</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">customId</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="kr">const</span> <span class="nx">worker</span> <span class="o">=</span> <span class="nx">cluster</span><span class="p">.</span><span class="nx">fork</span><span class="p">({</span> <span class="nx">customId</span><span class="o">:</span> <span class="nx">id</span> <span class="p">});</span>
+  <span class="nx">clusterMap</span><span class="p">[</span><span class="nx">worker</span><span class="p">.</span><span class="nx">id</span><span class="p">]</span> <span class="o">=</span> <span class="nx">customId</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Master can delegate tasks to specific worker something like this</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">if</span> <span class="p">(</span><span class="nx">clusterMap</span><span class="p">[</span><span class="nx">worker</span><span class="p">.</span><span class="nx">id</span><span class="p">]</span> <span class="o">===</span> <span class="nx">customId</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">worker</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span><span class="nx">msg</span><span class="o">:</span> <span class="s1">&#39;Message from master&#39;</span><span class="p">,</span> <span class="nx">task</span><span class="o">:</span> <span class="nx">taskArg</span><span class="p">});</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Similarly, message communicated between master and worker can be customized to delegate tasks. e.g.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">process</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span><span class="nx">msgType</span><span class="o">:</span> <span class="s1">&#39;EMAIL&#39;</span><span class="p">,</span> <span class="nx">message</span><span class="o">:</span> <span class="nx">emailContent</span><span class="p">});</span>
+
+<span class="nx">worker</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// each worker is listning to &#39;message&#39; event
+</span><span class="c1"></span>  <span class="c1">// and then perform relevant tasks.
+</span><span class="c1"></span>  <span class="k">switch</span> <span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">msgType</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="s1">&#39;EMAIL&#39;</span><span class="o">:</span>
+      <span class="c1">// Code to send email
+</span><span class="c1"></span>      <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span><span class="o">:</span>
+      <span class="c1">// default action
+</span><span class="c1"></span>      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Complete code snippet</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -416,191 +375,165 @@ worker.on(&#39;message&#39;, function (message) {
 </span><span class="lnt">44
 </span><span class="lnt">45
 </span><span class="lnt">46
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre class="chroma"><code class="language-fallback" data-lang="fallback">&#39;use strict&#39;;
-const cluster = require(&#39;cluster&#39;);
-const numCPUs = require(&#39;os&#39;).cpus().length;
-if (cluster.isMaster) {
-  console.log(&#39;Master process is running with pid:&#39;, process.pid);
-const clusterMap = {};
-  let count = 0; // Used to avoid infinite loop
-for (let i = 0; i &lt; numCPUs; ++i) {
-    const customId = i + 100;
-    const worker = cluster.fork({ workerId: customId });
-clusterMap[worker.id] = customId;
-worker.send({ msg: &#39;Hello from Master&#39; });
-worker.on(&#39;message&#39;, msg =&gt; {
-      console.log(&#39;Message from worker:&#39;, clusterMap[worker.id], msg);
-      if (clusterMap[worker.id] === 101 &amp;&amp; !count++) {
-        // Message from master for worker 101 to do specific task with taskArg
-        const taskArg = { params: { name: &#39;xyz&#39; }, task: &#39;email&#39; }; // dummy arg
-        worker.send(taskArg);
-      } else {
-        switch (msg.msgType) {
-          case &#39;EMAIL&#39;:
-            console.log(&#39;Action to perform is EMAIL&#39;);
-            // Code to send email
-            break;
-          default:
-            // default action
-            break;
-        }
-      }
-    });
-  }
-} else {
-  console.log(
-    &#39;Worker started with pid:&#39;,
-    process.pid,
-    &#39;and id:&#39;,
-    process.env.workerId
-  );
-process.on(&#39;message&#39;, msg =&gt; {
-    console.log(&#39;Message from master:&#39;, msg);
-    process.send({
-      msgType: &#39;EMAIL&#39;,
-      msg: &#39;Hello from worker&#39;
-    });
-  });
-}
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>Based on the above understanding of Node.js clustering and IPC, processes can communicate in following
-                interaction styles while acting as client and server.</p>
-              <ul>
-                <li>One-to-one: Typically used for one to one notification or request/response.</li>
-                <li>One-to-many: Typically used for publish/subscribe.</li>
-              </ul>
-              <h1 id="summary">Summary</h1>
-              <p>Clustering is a must have for any Node.js production app. It helps to scale according to the number of
-                CPU cores available on the machine. It is also easier to manage as there is no dependency on any
-                external module/service. Implementing inter process communication is also very easy. IPC using Node.js
-                cluster module is in memory and hence scalability becomes an issue. Performance also takes a hit when
-                there are too many messages. Management of process state has to be done by yourself.</p>
-              <p><a href="http://pm2.keymetrics.io">PM2</a> with use of message broker like <a
-                  href="https://www.rabbitmq.com">RabbitMQ</a> can also be used to manage the processes and inter
-                process communications which provides more flexibility with the only downside of adding external
-                dependency. It also helps in horizontal scaling and provides a flexible architecture.
-                <a href="http://riaevangelist.github.io/node-ipc/">‘node-ipc’</a> is a Node.js module for local and
-                remote Inter Process Communication with full support for Linux, Mac and Windows. It also supports all
-                forms of socket communication from low level unix and windows sockets to UDP and secure TLS and TCP
-                sockets.</p>
-              <p>You can read more about Node.js cluster module here: <a
-                  href="https://nodejs.org/docs/latest/api/cluster.html#cluster_cluster">https://nodejs.org/docs/latest/api/cluster.html#cluster_cluster</a>
-              </p>
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
 
-            </div>
+<span class="kr">const</span> <span class="nx">cluster</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;cluster&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">numCPUs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;os&#39;</span><span class="p">).</span><span class="nx">cpus</span><span class="p">().</span><span class="nx">length</span><span class="p">;</span>
 
-            <div class="post-copyright">
-              <p class="copyright-item">
-                <span class="item-title">Author</span>
-                <span class="item-content">Manish Prasad</span>
-              </p>
+<span class="k">if</span> <span class="p">(</span><span class="nx">cluster</span><span class="p">.</span><span class="nx">isMaster</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Master process is running with pid:&#39;</span><span class="p">,</span> <span class="nx">process</span><span class="p">.</span><span class="nx">pid</span><span class="p">);</span>
+  <span class="kr">const</span> <span class="nx">clusterMap</span> <span class="o">=</span> <span class="p">{};</span>
+  <span class="kd">let</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// Used to avoid infinite loop
+</span><span class="c1"></span>  
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">numCPUs</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">customId</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="kr">const</span> <span class="nx">worker</span> <span class="o">=</span> <span class="nx">cluster</span><span class="p">.</span><span class="nx">fork</span><span class="p">({</span> <span class="nx">workerId</span><span class="o">:</span> <span class="nx">customId</span> <span class="p">});</span>
+<span class="nx">clusterMap</span><span class="p">[</span><span class="nx">worker</span><span class="p">.</span><span class="nx">id</span><span class="p">]</span> <span class="o">=</span> <span class="nx">customId</span><span class="p">;</span>
+<span class="nx">worker</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span> <span class="nx">msg</span><span class="o">:</span> <span class="s1">&#39;Hello from Master&#39;</span> <span class="p">});</span>
+<span class="nx">worker</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="nx">msg</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Message from worker:&#39;</span><span class="p">,</span> <span class="nx">clusterMap</span><span class="p">[</span><span class="nx">worker</span><span class="p">.</span><span class="nx">id</span><span class="p">],</span> <span class="nx">msg</span><span class="p">);</span>
+      
+      <span class="k">if</span> <span class="p">(</span><span class="nx">clusterMap</span><span class="p">[</span><span class="nx">worker</span><span class="p">.</span><span class="nx">id</span><span class="p">]</span> <span class="o">===</span> <span class="mi">101</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">count</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Message from master for worker 101 to do specific task with taskArg
+</span><span class="c1"></span>        <span class="kr">const</span> <span class="nx">taskArg</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">params</span><span class="o">:</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;xyz&#39;</span> <span class="p">},</span> <span class="nx">task</span><span class="o">:</span> <span class="s1">&#39;email&#39;</span> <span class="p">};</span> <span class="c1">// dummy arg
+</span><span class="c1"></span>        <span class="nx">worker</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">taskArg</span><span class="p">);</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">msgType</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">case</span> <span class="s1">&#39;EMAIL&#39;</span><span class="o">:</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Action to perform is EMAIL&#39;</span><span class="p">);</span>
+            <span class="c1">// Code to send email
+</span><span class="c1"></span>            <span class="k">break</span><span class="p">;</span>
+          <span class="k">default</span><span class="o">:</span>
+            <span class="c1">// default action
+</span><span class="c1"></span>            <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+    <span class="s1">&#39;Worker started with pid:&#39;</span><span class="p">,</span>
+    <span class="nx">process</span><span class="p">.</span><span class="nx">pid</span><span class="p">,</span>
+    <span class="s1">&#39;and id:&#39;</span><span class="p">,</span>
+    <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">workerId</span>
+  <span class="p">);</span>
+  
+<span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="nx">msg</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Message from master:&#39;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">);</span>
+    <span class="nx">process</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span>
+      <span class="nx">msgType</span><span class="o">:</span> <span class="s1">&#39;EMAIL&#39;</span><span class="p">,</span>
+      <span class="nx">msg</span><span class="o">:</span> <span class="s1">&#39;Hello from worker&#39;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Based on the above understanding of Node.js clustering and IPC, processes can communicate in following interaction styles while acting as client and server.</p>
+<ul>
+<li>One-to-one: Typically used for one to one notification or request/response.</li>
+<li>One-to-many: Typically used for publish/subscribe.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>Clustering is a must have for any Node.js production app. It helps to scale horizontally according to the number of CPU cores available on the machine. It is also easier to manage as there is no dependency on any external module/service.</p>
+<p>Implementing inter process communication is also very easy. IPC using Node.js cluster module is in memory and hence scalability becomes an issue. Performance also takes a hit when there are too many messages. Management of process state has to be done by yourself.</p>
+<p><a href="http://pm2.keymetrics.io">PM2</a> with use of message broker like <a href="https://www.rabbitmq.com">RabbitMQ</a> can also be used to manage the processes and inter process communications which provides more flexibility with the only downside of adding external dependency. It also helps in horizontal scaling and provides a flexible architecture.
+<a href="http://riaevangelist.github.io/node-ipc/">‘node-ipc’</a> is a Node.js module for local and remote Inter Process Communication with full support for Linux, Mac and Windows. It also supports all forms of socket communication from low level unix and windows sockets to UDP and secure TLS and TCP sockets.</p>
+<p>Read more about <a href="https://nodejs.org/docs/latest/api/cluster.html#cluster_cluster">Node.js cluster module</a></p>
 
+    </div>
 
-
-            </div>
-            <footer class="post-footer">
-
-              <nav class="post-nav">
-                <a class="prev" href="/post/2018-08-24-eslint-prettier-vscode-setup/">
-                  <i class="iconfont icon-left"></i>
-                  <span class="prev-text nav-default">Love thy fellow programmer as thyself: Setup ESLint and Prettier
-                    in VSCode</span>
-                  <span class="prev-text nav-mobile">Prev</span>
-                </a>
-
-              </nav>
-            </footer>
-          </article>
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span
+      class="item-content">Manish Prasad</span>
+  </p>
+  
+  
+  
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/nodejs/">nodejs</a>
+          <a href="/tags/ipc/">ipc</a>
+          <a href="/tags/clustering/">clustering</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2018-08-24-eslint-prettier-vscode-setup/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
         </div>
+        
 
 
 
 
-
-        <script src="https://utteranc.es/client.js" repo="manisuec/manisuec/manisuec.github.io" issue-term="pathname"
-          theme="github-light" crossorigin="anonymous" async>
-          </script>
-        <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by
-            utterances.</a></noscript>
+<script src="https://utteranc.es/client.js"
+  repo="manisuec/hugo" issue-term="pathname"
+  theme="github-light" crossorigin="anonymous" async>
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by
+    utterances.</a></noscript>
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="social-links">
-        <a href="mailto:manishvaishu25@gmail.com" class="iconfont icon-email" title="email"></a>
-        <a href="https://twitter.com/_manish25" class="iconfont icon-twitter" title="twitter"></a>
-        <a href="https://github.com/manisuec" class="iconfont icon-github" title="github"></a>
-        <a href="https://manisuec.blogindex.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-      </div>
+  <a href="mailto:manishvaishu25@gmail.com" class="iconfont icon-email" title="email"></a>
+  <a href="https://twitter.com/_manish25" class="iconfont icon-twitter" title="twitter"></a>
+  <a href="https://github.com/manisuec" class="iconfont icon-github" title="github"></a>
+  <a href="https://techinsights.manisuec.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
 
-      <div class="copyright">
-        <span class="copyright-year"> Copyright
-          &copy;
-          2019
-
-          <span class="heart">
-            <i class="iconfont icon-heart"></i>
-          </span>
-          <span class="author">Manish Prasad</span>
-        </span>
-      </div>
+<div class="copyright">
+  <span class="copyright-year"> Copyright
+    &copy;
+    2019
+    
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span
+      class="author">Manish Prasad</span>
+  </span>
+</div>
     </footer>
 
     <div class="back-to-top" id="back-to-top">
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js"
-    integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js"
-    integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-  <script></script>
-  <script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js"
-    integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js"
-    integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script>
-  <script></script>
-  <script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js"
-    integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js"
-    integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js"
-    integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js"
-    integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css"
-    integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
 
 
 
-  <script type="text/javascript"
-    src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+<script type="text/javascript" src="/js/main.min.2517c0eb67172a0bae917de4af59b10ca2531411a009d4c0b82f5685259e5771.js"></script>
 
 
-  <script type="application/javascript">
-    var doNotTrack = false;
-    if (!doNotTrack) {
-      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
-      ga('create', 'UA-111859472-2', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    }
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZX0J3052R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YZX0J3052R');
   </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
-
 
 
 
@@ -608,5 +541,4 @@ process.on(&#39;message&#39;, msg =&gt; {
 
 
 </body>
-
 </html>

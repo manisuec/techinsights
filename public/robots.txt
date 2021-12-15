@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://manisuec.blogsitemap.xml
+Sitemap: https://techinsights.manisuec.com/sitemap.xml

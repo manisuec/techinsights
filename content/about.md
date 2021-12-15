@@ -6,12 +6,17 @@ weight: 50
 
 My life has been largely driven by the philosphy of
 
-![Example image](/img/bg-about.jpg)
+![Quote](/img/bg-about.jpg)
 
-My name is Manish Prasad. This is my personal blog where I write about my thoughts on technology topics.
+My name is Manish Prasad. I am part of **'Founding Team'** at [Powerplay](https://www.getpowerplay.in). I am a movie buff and a big fan of Penelope Cruz and Kangana Ranaut. I love to watch F1. An avid traveller and my soul just feels at home in mountains and forest.
 
+This is my personal blog where I write my thoughts on technology topics.
 I am open for providing consultancy service for ReactJS, NodeJS, ExpressJS, Mongodb (MERN) stack.
 
-The opinions or views expressed here are my own personal opinions/views and do not represent my employer's view in anyway.
+*Note: The opinions or views expressed here are my own personal opinions/views and do not represent my employer's view in anyway.*
 
-My [GitHub profile](https://github.com/manisuec).
+My profile links:
+
+  [![website](/img/profile.jpg) Perosonal Website](https://manisuec.com) 
+
+  [GitHub profile](https://github.com/manisuec)
