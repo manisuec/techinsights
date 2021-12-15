@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>destructuring on Tech Insights</title>
+    <link>https://techinsights.manisuec.com/tags/destructuring/</link>
+    <description>Recent content in destructuring on Tech Insights</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://techinsights.manisuec.com/tags/destructuring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ES6 Destructuring</title>
+      <link>https://techinsights.manisuec.com/post/2020-09-01-object-destructuring/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://techinsights.manisuec.com/post/2020-09-01-object-destructuring/</guid>
+      <description>What is destructuring assignment?  The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+ - MDN</description>
+    </item>
+    
+  </channel>
+</rss>

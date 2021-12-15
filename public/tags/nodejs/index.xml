@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on Tech Insights</title>
+    <link>https://techinsights.manisuec.com/tags/nodejs/</link>
+    <description>Recent content in nodejs on Tech Insights</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://techinsights.manisuec.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understand Sub-documents &amp; Nested documents in Mongoose</title>
+      <link>https://techinsights.manisuec.com/post/2021-11-24-understand-mongoose-subdoc-and-nesteddoc/</link>
+      <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://techinsights.manisuec.com/post/2021-11-24-understand-mongoose-subdoc-and-nesteddoc/</guid>
+      <description>Mongoose is the most widely schema-based solution to model your application data in MongoDB. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.</description>
+    </item>
+    
+    <item>
+      <title>Async Operations with AbortController &amp; AbortSignal in Nodejs</title>
+      <link>https://techinsights.manisuec.com/post/2021-11-02-abort-controller-nodejs/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://techinsights.manisuec.com/post/2021-11-02-abort-controller-nodejs/</guid>
+      <description>AbortController is the standard way to abort any ongoing operations. AbortController and AbortSignal are now part of Nodejs LTS (originally introduced in v15.0.0).
+Modern apps usually don’t work in isolation. They interact with entities like other APIs, file system, network, databases, etc.</description>
+    </item>
+    
+    <item>
+      <title>Understand Event Loop in Nodejs</title>
+      <link>https://techinsights.manisuec.com/post/2021-08-11-understand-event-loop-in-nodejs/</link>
+      <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://techinsights.manisuec.com/post/2021-08-11-understand-event-loop-in-nodejs/</guid>
+      <description>Event Loop is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible.
+Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background.</description>
+    </item>
+    
+    <item>
+      <title>Understand the difference between setImmediate(), setTimeout() and process.nextTick()</title>
+      <link>https://techinsights.manisuec.com/post/2021-07-30-timers-and-process-next-tick/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://techinsights.manisuec.com/post/2021-07-30-timers-and-process-next-tick/</guid>
+      <description>Timers and process.nextTick() are core concepts of Nodejs. It is important to undestand and be familiar with these and use them with ease. setTimeout(callback, 0), setImmediate(callback) and process.nextTick(callback) appear to be doing the same thing.</description>
+    </item>
+    
+    <item>
+      <title>Streams: An underrated but very powerful concept in NodeJS</title>
+      <link>https://techinsights.manisuec.com/post/2020-03-02-streams-nodejs/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://techinsights.manisuec.com/post/2020-03-02-streams-nodejs/</guid>
+      <description>A stream is an abstract interface for working with streaming data in Node.js. Streams have gained the reputation that it is hard to work with and harder to understand. However, it is a highly underrated but very powerful concept in Node.</description>
+    </item>
+    
+    <item>
+      <title>Clustering &amp; Inter Process Communication (IPC) in NodeJS</title>
+      <link>https://techinsights.manisuec.com/post/2018-08-18-clustering-and-ipc-nodejs/</link>
+      <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://techinsights.manisuec.com/post/2018-08-18-clustering-and-ipc-nodejs/</guid>
+      <description>Introduction A single instance of Node.js runs in a single thread. This does not allow to take advantage of multi-core systems automatically. However, by leveraging ‘cluster module’ one can take advantage of multiple CPU cores.</description>
+    </item>
+    
+  </channel>
+</rss>

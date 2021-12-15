@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nested on Tech Insights</title>
+    <link>https://techinsights.manisuec.com/tags/nested/</link>
+    <description>Recent content in nested on Tech Insights</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://techinsights.manisuec.com/tags/nested/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understand Sub-documents &amp; Nested documents in Mongoose</title>
+      <link>https://techinsights.manisuec.com/post/2021-11-24-understand-mongoose-subdoc-and-nesteddoc/</link>
+      <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://techinsights.manisuec.com/post/2021-11-24-understand-mongoose-subdoc-and-nesteddoc/</guid>
+      <description>Mongoose is the most widely schema-based solution to model your application data in MongoDB. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.</description>
+    </item>
+    
+  </channel>
+</rss>
