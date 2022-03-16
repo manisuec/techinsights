@@ -40,6 +40,7 @@ In my opinion, it will be good to add 3 additional EBS volumes for MongoDB
 
 Size of EBS volumes can be changed later also.
 
+[Make an Amazon EBS volume available for use](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html)
 Mount each volume as below:
 
 ```
