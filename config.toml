@@ -170,7 +170,7 @@ copyright = ""            # default: author.name ↓        #
 
   [params.social]                                        
     a-email = "mailto:manishvaishu25@gmail.com"
-    c-twitter = "https://twitter.com/_manish25"
+    c-twitter = "https://twitter.com/lifeClicks25"
     g-github = "https://github.com/manisuec"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
