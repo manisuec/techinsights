@@ -188,6 +188,6 @@ In my personal opinion; embedded documents should follow [sub-document schema de
 
 There is subtle difference between sub-document and nested document in Mongoose. In my personal view sub-document schema definition should be the preferred way for embedded document.
 
-✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section. You can follow me on twitter [@_manish25](https://twitter.com/_manish25).
+✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section. You can follow me on twitter [@lifeClicks25](https://twitter.com/lifeClicks25).
 
 

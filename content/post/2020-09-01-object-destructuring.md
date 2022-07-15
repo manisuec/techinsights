@@ -145,4 +145,4 @@ These are few very cool and helpful features of destructuring. I would highly re
 
 ## Conclusion
 
-ES6 introduced one of the most awaited JavaScript features: destructuring. It helps to write more cleaner and readable code. I hope you enjoyed reading this and find this helpful. I sincerely request for your feedback. You can follow me on twitter [@_manish25](https://twitter.com/_manish25).
+ES6 introduced one of the most awaited JavaScript features: destructuring. It helps to write more cleaner and readable code. I hope you enjoyed reading this and find this helpful. I sincerely request for your feedback. You can follow me on twitter [@lifeClicks25](https://twitter.com/lifeClicks25).

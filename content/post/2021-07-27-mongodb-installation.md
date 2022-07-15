@@ -209,4 +209,4 @@ Restart the mongod process and try to connect using command:
 
 ## Conclusion
 
-I have tried to document all the steps based on my learnings during standalone installation. I will write another blog for MongoDB Installation with Replication setup. I hope you enjoyed reading this and find it helpful. I sincerely request for your feedback. You can follow me on twitter [@_manish25](https://twitter.com/_manish25).
+I have tried to document all the steps based on my learnings during standalone installation. I will write another blog for MongoDB Installation with Replication setup. I hope you enjoyed reading this and find it helpful. I sincerely request for your feedback. You can follow me on twitter [@lifeClicks25](https://twitter.com/lifeClicks25).

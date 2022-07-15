@@ -179,6 +179,6 @@ nextTick 3
 
 Node.js processes are single threaded and simplifies the complexity that comes with writing multithreaded code.  Event Loop helps offloading I/O tasks to the C++ APIs and determines the callback function that would be executed next at every iteration.
 
-I hope you enjoyed reading this and find it helpful. I sincerely request for your feedback. You can follow me on twitter [@_manish25](https://twitter.com/_manish25).
+I hope you enjoyed reading this and find it helpful. I sincerely request for your feedback. You can follow me on twitter [@lifeClicks25](https://twitter.com/lifeClicks25).
 
 

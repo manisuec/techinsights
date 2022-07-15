@@ -94,4 +94,4 @@ The [official documentation](https://nodejs.org/en/docs/guides/event-loop-timers
 > We recommend that developers use setImmediate() in all cases because it’s easier to think about.
 
 `process.nextTick()` can potentially cause I/O starvation and hence should be used responsibly.
-I hope you enjoyed reading this and find it helpful. I sincerely request for your feedback. You can follow me on twitter [@_manish25](https://twitter.com/_manish25).
+I hope you enjoyed reading this and find it helpful. I sincerely request for your feedback. You can follow me on twitter [@lifeClicks25](https://twitter.com/lifeClicks25).
