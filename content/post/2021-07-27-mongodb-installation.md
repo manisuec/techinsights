@@ -4,6 +4,9 @@ title: 'MongoDB Installation & Configuration on AWS EC2 Instance'
 date: 2021-07-27 00:00:00 +0530
 images: ['/img/posts/mongodb.png']
 tags: ['mongodb']
+url: 'mongodb/mongodb-installation-aws-ec2'
+aliases:
+    - /post/2021-07-27-mongodb-installation/
 ---
 
 I had to search a lot before figuring out a proper way to install and configure MongoDB in AWS EC2 instance. I am sharing my learnings and hope it is useful for others.

@@ -4,6 +4,9 @@ title: 'Understand the difference between setImmediate(), setTimeout() and proce
 date: 2021-07-30 00:00:00 +0530
 images: ['/img/posts/timers.png']
 tags: ['nodejs', 'javascript', 'timers']
+url: 'nodejs/nodejs-timers'
+aliases:
+    - /post/2021-07-30-timers-and-process-next-tick/
 ---
 
 Timers and process.nextTick() are core concepts of Nodejs. It is important to undestand and be familiar with these and use them with ease. `setTimeout(callback, 0)`, `setImmediate(callback)` and `process.nextTick(callback)` appear to be doing the same thing. I have tried to make this concept easier to understand.

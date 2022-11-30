@@ -4,6 +4,9 @@ title: 'Understand Sub-documents & Nested documents in Mongoose'
 date: 2021-11-24 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/e_improve/v1637747985/mongoose_djuhic.png']
 tags: ['nodejs', 'mongoose', 'subdocument', 'nested', 'javascript']
+url: 'mongodb/mongoose-subdocument'
+aliases:
+    - /post/2021-11-24-understand-mongoose-subdoc-and-nesteddoc/
 ---
 
 [Mongoose](https://mongoosejs.com) is the most widely schema-based solution to model your application data in MongoDB. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.

@@ -3,6 +3,9 @@ background: /img/posts/04.jpg
 date: '2020-03-02T00:00:00Z'
 title: 'Streams: An underrated but very powerful concept in NodeJS'
 tags: ['nodejs', 'streams', 'data processing']
+url: 'nodejs/nodejs-streams'
+aliases:
+    - /post/2020-03-02-streams-nodejs/
 ---
 
 A stream is an abstract interface for working with streaming data in Node.js. Streams have gained the reputation that it is hard to work with and harder to understand. However, it is a highly underrated but very powerful concept in Node.js. This article will help in understanding of streams, how to work with them and where to use this module.

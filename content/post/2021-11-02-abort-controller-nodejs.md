@@ -4,6 +4,9 @@ title: 'Async Operations with AbortController & AbortSignal in Nodejs'
 date: 2021-11-02 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1635836633/1_zfv_iZJYdjBUL2K1Y6k9yw_zjq7f8.jpg']
 tags: ['nodejs', 'javascript', 'async', 'abortcontroller', 'abortsignal']
+url: 'nodejs/nodejs-async-operations-abortcontroller-abortsignal'
+aliases:
+    - /post/2021-11-02-abort-controller-nodejs
 ---
 
 [AbortController](https://nodejs.org/dist/latest-v16.x/docs/api/globals.html#class-abortcontroller) is the standard way to abort any ongoing operations. AbortController and AbortSignal are now part of Nodejs LTS (originally introduced in v15.0.0).
