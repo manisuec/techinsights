@@ -3,6 +3,7 @@ background: /img/posts/02.png
 date: '2018-08-24T00:00:00Z'
 title: 'Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode'
 tags: ['javascript', 'eslint', 'prettier', 'vscode']
+categories: ['Javascript']
 url: 'javascript/eslint-prettier-vscode-setup'
 aliases:
     - /post/2018-08-24-eslint-prettier-vscode-setup/

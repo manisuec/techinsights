@@ -4,6 +4,7 @@ title: 'Understand Event Loop in Nodejs'
 date: 2021-08-11 00:00:00 +0530
 images: ['https://d33wubrfki0l68.cloudfront.net/5ae98f0d504223b0d1b0ab438a19ba988b9529d4/dc0a3/img/posts/eventloop.png']
 tags: ['nodejs', 'javascript', 'eventloop']
+categories: ['Nodejs']
 url: 'nodejs/nodejs-event-loop'
 aliases:
     - /post/2021-08-11-understand-event-loop-in-nodejs/

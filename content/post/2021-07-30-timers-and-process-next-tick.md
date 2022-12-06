@@ -4,6 +4,7 @@ title: 'Understand the difference between setImmediate(), setTimeout() and proce
 date: 2021-07-30 00:00:00 +0530
 images: ['/img/posts/timers.png']
 tags: ['nodejs', 'javascript', 'timers']
+categories: ['Nodejs']
 url: 'nodejs/nodejs-timers'
 aliases:
     - /post/2021-07-30-timers-and-process-next-tick/

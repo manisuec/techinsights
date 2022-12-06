@@ -3,6 +3,7 @@ background: /img/posts/04.jpg
 date: '2019-10-12T00:00:00Z'
 title: Image Grid using Material UI in React
 tags: ['reactjs', 'material-ui', 'image grid', 'grid']
+categories: ['Reactjs']
 url: 'reactjs/react-materialui-imagegrid'
 aliases:
     - /post/2019-10-12-imagegrid-materialui-react/

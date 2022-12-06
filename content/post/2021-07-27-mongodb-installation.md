@@ -3,6 +3,7 @@ layout: post
 title: 'MongoDB Installation & Configuration on AWS EC2 Instance'
 date: 2021-07-27 00:00:00 +0530
 images: ['/img/posts/mongodb.png']
+categories: ['Mongodb']
 tags: ['mongodb']
 url: 'mongodb/mongodb-installation-aws-ec2'
 aliases:
