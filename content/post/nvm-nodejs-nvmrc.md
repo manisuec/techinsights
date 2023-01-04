@@ -17,19 +17,13 @@ $ nvm use v18.12.1
 Now using node v18.12.1 (npm v8.19.2)
 
 $ node -v
-v16.9.1
+v18.12.1
 
 $ nvm use 14
 Now using node v14.18.0 (npm v6.14.15)
 
 $ node -v
 v14.18.0
-
-$ nvm install 12
-Now using node v12.22.6 (npm v6.14.5)
-
-$ node -v
-v12.22.6
 ```
 
 ## Installation
@@ -43,7 +37,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
 
-The steps for installation and configuration are easy and refer [nvm installation steps](https://github.com/nvm-sh/nvm/blob/master/README.md#installing-and-updating).
+The steps for installation and configuration are easy; refer [nvm installation steps](https://github.com/nvm-sh/nvm/blob/master/README.md#installing-and-updating).
+
+Basic commands and their usage can be referenced from [Usage section](https://github.com/nvm-sh/nvm/blob/master/README.md#usage-1).
 
 ## Use nvm like a superhero
 
@@ -124,7 +120,7 @@ Now when you switch to your project directory
 
 ```sh
 $ cd project_xyz
-Found '/Users/manisuec/work/personal/open-file-manager/ofm-ui/.nvmrc' with version <v18.6.0>
+Found '/home/user/project_xyz/.nvmrc' with version <v18.6.0>
 Now using node v18.6.0 (npm v9.2.0)
 
 $ cd ..
