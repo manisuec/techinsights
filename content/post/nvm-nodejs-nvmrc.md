@@ -19,7 +19,7 @@ Now using node v18.12.1 (npm v8.19.2)
 $ node -v
 v18.12.1
 
-$ nvm use 14
+$ nvm use v14.18.0
 Now using node v14.18.0 (npm v6.14.15)
 
 $ node -v
