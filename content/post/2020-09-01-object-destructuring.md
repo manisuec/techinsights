@@ -4,6 +4,7 @@ title: 'ES6 Destructuring'
 date: 2020-09-01 00:00:00 +0530
 tags: ['javascript', 'es6', 'destructuring']
 categories: ['Javascript']
+keywords: 'javascript,object,destructuring,es6'
 url: 'javascript/es6-destructuring'
 aliases:
     - /post/2020-09-01-object-destructuring/

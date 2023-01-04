@@ -50,7 +50,7 @@ copyright = ""            # default: author.name ↓        #
 
   # site info (optional)                                  
   logoTitle = "Tech Insights"        # default: the title value
-  keywords = ["tech", "blog","manisuec"]
+  keywords = ["tech","blog","manisuec"]
   description = "Tech Insights: A personal tech blog site"
 
   # paginate of posts, tags and categories             

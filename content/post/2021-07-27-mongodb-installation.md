@@ -5,6 +5,7 @@ date: 2021-07-27 00:00:00 +0530
 images: ['/img/posts/mongodb.png']
 categories: ['Mongodb']
 tags: ['mongodb']
+keywords: 'mongodb,aws,ec2,installation'
 url: 'mongodb/mongodb-installation-aws-ec2'
 aliases:
     - /post/2021-07-27-mongodb-installation/

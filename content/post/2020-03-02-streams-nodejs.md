@@ -3,6 +3,7 @@ background: /img/posts/04.jpg
 date: '2020-03-02T00:00:00Z'
 title: 'Streams: An underrated but very powerful concept in NodeJS'
 tags: ['nodejs', 'streams', 'data processing']
+keywords: 'nodejs,streams,transform,javascript'
 categories: ['Nodejs']
 url: 'nodejs/nodejs-streams'
 aliases:
