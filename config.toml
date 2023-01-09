@@ -54,7 +54,7 @@ copyright = ""            # default: author.name ↓        #
   description = "Tech Insights: A personal tech blog site"
 
   # paginate of posts, tags and categories             
-  archivePaginate = 5
+  archivePaginate = 10
 
   # show 'xx Posts In Total' in archive page ?           
   showArchiveCount = false
