@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'A Beginner's Guide to Macbook setup for web development'
+title: "A Beginner's Guide to Macbook setup for web development"
 date: 2023-01-18 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1674035486/macbook_development_b0rlfv_vi6k9t.jpg']
 tags: ['nodejs', 'javascript']
