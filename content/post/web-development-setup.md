@@ -11,6 +11,8 @@ url: 'javascript/web-development-setup'
 
 This is a beginner's guide to setup Macbook for web development. The motivation for writing this guide is to help people get started with programming on a Mac, and as also a personal reference for myself. If any mistakes/updates are there; do let me know...
 
+![macbook](https://res.cloudinary.com/dkiurfsjm/image/upload/v1674035486/macbook_development_b0rlfv_vi6k9t.jpg)
+
 ## List of tools
 - [iTerm2](#item_1)
 - [Git](#item_2)
