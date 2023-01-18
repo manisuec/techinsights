@@ -5,13 +5,13 @@ date: 2021-07-27 00:00:00 +0530
 images: ['/img/posts/mongodb.png']
 categories: ['Mongodb']
 tags: ['mongodb']
-keywords: 'mongodb,aws,ec2,installation'
+keywords: 'mongodb,aws,ec2,installation,standalone,production'
 url: 'mongodb/mongodb-installation-aws-ec2'
 aliases:
     - /post/2021-07-27-mongodb-installation/
 ---
 
-I had to search a lot before figuring out a proper way to install and configure MongoDB in AWS EC2 instance. I am sharing my learnings and hope it is useful for others.
+I had to search a lot before figuring out a proper way to install and configure a production ready standalone MongoDB installation in AWS EC2 instance. I am sharing my learnings and hope it is useful for others.
 
 ## Install MongoDB Community Edition
 
@@ -32,31 +32,35 @@ To install the latest stable version of MongoDB, issue the following command:
 
 Issue below command to verify whether MongoDB is installed properly
 
-`$ which mongo     # it should print /usr/bin/mongo`
+```
+$ which mongo     # it should print 
 
+/usr/bin/mongo
+```
 
 ## Configure EC2 Instance
 
-In my opinion, it will be good to add 3 additional EBS volumes for MongoDB
+In my opinion, it will be good to add 2 additional EBS volumes apart from default root volume for MongoDB
 
-1. **Data volume:** Size: x GB (according to your size estimation)
-2. **Journal volumne:** Recommended size is 1/5th of data volume
-3. **Log volume:** Recommended size is half of journal volume
+1. **Data volume:** Size: X GB (according to your size estimation)
+2. **Log volume:** Recommended size is 1/10th of data volume
+
+**Note:-** A separate volume for `journal` can also be attached by creating a symbolic link to point the journal directory to the attached volume as
+
+> MongoDB creates a subdirectory named journal under the dbPath directory
 
 Size of EBS volumes can be changed later also.
 
+Read detailed steps for [Make an Amazon EBS volume available for use.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html). 
 Mount each volume as below:
-Read detailed steps for [Make an Amazon EBS volume available for use.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html)
 
 ```
 # create below directories
 $ sudo mkdir /data
-$ sudo mkdir /journal
 $ sudo mkdir /log
 
 # mount volumes appropriately
 $ sudo mount -t xfs /dev/sdf /data
-$ sudo mount -t xfs /dev/sdg /journal
 $ sudo mount -t xfs /dev/sdh /log
 
 # create a link for journal
@@ -65,7 +69,6 @@ $ sudo ln -s /journal /data/journal
 # set appropriate ownership
 $ sudo chown mongod:mongod /data
 $ sudo chown mongod:mongod /log/
-$ sudo chown mongod:mongod /journal/
 ```
 
 Add below content using command `$ sudo vi /etc/fstab`
@@ -76,7 +79,7 @@ Add below content using command `$ sudo vi /etc/fstab`
 /dev/sdh /log     xfs defaults,auto,noatime,noexec 0 0
 ```
 
-I would also recommend to add swap space of atleast 4GB. Run below commands to create the swap space.
+I would also recommend to add swap space of atleast **4GB**. Run below commands to create the swap space.
 
 ```
 $ sudo dd if=/dev/xvda1 of=/swapfile bs=4096 count=488400
@@ -132,7 +135,7 @@ I would recommend to follow steps mentioned at [MongoDB](https://docs.mongodb.co
 
 ## Configure Log Rotation
 
-Create a file `/etc/logrotate.d/mongodb` and add below contents:
+[Linux logrotate utility](https://linux.die.net/man/8/logrotate) allows automatic rotation, compression and removal of log files. Create a file `/etc/logrotate.d/mongodb` and add below contents:
 
 ```
 /log/*log {
@@ -162,7 +165,7 @@ Update MongoDB configuration:
 
 `$ sudo vi /etc/mongod.conf`
 
-Change value of port other than the default `27017` and also update the security group settings accordingly.
+Change value of port other than the default `27017` and also update the security group settings in aws accordingly.
 
 ```
 # network interfaces
@@ -190,13 +193,14 @@ storage:
 
 Start mongodb user by using command `$ mongod --config /etc/mongod.conf`
 
-Connect to mongodb by using command `$ mongo`
+Connect to mongodb by using command `$ mongo --port <configured port value>`
 
-Create a root user: 
+Create a root user:
+
 ```
 use admin
 
-db.createUser({ user: "adminUser", pwd: "adminPass", roles: ["root"] })
+db.createUser({ user: "adminUser", pwd: "<strong password>", roles: ["root"] })
 ```
 
 I would strongly recommend to go through the section [Built-In Roles](https://docs.mongodb.com/v4.4/reference/built-in-roles/)
@@ -214,4 +218,4 @@ Restart the mongod process and try to connect using command:
 
 ## Conclusion
 
-I have tried to document all the steps based on my learnings during standalone installation. I will write another blog for MongoDB Installation with Replication setup. I hope you enjoyed reading this and find it helpful. I sincerely request for your feedback. You can follow me on twitter [@lifeClicks25](https://twitter.com/lifeClicks25).
+I have tried to document all the steps based on my learnings during a standalone installation. I will write another blog for MongoDB Installation with Replication setup. I hope you enjoyed reading this and find it helpful. I sincerely request for your feedback. You can follow me on twitter [@lifeClicks25](https://twitter.com/lifeClicks25).
