@@ -9,7 +9,7 @@ categories: ['Javascript']
 url: 'javascript/web-development-setup'
 ---
 
-This document is a beginner's guide to setup M1 Macbook for web development. The motivation for writing this guide to help people get started with programming on a Mac, and as also a personal reference for myself. If any mistakes/updates are there; do let me know...
+This is a beginner's guide to setup Macbook for web development. The motivation for writing this guide is to help people get started with programming on a Mac, and as also a personal reference for myself. If any mistakes/updates are there; do let me know...
 
 ## List of tools
 - iTerm2
