@@ -40,6 +40,8 @@ $ which mongo     # it should print
 
 ## Configure EC2 Instance
 
+Please refer [deploy ec2 in a private subnet & securely communicate with internet](https://techinsights.manisuec.com/mongodb/db-ec2-private-subnet-vpc/).
+
 In my opinion, it will be good to add 2 additional EBS volumes apart from default root volume for MongoDB
 
 1. **Data volume:** Size: X GB (according to your size estimation)

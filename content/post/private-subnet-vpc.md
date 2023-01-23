@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Beginner's Guide to Macbook setup for web development"
+title: "Deploy EC2 instance in a private subnet & securely communicate with Internet"
 date: 2023-01-23 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1674130623/private_vpc_nat_ufnejw.png']
 tags: ['mongodb']
