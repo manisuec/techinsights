@@ -11,9 +11,9 @@ url: 'mongodb/db-ec2-private-subnet-vpc'
 
 Critical infrastructure like databases, application servers etc must be deployed securely in AWS and deploying ec2 instances in private subnet is a must. Instances launched in a private subnet have only private ip address (No public IP) and hence these instances can never be reached from internet. This prevents direct attacks on the system and applications in the system.
 
-![{#fig_1}](https://res.cloudinary.com/dkiurfsjm/image/upload/v1674130623/private_vpc_nat_ufnejw.png)
+![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1674130623/private_vpc_nat_ufnejw.png) 
 
-## NAT Gateway: Short description
+## NAT Gateway: Short description {#fig_1}
 
 A network address translation (NAT) gateway allows EC2 instances to establish outbound connections to resources on internet without allowing inbound connections to the EC2 instance. It's not possible to use the private IP addresses assigned to instances in a private VPC subnet over the internet. Instead, you must use NAT to map the private IP addresses to a public address for requests. Then, you must map the public IP address back to the private IP addresses for responses.
 
