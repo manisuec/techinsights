@@ -29,7 +29,7 @@ Why do ec2 instances deployed on private subnets then need to communicate with i
 
 ## Set up NAT gateway
 
-The deployment would similar to [figure 1](#fig_1).
+The deployment will look similar to [figure 1](#fig_1).
 Follow the steps mentioned below:
 
 * [Create a public VPC subnet](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html#Add_IGW_Create_Subnet) to host your NAT gateway.
