@@ -11,8 +11,7 @@ url: 'mongodb/db-ec2-private-subnet-vpc'
 
 Critical infrastructure like databases, application servers etc must be deployed securely in AWS and deploying ec2 instances in private subnet is a must. Instances launched in a private subnet have only private ip address (No public IP) and hence these instances can never be reached from internet. This prevents direct attacks on the system and applications in the system.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1674130623/private_vpc_nat_ufnejw.png)
-{#fig_1}
+![{#fig_1}](https://res.cloudinary.com/dkiurfsjm/image/upload/v1674130623/private_vpc_nat_ufnejw.png)
 
 ## NAT Gateway: Short description
 
