@@ -15,6 +15,8 @@ I had to search a lot before figuring out a proper way to install and configure 
 
 ## Install MongoDB Community Edition
 
+Prior to installation; please refer [deploy ec2 in a private subnet & securely communicate with internet](https://techinsights.manisuec.com/mongodb/db-ec2-private-subnet-vpc/) to properply setup your ec2 instance.
+
 Create a `/etc/yum.repos.d/mongodb-org-4.4.repo` file so that you can install MongoDB directly using yum:
 
 ```
@@ -39,8 +41,6 @@ $ which mongo     # it should print
 ```
 
 ## Configure EC2 Instance
-
-Please refer [deploy ec2 in a private subnet & securely communicate with internet](https://techinsights.manisuec.com/mongodb/db-ec2-private-subnet-vpc/).
 
 In my opinion, it will be good to add 2 additional EBS volumes apart from default root volume for MongoDB
 
