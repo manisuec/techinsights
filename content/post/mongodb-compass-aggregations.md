@@ -7,6 +7,7 @@ tags: ['mongodb', 'mongodb compass', 'aggregation pipeline']
 keywords: 'mongodb,mongodb compass,aggregation,aggregation pipeline,compass'
 categories: ['Mongodb']
 url: 'mongodb/my-queries-aggregation-mongodb-compass'
+thumbnail: 'https://geekofalltrades.org/graphics/logos/images/codex-thumb.jpg'
 ---
 
 MongoDB Compass, as of 2018, comes with an aggregation pipeline builder to help make prototyping and debugging easier. This feature allows developers to export their aggregations into different programming languages and use the code in their applications.
