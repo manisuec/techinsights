@@ -3,6 +3,7 @@ layout: post
 title: 'Understand Event Loop in Nodejs'
 date: 2021-08-11 00:00:00 +0530
 images: ['https://d33wubrfki0l68.cloudfront.net/5ae98f0d504223b0d1b0ab438a19ba988b9529d4/dc0a3/img/posts/eventloop.png']
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675422979/nodejs_mdyatf.png'
 tags: ['nodejs', 'javascript', 'eventloop']
 keywords: 'nodejs,async,eventloop,javascript'
 categories: ['Nodejs']

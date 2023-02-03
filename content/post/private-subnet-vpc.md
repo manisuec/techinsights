@@ -3,6 +3,7 @@ layout: post
 title: "Deploy EC2 instance in a private subnet & securely communicate with Internet"
 date: 2023-01-23 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1674130623/private_vpc_nat_ufnejw.png']
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675423359/aws_fmtmfi.png'
 tags: ['mongodb', 'aws']
 keywords: 'mongodb,aws,vpc,private subnet,nat,internet'
 categories: ['Mongodb']

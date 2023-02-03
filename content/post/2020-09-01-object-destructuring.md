@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'ES6 Destructuring'
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675422979/javascript_wtrvhy.png'
 date: 2020-09-01 00:00:00 +0530
 tags: ['javascript', 'es6', 'destructuring']
 categories: ['Javascript']

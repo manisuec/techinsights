@@ -3,6 +3,7 @@ layout: post
 title: 'Understand the difference between setImmediate(), setTimeout() and process.nextTick()'
 date: 2021-07-30 00:00:00 +0530
 images: ['/img/posts/timers.png']
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675422979/nodejs_mdyatf.png'
 tags: ['nodejs', 'javascript', 'timers']
 keywords: 'nodejs,async,timers,javascript'
 categories: ['Nodejs']
