@@ -3,7 +3,7 @@ layout: post
 title: 'MongoDB Installation & Configuration on AWS EC2 Instance'
 date: 2021-07-27 00:00:00 +0530
 images: ['/img/posts/mongodb.png']
-thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675422979/mongodb_misfog.png'
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 categories: ['Mongodb']
 tags: ['mongodb']
 keywords: 'mongodb,aws,ec2,installation,standalone,production'

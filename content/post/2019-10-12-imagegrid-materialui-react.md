@@ -1,7 +1,7 @@
 ---
 background: /img/posts/04.jpg
 date: '2019-10-12T00:00:00Z'
-thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675422979/reactjs_q35ayl.png'
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/React-Dark_trdwyz.jpg'
 title: Image Grid using Material UI in React
 tags: ['reactjs', 'material-ui', 'image grid', 'grid']
 keywords: 'reactjs,material-ui,image grid,grid,javascript'

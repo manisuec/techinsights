@@ -3,7 +3,7 @@ layout: post
 title: 'Use NVM and .nvmrc for a better Javascript development'
 date: 2023-01-04 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1672811003/nvm_gyddwb.png']
-thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675422979/nodejs_mdyatf.png'
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/NodeJS-Dark_fzh3cd.jpg'
 tags: ['nodejs', 'nvm', 'javascript']
 keywords: 'nodejs,nvm,javascript,version'
 categories: ['Nodejs']

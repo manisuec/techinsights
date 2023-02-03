@@ -6,7 +6,7 @@ tags: ['nodejs', 'ipc', 'clustering']
 keywords: 'nodejs,clustering,ipc,javascript'
 categories: ['Nodejs']
 url: 'nodejs/clustering-and-ipc'
-thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675422979/nodejs_mdyatf.png'
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/NodeJS-Dark_fzh3cd.jpg'
 aliases:
     - /post/2018-08-18-clustering-and-ipc-nodejs/
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "My Queries: A better experience of Mongodb Aggregation in Mongodb Compass"
 date: 2023-01-30 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1675067686/aggregation_g1ra8g.png']
-thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675422979/mongodb_misfog.png'
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 tags: ['mongodb', 'mongodb compass', 'aggregation pipeline']
 keywords: 'mongodb,mongodb compass,aggregation,aggregation pipeline,compass'
 categories: ['Mongodb']
