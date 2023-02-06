@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Understanding TTL Indexes in MongoDB in depth"
+title: "Understanding TTL Indexes in MongoDB comprehensively"
 date: 2023-02-06 00:00:00 +0530
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 tags: ['mongodb', 'ttl index', 'time to live']
