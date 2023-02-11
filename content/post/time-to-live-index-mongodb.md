@@ -2,6 +2,7 @@
 layout: post
 title: "Understanding TTL Indexes in MongoDB comprehensively"
 date: 2023-02-06 00:00:00 +0530
+images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676006275/ttl_axpreo.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 tags: ['mongodb', 'ttl index', 'time to live']
 keywords: 'mongodb,ttl index,time to live,index,expire data'
@@ -10,6 +11,8 @@ url: 'mongodb/time-to-live-ttl-index-mongodb'
 ---
 
 Time to Live (TTL) indexes are special single-field indexes in MongoDB that help delete documents from a collection after a specific amount of time or at a given clock time. Data expiration is useful for certain types of information like machine generated event data, shopping carts, logs, and session information etc that only need to persist in a database for a finite amount of time.
+
+![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676006275/ttl_axpreo.jpg)
 
 MongoDB offers an easy way to automatically expire documents using a TTL index. This is much more efficient than writing your own code as you don't have to worry about manually deleting expired documents. You can bypass the hassle of manually filtering documents based on their expiry and calculating the absolute expiry time. All you need to provide is the number of seconds a document should be valid for and let Mongodb take care of the rest.
 
