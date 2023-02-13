@@ -147,6 +147,8 @@ You will find `info.log` created with logs written as
 {"level":30,"time":"11-Feb-2023 12:28:35 035","req_id":"cldzlwdmh0003cv4w9rb5d089","msg":"request for hello"}
 ```
 
+> Suggested Read: [Pino API reference](https://getpino.io/#/docs/api)
+
 ## Conclusion
 
 A working example can be found in [techinsights-tutorials/pino-http-context](https://github.com/manisuec/techinsights-tutorials/tree/main/pino-http-context) repository on github.
