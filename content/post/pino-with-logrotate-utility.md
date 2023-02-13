@@ -16,7 +16,7 @@ Log files are very useful to troubleshoot, to track usage, improve performance, 
 
 ## Stop using log-rotate npm libraries
 
-Almost all the popular logging framework in Nodejs like winston, bunyan etc have a complimentary log rotation npm libraries winston-daily-rotate-file, bunyan-rotating-file-stream etc. However, in my personal view we should avoid using them and let the Nodejs application concentrate on serving the business logic. These libraries only adds overhead and dependencies in your application.
+Almost all the popular logging framework in Nodejs like winston, bunyan etc have a complimentary log rotation npm libraries `winston-daily-rotate-file`, `bunyan-rotating-file-stream` etc. However, in my personal view we should avoid using them and let the Nodejs application concentrate on serving the business logic. These libraries only adds overhead and dependencies in your application.
 
 The less resources is used for logging, faster the application. This is where Pino scores over other logging frameworks. Refer [benchmarks document.](https://github.com/pinojs/pino/blob/master/docs/benchmarks.md)
  
