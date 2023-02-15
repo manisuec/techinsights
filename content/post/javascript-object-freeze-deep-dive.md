@@ -14,6 +14,8 @@ According to MDN, the [Object.freeze()](https://developer.mozilla.org/en-US/docs
 
 > Freezing an object is the highest integrity level that JavaScript provides.
 
+![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676446736/deep-dive_y0omgf.jpg)
+
 ## A Closer look at JavaScript Object
 
 [ECMA specification](https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-object-type) defines an object as
