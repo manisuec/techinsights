@@ -5,7 +5,7 @@ date: 2021-11-24 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/e_improve/v1637747985/mongoose_djuhic.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 tags: ['nodejs', 'mongoose', 'subdocument', 'nested', 'javascript']
-keywords: 'nodejs,mongoose,subdocument,javascript,nested'
+keywords: 'nodejs,mongoose,subdocument,javascript,nested,schema'
 categories: ['Mongodb']
 url: 'mongodb/mongoose-subdocument'
 aliases:

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'An OTP generator npm library based on nanoid'
+title: 'A One Time Password (OTP) generator npm library based on nanoid'
 date: 2023-01-05 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1672914714/otp_tqczzd.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/NodeJS-Dark_fzh3cd.jpg'
 tags: ['nodejs', 'javascript']
-keywords: 'nodejs,otp,npm,otp generator,nano id,javascript,nanoid'
+keywords: 'nodejs,otp,npm,otp generator,nano id,javascript,nanoid,one time password,generator'
 categories: ['Nodejs']
 url: 'nodejs/otp-generator-nodejs'
 ---

@@ -5,7 +5,7 @@ thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaSc
 date: 2023-01-18 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1674035486/macbook_development_b0rlfv_vi6k9t.jpg']
 tags: ['nodejs', 'javascript']
-keywords: 'nodejs,nvm,macbook,web development,javascript,vs code,git,zsh'
+keywords: 'nodejs,nvm,macbook,web development,javascript,vs code,git,zsh,m1,apple,development setup'
 categories: ['Javascript']
 url: 'javascript/web-development-setup'
 ---

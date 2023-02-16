@@ -3,7 +3,7 @@ background: /img/posts/01.png
 date: '2018-08-18T00:00:00Z'
 title: Clustering & Inter Process Communication (IPC) in NodeJS
 tags: ['nodejs', 'ipc', 'clustering']
-keywords: 'nodejs,clustering,ipc,javascript'
+keywords: 'nodejs,clustering,ipc,javascript,cluster,performance'
 categories: ['Nodejs']
 url: 'nodejs/clustering-and-ipc'
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/NodeJS-Dark_fzh3cd.jpg'

@@ -5,7 +5,7 @@ date: 2023-02-11 00:00:00 +0530
 images: ["https://res.cloudinary.com/dkiurfsjm/image/upload/v1676006659/pino-banner_fktunb.png"]
 thumbnail: "https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/NodeJS-Dark_fzh3cd.jpg"
 tags: ['pino', 'nodejs', 'expressjs']
-keywords: 'pino,nodejs,logging,logger,expressjs,http context'
+keywords: 'pino,nodejs,logging,logger,expressjs,http context,server,logging framework'
 categories: ['Nodejs']
 url: 'nodejs/pino-logger-express-http-context'
 ---

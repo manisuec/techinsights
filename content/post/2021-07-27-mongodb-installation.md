@@ -6,7 +6,7 @@ images: ['/img/posts/mongodb.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 categories: ['Mongodb']
 tags: ['mongodb']
-keywords: 'mongodb,aws,ec2,installation,standalone,production'
+keywords: 'mongodb,aws,ec2,installation,standalone,production,configuration'
 url: 'mongodb/mongodb-installation-aws-ec2'
 aliases:
     - /post/2021-07-27-mongodb-installation/

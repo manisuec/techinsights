@@ -5,7 +5,7 @@ date: 2023-02-06 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676006275/ttl_axpreo.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 tags: ['mongodb', 'ttl index', 'time to live']
-keywords: 'mongodb,ttl index,time to live,index,expire data'
+keywords: 'mongodb,ttl index,time to live,index,expire data,ttl'
 categories: ['Mongodb']
 url: 'mongodb/time-to-live-ttl-index-mongodb'
 ---

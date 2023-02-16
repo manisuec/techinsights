@@ -5,7 +5,7 @@ thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaSc
 date: 2020-09-01 00:00:00 +0530
 tags: ['javascript', 'es6', 'destructuring']
 categories: ['Javascript']
-keywords: 'javascript,object,destructuring,es6'
+keywords: 'javascript,object,destructuring,es6,array destructuring,object destructuring'
 url: 'javascript/es6-destructuring'
 aliases:
     - /post/2020-09-01-object-destructuring/

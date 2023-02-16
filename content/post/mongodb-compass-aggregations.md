@@ -5,7 +5,7 @@ date: 2023-01-30 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1675067686/aggregation_g1ra8g.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 tags: ['mongodb', 'mongodb compass', 'aggregation pipeline']
-keywords: 'mongodb,mongodb compass,aggregation,aggregation pipeline,compass'
+keywords: 'mongodb,mongodb compass,aggregation,aggregation pipeline,compass,pipeline,queries'
 categories: ['Mongodb']
 url: 'mongodb/my-queries-aggregation-mongodb-compass'
 ---

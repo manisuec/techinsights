@@ -6,7 +6,7 @@ thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaSc
 date: 2023-02-15 00:00:00 +0530
 tags: ['javascript', 'es6','object']
 categories: ['Javascript']
-keywords: 'javascript,object,object.freeze(),es6, deep dive'
+keywords: 'javascript,object,object.freeze(),es6,deep dive,object seal,object freeze,freeze,seal'
 url: 'javascript/object-freeze-deep-dive'
 ---
 

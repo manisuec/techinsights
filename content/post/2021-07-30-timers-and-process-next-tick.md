@@ -5,7 +5,7 @@ date: 2021-07-30 00:00:00 +0530
 images: ['/img/posts/timers.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/NodeJS-Dark_fzh3cd.jpg'
 tags: ['nodejs', 'javascript', 'timers']
-keywords: 'nodejs,async,timers,javascript'
+keywords: 'nodejs,async,timers,javascript,setTimeout,setImmediate,nextTick'
 categories: ['Nodejs']
 url: 'nodejs/nodejs-timers'
 aliases:
