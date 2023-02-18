@@ -3,7 +3,7 @@ layout: post
 title: "Pino with Logrotate is the best way for managing logs in your Nodejs application"
 date: 2023-02-13 00:00:00 +0530
 images: ["https://res.cloudinary.com/dkiurfsjm/image/upload/v1676284194/pino-logrotate_hhr0er.png"]
-thumbnail: "https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/NodeJS-Dark_fzh3cd.jpg"
+thumbnail: "https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png"
 tags: ['pino', 'nodejs', 'expressjs']
 keywords: 'pino,nodejs,logging,logger,expressjs,logrotate,logging framework,file rotate'
 categories: ['Nodejs']
