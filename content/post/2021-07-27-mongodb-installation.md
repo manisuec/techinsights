@@ -66,9 +66,6 @@ $ sudo mkdir /log
 $ sudo mount -t xfs /dev/sdf /data
 $ sudo mount -t xfs /dev/sdh /log
 
-# create a link for journal
-$ sudo ln -s /journal /data/journal
-
 # set appropriate ownership
 $ sudo chown mongod:mongod /data
 $ sudo chown mongod:mongod /log/
@@ -78,7 +75,6 @@ Add below content using command `$ sudo vi /etc/fstab`
 
 ```
 /dev/sdf /data    xfs defaults,auto,noatime,noexec 0 0
-/dev/sdg /journal xfs defaults,auto,noatime,noexec 0 0
 /dev/sdh /log     xfs defaults,auto,noatime,noexec 0 0
 ```
 
