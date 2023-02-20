@@ -172,6 +172,15 @@ net:
   port: 31012
 ```
 
+Update path of `pid` file.
+
+```
+# how the process runs
+processManagement:
+  fork: true  # fork and run in background
+  pidFilePath: /home/mongod/mongod.pid  # location of pidfile
+```
+
 Also, update data and log paths:
 
 ```
