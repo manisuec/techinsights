@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Understanding Mongoose Pre and Post middleware hooks'
-images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676885262/mongoose-lean_m3xter.png']
+images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1677072845/mongoose-hooks_cailhh.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2023-02-22 00:00:00 +0530
 tags: ['mongoose', 'mongodb', 'javascript']
@@ -11,6 +11,8 @@ url: 'mongodb/mongoose-pre-and-post-hooks-middlewares'
 ---
 
 Pre and post middleware hooks is a very useful feature in Mongoose and provides a lot of flexibility during database operations like query, create, remove etc. Pre and post hooks are functions that are executed before or after a particular action that you specify. These hooks get triggered whenever you perform an operation with your database.
+
+![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1677072845/mongoose-hooks_cailhh.jpg)
 
 ## Types of Middleware
 
