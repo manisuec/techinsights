@@ -4,7 +4,7 @@ title: "Mongodb Views: A Secure Way to Access & Share Data"
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2023-05-17 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1684323449/mongodb_views_ymdkdr.jpg']
-tags: ['mongodb','secure','database','access']
+tags: ['mongodb','security','database','access']
 keywords: 'mongodb,views,secure,database,nodejs,access'
 categories: ['Mongodb']
 url: 'mongodb/mongodb-views-secure-data-access'

@@ -4,7 +4,7 @@ title: 'How to make Mongoose Queries faster & less memory intensive (The Lean Wa
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676885262/mongoose-lean_m3xter.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2023-02-20 00:00:00 +0530
-tags: ['mongoose', 'mongodb', 'javascript']
+tags: ['mongoose', 'mongodb', 'javascript', 'database']
 categories: ['Mongodb']
 keywords: 'mongoose,mongodb,queries,mongoose queries,lean,faster,virtuals,populate,document,subdocument'
 url: 'mongodb/mongoose-queries-faster-lean'

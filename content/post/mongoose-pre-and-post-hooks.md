@@ -4,7 +4,7 @@ title: 'Understanding Mongoose Pre and Post middleware hooks'
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1677072845/mongoose-hooks_cailhh.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2023-02-22 00:00:00 +0530
-tags: ['mongoose', 'mongodb', 'javascript']
+tags: ['mongoose', 'mongodb', 'javascript', 'database']
 categories: ['Mongodb']
 keywords: 'mongoose,middlewares,pre hooks,post hooks,document,subdocument'
 url: 'mongodb/mongoose-pre-and-post-hooks-middlewares'
