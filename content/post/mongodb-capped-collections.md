@@ -4,8 +4,8 @@ title: "Mongodb Capped Collections - An Overview"
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2023-05-29 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1685355100/ring_buffer_fjkx4t.jpg']
-tags: ['mongodb','capped','database']
-keywords: 'mongodb,capped collections,collections,database'
+tags: ['mongodb','capped','database','schema']
+keywords: 'mongodb,capped collections,collections,database,schema,no sql'
 categories: ['Mongodb']
 url: 'mongodb/mongodb-capped-collections'
 ---
