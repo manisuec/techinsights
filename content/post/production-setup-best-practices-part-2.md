@@ -2,7 +2,7 @@
 layout: post
 title: 'Best Practices for Production setup of Nodejs Application: Part II'
 date: 2023-06-13 00:00:00 +0530
-images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1686135208/light_ship_ugp2qc.jpg']
+images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1686211560/pexels-kevin-ku-577585_oi0vaa.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'javascript', 'expressjs']
 keywords: 'nodejs,expressjs,production,setup,best practices,development'
