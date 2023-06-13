@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Best Practices for Production setup of Nodejs Application'
+title: 'Best Practices for Production setup of Nodejs Application: Part I'
 date: 2023-06-08 00:00:00 +0530
-images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1686135208/light_ship_ugp2qc.jpg']
+images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1686656287/expressjs_sgp464.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'javascript', 'expressjs']
 keywords: 'nodejs,expressjs,production,setup,best practices'
@@ -26,7 +26,7 @@ Here are several measures you can take within your system environment to enhance
 6. [Use a reverse proxy](#ref-6)
 
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1686211560/pexels-kevin-ku-577585_oi0vaa.jpg)
+![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1686656287/expressjs_sgp464.jpg)
 
 ## Set NODE_ENV to “production” {#ref-1}
 
