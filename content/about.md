@@ -21,6 +21,6 @@ My profile links:
 
   [GitHub profile](https://github.com/manisuec)
 
-![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+[![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)](https://www.buymeacoffee.com/manisuec)
 
-> If you the blog posts and find them helpful, you can buy me a coffee to keep me energized for writing blogs for you.
+> If you the blog posts and find them helpful, you can [buy me a coffee](https://www.buymeacoffee.com/manisuec) to keep me energized for writing blogs for you.

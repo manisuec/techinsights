@@ -178,6 +178,6 @@ Implementing inter process communication is also very easy. IPC using Node.js cl
 
 Read more about [Node.js cluster module](https://nodejs.org/docs/latest/api/cluster.html#cluster_cluster)
 
-![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+[![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)](https://www.buymeacoffee.com/manisuec)
 
-> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.
+> If you liked the above story, you can [buy me a coffee](https://www.buymeacoffee.com/manisuec) to keep me energized for writing stories like this for you.

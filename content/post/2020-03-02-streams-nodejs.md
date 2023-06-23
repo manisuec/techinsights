@@ -119,6 +119,6 @@ In this example, we can see that by using Nodejs streams, we can manipulate larg
 
 Note:- Complete code is checked into [github](https://github.com/manisuec/study/tree/master/streams)
 
-![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+[![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)](https://www.buymeacoffee.com/manisuec)
 
-> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.
+> If you liked the above story, you can [buy me a coffee](https://www.buymeacoffee.com/manisuec) to keep me energized for writing stories like this for you.
