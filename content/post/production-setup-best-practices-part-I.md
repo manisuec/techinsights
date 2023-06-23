@@ -107,3 +107,7 @@ Performance and reliability are crucial aspects of production-deployed applicati
 In this article, the focus was more on dev ops side of best practices for optimizing performance and ensuring reliability when deploying Express applications in a production environment.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

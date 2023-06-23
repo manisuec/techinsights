@@ -150,3 +150,7 @@ and defaults. To use these features with `lean()`, you need to use the correspon
 Lean is great for high-performance, read-only cases, especially when combined with cursors. With the help of plugins, `lean()` can be used with virtuals, getters/setters, or defaults. The sample code is checked into [mongoose-lean](https://github.com/manisuec/techinsights-tutorials/tree/main/mongoose-lean) on github.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

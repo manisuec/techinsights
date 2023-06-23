@@ -79,3 +79,7 @@ Logrotate is one of the best utilities available in the Linux OS. [Pino](https:/
 A working example for Pino can be found in [techinsights-tutorials/pino-http-context](https://github.com/manisuec/techinsights-tutorials/tree/main/pino-http-context) repository on github.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

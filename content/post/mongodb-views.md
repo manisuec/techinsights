@@ -111,3 +111,7 @@ Now we can share the credentials of `view_user` with the customer retention team
 In this blog post, you learned how to share your MongoDB collections to a wider audience — even the most critical ones — without exposing sensitive data.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

@@ -148,3 +148,7 @@ Save v18.x.x instead of saving the exact version like v18.12.1 in **.nvmrc** fil
 NVM is one of the most helpful tools and using it with .nvmrc files will make a better Javascript development experience.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

@@ -89,3 +89,7 @@ Read more at [Restrictions.](https://www.mongodb.com/docs/manual/core/index-ttl/
 TTL indexes is underused feature of Mongodb. In my view, it is a very helpful feature for building data applications. This removes the need for running a cronjob that deletes the expired data. Also, ability to have different documents to have different expire times instead of the fixed time period gives a fine-grained control over the documents.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

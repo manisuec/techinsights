@@ -20,3 +20,7 @@ My profile links:
   [![website](/img/profile.jpg) Perosonal Website](https://manisuec.com) 
 
   [GitHub profile](https://github.com/manisuec)
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you the blog posts and find them helpful, you can buy me a coffee to keep me energized for writing blogs for you.

@@ -105,3 +105,7 @@ b) Enable auto fix: View → Command Pallete → Open User Settings → add: `"e
 # Conclusion
 
 This sets up VS Code with ESLint and Prettier for development with a consistent configuration.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

@@ -47,3 +47,7 @@ Follow the steps mentioned below:
 I hope this post helps you in seting up your environment for deploying your applications in a VPC with public and private subnets. And helps you understand on how the ec2 instances in private subnet can connect to internet.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

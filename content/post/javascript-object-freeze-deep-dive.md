@@ -178,3 +178,7 @@ For freezing nested objects too you can write your custom `deepFreeze` method or
 I hope this article helps you understand about Javascript objects in more depth. The insights gained from this article will help property undeletable, property immutable or protect objects from unintentional modifications.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

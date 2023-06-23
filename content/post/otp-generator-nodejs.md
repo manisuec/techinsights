@@ -90,3 +90,7 @@ Useful in cases where number of OTPs to be generated is known before hand.
 Nano ID uses the crypto module in Node.js and the Web Crypto API in browsers. These modules use unpredictable hardware random generator. [`otp-gen-agent`](https://www.npmjs.com/package/otp-gen-agent?activeTab=readme) is a small utility lib based on Nano ID for generating otp.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

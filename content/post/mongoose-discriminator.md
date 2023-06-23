@@ -193,3 +193,7 @@ To update a document's discriminator key, use `findOneAndUpdate()` or `updateOne
 Discriminators in Mongoose are a robust feature that allows for storing comparable documents with varying schema constraints in a single collection. They are extremely useful in scenarios where using a `Mixed type` and bypassing `validation` is tempting. Specifically, in applications such as event tracking and user permissions, discriminators can be an essential tool.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

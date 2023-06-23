@@ -187,3 +187,7 @@ I hope that in this article, you have gained an understanding of how and when to
 By implementing these hooks, we can reduce the amount of code we need to write, resulting in a smaller potential for bugs. Additionally, we can alleviate the mental burden of having to remember to execute certain logic before or after a method each time. There are various other use cases for pre and post middleware hooks, and their execution before the method they are hooked onto makes them a versatile tool.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

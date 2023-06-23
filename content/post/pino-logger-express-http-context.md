@@ -156,3 +156,7 @@ A working example can be found in [techinsights-tutorials/pino-http-context](htt
 Depending upon the need of your application; you can add other details like user id etc. in the logs. The primary aim of this tutorial was to help start with pino logger.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

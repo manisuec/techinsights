@@ -177,3 +177,7 @@ Implementing inter process communication is also very easy. IPC using Node.js cl
 [‘node-ipc’](http://riaevangelist.github.io/node-ipc/) is a Node.js module for local and remote Inter Process Communication with full support for Linux, Mac and Windows. It also supports all forms of socket communication from low level unix and windows sockets to UDP and secure TLS and TCP sockets.
 
 Read more about [Node.js cluster module](https://nodejs.org/docs/latest/api/cluster.html#cluster_cluster)
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

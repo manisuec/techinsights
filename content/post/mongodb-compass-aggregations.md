@@ -41,3 +41,7 @@ It's now easy to compile the data needed. By clicking the "Run" button, once can
 MongoDB Compass new features simplifies the process of using MongoDB’s aggregation framework by allowing developers to get up and running quickly without needing to thoroughly read through documentation. This also helps in efficiently creating, reusing, and sharing aggregations with colleagues, evaluating their success rate, and executing them directly with Compass.
 
 ✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.

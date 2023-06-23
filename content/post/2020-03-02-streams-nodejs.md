@@ -118,3 +118,7 @@ pipeline(
 In this example, we can see that by using Nodejs streams, we can manipulate large sets of data very efficiently both in terms of memory and time. I reiterate, streams are a highly underrated but very powerful concept in Node.js. Hopefully, this article will help in understanding of streams, how to work with them and where to use this module.
 
 Note:- Complete code is checked into [github](https://github.com/manisuec/study/tree/master/streams)
+
+![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)
+
+> If you liked the above story, you can buy me a coffee to keep me energized for writing stories like this for you.
