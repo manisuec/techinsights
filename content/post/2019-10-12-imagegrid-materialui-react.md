@@ -38,6 +38,3 @@ Complete code is checked in at [GitHub](https://github.com/manisuec/Sandbox).
 
 You can play around with at [CodeSandbox](https://codesandbox.io/embed/imagegrid-lepk2)
 
-[![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)](https://www.buymeacoffee.com/manisuec)
-
-> If you liked the above story, you can [buy me a coffee](https://www.buymeacoffee.com/manisuec) to keep me energized for writing stories like this for you.

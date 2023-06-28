@@ -102,6 +102,3 @@ The [official documentation](https://nodejs.org/en/docs/guides/event-loop-timers
 `process.nextTick()` can potentially cause I/O starvation and hence should be used responsibly.
 I hope you enjoyed reading this and find it helpful. I sincerely request for your feedback. You can follow me on twitter [@lifeClicks25](https://twitter.com/lifeClicks25).
 
-[![](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)](https://www.buymeacoffee.com/manisuec)
-
-> If you liked the above story, you can [buy me a coffee](https://www.buymeacoffee.com/manisuec) to keep me energized for writing stories like this for you.
