@@ -1,15 +1,13 @@
 ---
 layout: post
 title: 'Async Operations with AbortController & AbortSignal in Nodejs'
-date: 2021-11-02 00:00:00 +0530
+date: 2022-11-02 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1635836633/1_zfv_iZJYdjBUL2K1Y6k9yw_zjq7f8.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'javascript', 'async', 'abortcontroller', 'abortsignal']
-keywords: 'nodejs,async,abortcontroller,javascript,abortsignal,operation'
+keywords: 'nodejs,async,fetch,request,abortcontroller,javascript,abortsignal,"async operation",cancel'
 categories: ['Nodejs']
 url: 'nodejs/nodejs-async-operations-abortcontroller-abortsignal'
-aliases:
-    - /post/2021-11-02-abort-controller-nodejs
 ---
 
 [AbortController](https://nodejs.org/dist/latest-v16.x/docs/api/globals.html#class-abortcontroller) is the standard way to abort any ongoing operations. AbortController and AbortSignal are now part of Nodejs LTS (originally introduced in v15.0.0).
@@ -137,6 +135,20 @@ I have used `setTimeout` to simulate the operations.
  signal ---> abort timeout
  The timeout was aborted
  ```
+
+## Use Cases
+
+Let's explore some of the practical applications of AbortController:
+
+- Terminating requests when a user navigates away from the page
+
+- Canceling requests that exhibit prolonged response times
+
+- Regulating or delaying fetch requests using throttling or debouncing techniques
+
+- Effectively managing errors that may arise during request handling
+
+- Aborting requests during the upload of larger files
 
 
 ## Conclusion
