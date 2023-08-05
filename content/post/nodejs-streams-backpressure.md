@@ -2,7 +2,7 @@
 layout: post
 title: 'Understanding Backpressure and Stream Optimization in Nodejs'
 date: 2023-08-03 00:00:00 +0530
-images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1672811003/nvm_gyddwb.png']
+images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1691054457/backpressure-streams-2_lgs9zz.png', 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1691054457/backpressure-streams-1_y30lqc.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'streams']
 keywords: 'nodejs,streams,backpressure,back,pressure,optimization'
