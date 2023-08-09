@@ -94,7 +94,7 @@ const transformData = (fn, options = {}) =>
   });
 ```
 
-I have also used 'split' module to create read chunks line by line. Using 'pipeline' module method of Nodejs pipe all the streams. This method pipes streams forwarding errors and properly cleaning up and provide a callback when the pipeline is complete.
+I have also used 'split' module to create read chunks line by line. Using 'pipeline' module method of Nodejs pipe all the streams. This method pipes streams forwarding errors and properly cleaning up and provide a callback when the pipeline is complete. Also read about [back pressure optimization in streams](https://techinsights.manisuec.com/nodejs/backpressure-stream-optimization/).
 
 ```
 pipeline(

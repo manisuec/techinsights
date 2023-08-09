@@ -103,7 +103,7 @@ try {
 
 ## Control Flow Effects of `await()`
 
-When encountering an `await` within code, whether in an async function or a module, the expression being awaited is executed. Meanwhile, any code reliant on the result of this expression is temporarily halted and placed into the microtask queue. This action liberates the main thread for the next task within the event loop. This holds true even when the awaited value is a promise that has already been resolved or when it's not a promise at all. For instance, consider the subsequent code snippet:
+When encountering an `await` within code, whether in an async function or a module, the expression being awaited is executed. Meanwhile, any code reliant on the result of this expression is temporarily halted and placed into the microtask queue. This action liberates the main thread for the next task within [the event loop](https://techinsights.manisuec.com/nodejs/nodejs-event-loop/). This holds true even when the awaited value is a promise that has already been resolved or when it's not a promise at all. For instance, consider the subsequent code snippet:
 
 ```
 async function foo(name) {
