@@ -56,7 +56,7 @@ const userIds = [1, 2, 3];
 const userNameArr = [];
 
 for (const userId of userIds) {
-   const userName = await getName(userId);
+   const userName = await fetchUserById(userId);
    userNameArr.push(userName);
 }
 
