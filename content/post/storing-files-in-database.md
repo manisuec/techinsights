@@ -55,7 +55,7 @@ Cloud storage is a preferred solution for larger applications due to its benefit
 
 **AWS S3:** Amazon's object storage service for scalable, durable storage.
 
-**Cloudinary:** A media-focused solution optimized for image and video storage, built on AWS S3.
+**[Cloudinary](https://cloudinary.com):** A media-focused solution optimized for image and video storage, built on AWS S3.
 
 **DigitalOcean Spaces:** A user-friendly storage service similar to AWS S3.
 
