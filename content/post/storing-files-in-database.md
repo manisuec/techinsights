@@ -61,7 +61,7 @@ Cloud storage is a preferred solution for larger applications due to its benefit
 
 **Backblaze B2:** A cost-effective alternative to AWS S3 with a focus on security and encryption.
 
-> **Tip:** Use tools like [websiteplanet image compressor](https://www.websiteplanet.com/webtools/imagecompressor/),  [ilovemyimg](https://www.iloveimg.com) etc to compress images as per your need and then store them 
+> **Tip:** Use tools like [websiteplanet image compressor](https://www.websiteplanet.com/webtools/imagecompressor/),  [ilovemyimg](https://www.iloveimg.com){:target="_blank" rel="noopener"} etc to compress images as per your need and then store them 
 ## Conclusion:
 
 Storing files in a database might seem convenient at first, but it comes with significant downsides that impact performance, maintenance, and complexity. Instead, industry best practices advocate using alternatives such as file system storage or cloud storage solutions like AWS S3, Cloudinary, DigitalOcean Spaces, or Backblaze B2. While there are cases where storing files in a database can be acceptable, understanding the trade-offs and exploring better storage options will ultimately lead to more efficient and scalable applications.
