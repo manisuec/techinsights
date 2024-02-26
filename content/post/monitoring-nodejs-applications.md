@@ -3,7 +3,7 @@ layout: post
 title: Monitoring Tips for Nodejs Applications
 date: 2024-02-26 00:00:00 +0530
 images:
-  - https://res.cloudinary.com/dkiurfsjm/image/upload/v1692621172/file-storage-in-database_xbwidi.jpg
+  - https://res.cloudinary.com/dkiurfsjm/image/upload/v1708952649/pexels-josh-sorenson-1714208_qexmpg.jpg
 thumbnail: https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png
 tags:
   - tech
