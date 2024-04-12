@@ -1,7 +1,7 @@
 baseURL = "https://techinsights.manisuec.com/"
 languageCode = "en"
 defaultContentLanguage = "en"                            
-title = "Tech Insights"
+title = "Thoughts on tech: NodeJS, Javascript, Mongodb | Tech Insights"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
