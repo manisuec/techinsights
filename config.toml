@@ -52,7 +52,7 @@ copyright = ""            # default: author.name ↓        #
   # site info (optional)                                  
   logoTitle = "Tech Insights"        # default: the title value
   keywords = ["tech","blog","manisuec"]
-  description = "Tech Insights: A personal tech blog site"
+  description = "A personal technology blog on NodeJS, ExpressJS, Mongodb, Javascript, ReactJS and general technology topics. I am open for providing consultancy service for ReactJS, NodeJS, ExpressJS, Mongodb (MERN) tech stack."
 
   # paginate of posts, tags and categories             
   archivePaginate = 10
