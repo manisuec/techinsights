@@ -1,7 +1,7 @@
 baseURL = "https://techinsights.manisuec.com/"
 languageCode = "en"
 defaultContentLanguage = "en"                            
-title = "Thoughts on NodeJS, Javascript, Mongodb | Tech Insights"
+title = "Tech Insights on NodeJS, Javascript, Mongodb"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
@@ -52,7 +52,7 @@ copyright = ""            # default: author.name ↓        #
   # site info (optional)                                  
   logoTitle = "Tech Insights"        # default: the title value
   keywords = ["tech","blog","manisuec"]
-  description = "A personal tech blog covering NodeJS, ExpressJS, MongoDB, ReactJS, and more. I am open for consultancy in MERN stack: ReactJS, NodeJS, ExpressJS, MongoDB."
+  description = "A personal tech blog exploring NodeJS, ExpressJS, MongoDB, ReactJS, and more. Offering consultancy services in the MERN stack"
 
   # paginate of posts, tags and categories             
   archivePaginate = 10
