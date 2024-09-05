@@ -3,6 +3,7 @@ background: /img/posts/04.jpg
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: '2020-03-02T00:00:00Z'
 title: 'Streams: An underrated but very powerful concept in NodeJS'
+description: Demystifying Streams in Nodejs. Explore the power of streams learn how to work with and effectively use streaming data in your applications.
 tags: ['nodejs', 'streams', 'data processing']
 keywords: 'nodejs,streams,transform,javascript,data,memory,large data'
 categories: ['Nodejs']

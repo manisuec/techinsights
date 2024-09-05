@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'MongoDB Installation & Configuration on AWS EC2 Instance'
+title: 'MongoDB Installation on AWS EC2: Lessons Learned & Best Practices'
+description: Learn how to install and configure MongoDB on an AWS EC2 instance. Follow this guide to set up a production-ready standalone MongoDB server effortlessly.
 date: 2021-07-27 00:00:00 +0530
 images: ['/img/posts/mongodb.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'

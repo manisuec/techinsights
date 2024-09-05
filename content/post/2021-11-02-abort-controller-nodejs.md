@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Async Operations with AbortController & AbortSignal in Nodejs'
+description: Avoid delays in Node.js applications with AbortController. Learn how to abort long-running operations when interacting with APIs, networks, and databases.
 date: 2022-11-02 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1635836633/1_zfv_iZJYdjBUL2K1Y6k9yw_zjq7f8.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
