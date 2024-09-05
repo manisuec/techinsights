@@ -2,6 +2,7 @@
 layout: post
 title: 'The Pitfalls of Using Async/Await Inside forEach() Loops'
 date: 2023-08-14 00:00:00 +0530
+lastmod: 2024-09-05T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1692000996/foreach_cozdhs.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 tags: ['nodejs', 'async', 'javascript']
@@ -33,7 +34,7 @@ console.log(userNameArr);
 
 To truly grasp what's happening, let's dive into the inner workings of this code. And what better way to understand it than through an animated depiction of the JavaScript runtime as it meticulously executes each line of your program?
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1692000462/ezgif-3-c2c078f152_wi9oaq.gif)
+![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725520524/asyn-for-each_yf2gkf.gif)
 
 *Animation Courtesy: [Maxim Orlov](https://maximorlov.com/async-await-inside-foreach/)*
 

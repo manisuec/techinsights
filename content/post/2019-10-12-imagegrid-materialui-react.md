@@ -1,6 +1,7 @@
 ---
 background: /img/posts/04.jpg
 date: '2019-10-12T00:00:00Z'
+lastmod: 2024-09-05T00:00:30
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/React-Dark_trdwyz.jpg'
 title: Image Grid using Material UI in React
 tags: ['reactjs', 'material-ui', 'image grid', 'grid']
@@ -27,8 +28,8 @@ I would request someone to update the example with below capabilities:
 
 Few screenshots of the image grid
 
-1. Image Grid ![Image Grid](/img/posts/ss_0.png)
-2. Expaned Image ![Expanded Image](/img/posts/ss_1.png)
+1. Image Grid ![Image Grid](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725520524/ss_0_yawyfq.png)
+2. Expaned Image ![Expanded Image](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725520524/ss_1_vk6k8h.png)
 
 We also used [React Infinite Scroller](https://github.com/CassetteRocks/react-infinite-scroller) which is a simple, lightweight infinite scroll package that supports both window and scrollable elements.
 
