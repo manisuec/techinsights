@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mongodb Capped Collections - An Overview"
+description: "Learn about capped collections: Fixed-size, high-throughput data structures that function like circular buffers, optimizing document insertion and retrieval."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2023-05-29 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1685355100/ring_buffer_fjkx4t.jpg']

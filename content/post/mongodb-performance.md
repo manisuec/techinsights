@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MongoDB Best Practices: Optimizing Performance & Reliability"
+description: Discover essential MongoDB best practices to ensure optimal performance, reliability, and robust application development with MongoDB's flexible NoSQL solution.
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2024-09-02 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1725274812/mongodb_h7owyy.jpg']

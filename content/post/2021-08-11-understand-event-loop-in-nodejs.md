@@ -85,7 +85,7 @@ The Event Loop is composed of six phases, which are repeated for as long as the 
 For detailed difference between timers and process.nextTick() read [Understand the difference between setImmediate(), setTimeout() and process.nextTick()](https://techinsights.manisuec.com/post/2021-07-30-timers-and-process-next-tick/)
 
 
-![Event Loop](/img/posts/eventloop.png)
+![Event Loop](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725601516/eventloop_up0ezi.png)
 
 
 The six phases of event loop creates one cycle, or loop, which is known as a tick. A Node.js process exits when there is no more pending work in the Event Loop, or when process.exit() is called manually.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Understand Sub-documents & Nested documents in Mongoose'
+description: Mongoose is a popular schema-based tool for MongoDB. Explore the subtle difference between nested paths and subdocuments.
 date: 2021-11-24 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/e_improve/v1637747985/mongoose_djuhic.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'

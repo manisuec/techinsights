@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Deep dive into Object.freeze() in Javascript'
+description: "Discover Object.freeze() in JavaScript: Learn how it creates immutable objects, preventing modifications and ensuring the highest level of data integrity"
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676446736/deep-dive_y0omgf.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2023-02-15 00:00:00 +0530
