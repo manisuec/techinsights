@@ -36,8 +36,8 @@ copyright = ""            # default: author.name ↓        #
   url = "/"
 
 [[menu.main]]
-  name = "Posts"
-  weight = 20
+  name = "Blogs"
+  weight = 25
   identifier = "archives"
   url = "/post"
 
