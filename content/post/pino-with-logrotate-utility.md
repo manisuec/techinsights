@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pino with Logrotate is the best way for managing logs in your Nodejs application"
+title: 'Why Pino with Logrotate is the Best for Managing Logs in Nodejs Apps'
 date: 2023-02-13 00:00:00 +0530
 images: ["https://res.cloudinary.com/dkiurfsjm/image/upload/v1676284194/pino-logrotate_hhr0er.png"]
 thumbnail: "https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Stop Using JavaScript’s Template Literals for building URLs with Query Params'
+title: 'Avoid JavaScript Template Literals for Building URLs with Query Params'
 description: "Explore JavaScript template literals: Multi-line strings and string interpolation using backticks. Learn about this popular feature for flexible text handling"
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1687259385/ts_url_jydkn8.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'

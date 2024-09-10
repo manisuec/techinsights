@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How to make Mongoose Queries faster & less memory intensive (The Lean Way)'
+title: 'Optimize Mongoose Queries for Speed & Efficiency: The Lean Way'
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676885262/mongoose-lean_m3xter.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2023-02-20 00:00:00 +0530
