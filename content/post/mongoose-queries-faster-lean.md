@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Optimize Mongoose Queries for Speed & Efficiency: The Lean Way'
+description: Optimize Mongoose find() performance with the lean() method. Learn how it speeds up retrieval and reduces memory usage by returning plain JavaScript objects
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676885262/mongoose-lean_m3xter.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2023-02-20 00:00:00 +0530

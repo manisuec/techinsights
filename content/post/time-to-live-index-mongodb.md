@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Understanding TTL Indexes in MongoDB comprehensively"
+description: Learn how MongoDB’s Time to Live (TTL) indexes automate document expiration. Efficiently manage data like logs and sessions without manual deletion hassles
 date: 2023-02-06 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676006275/ttl_axpreo.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'

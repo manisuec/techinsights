@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'A One Time Password (OTP) generator npm library based on nanoid'
+description: In India, mobile numbers are key for user authentication. Discover how the otp-gen-agent library, based on Nano ID, simplifies OTP generation for secure access
 date: 2023-01-05 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1672914714/otp_tqczzd.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'

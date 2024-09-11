@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Why Storing Files in the Database is a Bad Practice: Best Alternatives'
+description: Discover why storing files in a database is considered a bad practice. Explore the downsides and learn about alternative industry best practices methods
 date: 2023-08-21 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1692621172/file-storage-in-database_xbwidi.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1692621749/general-tech_nou1q6.jpg'
@@ -8,7 +9,6 @@ tags: ['database', 'tech']
 keywords: 'database,files,storage,cloud storage'
 categories: ['General']
 url: 'javascript/storing-files-in-database'
-description: Discover why storing files in the database is considered bad practice. Learn about the downsides that impact performance, maintenance, and complexity. Explore alternative approaches for better file management.
 ---
 
 In the world of web development, the idea of saving files in a database might seem appealing at first glance. After all, if structured data resides there, why not files too?  In this article, we'll delve into the reasons why storing files in a database is considered a bad practice. We'll explore the common downsides associated with this approach and discuss alternative methods that align with industry best practices.

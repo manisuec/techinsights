@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Best Practices for Production setup of Nodejs Application: Part II'
+description: Discover best practices for optimizing performance and reliability during app development. Learn how to enhance resource use, minimize response times and ensure fault tolerance.
 date: 2023-06-13 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1686211560/pexels-kevin-ku-577585_oi0vaa.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'

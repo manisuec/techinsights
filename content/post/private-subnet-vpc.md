@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Deploy EC2 in Private Subnet & Securely Enable Internet Communication"
+description: Secure critical infrastructure in AWS by deploying EC2 instances in a private subnet. Prevent direct internet access and protect databases & application servers
 date: 2023-01-23 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1674130623/private_vpc_nat_ufnejw.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/AWS-Dark_jwzawt.jpg'

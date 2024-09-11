@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Understanding Mongoose Pre and Post middleware hooks'
+description: Pre and post middleware hooks is a very useful feature in Mongoose. These hooks provide flexibility by executing functions before or after specified actions.
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1677072845/mongoose-hooks_cailhh.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2023-02-22 00:00:00 +0530

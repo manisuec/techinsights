@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Exploring Different Filesystems in Nodejs: A Comprehensive Guide'
+description: Discover best practices for handling diverse filesystems in Nodejs ensuring simplicity and safety in your code.
 date: 2023-08-04 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1691221519/pexels-anete-lusina-4792288_lt95ab.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'

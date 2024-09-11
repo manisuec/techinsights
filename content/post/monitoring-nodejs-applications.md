@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Monitoring Tips for Nodejs Applications
+description: Discover top tips for monitoring Nodejs applications addressing performance issues, prevent customer abandonment ensuring optimal performance and reliability.
 date: 2024-02-26 00:00:00 +0530
 images:
   - https://res.cloudinary.com/dkiurfsjm/image/upload/v1708952649/pexels-josh-sorenson-1714208_qexmpg.jpg
@@ -12,7 +13,6 @@ keywords: database,files,storage,cloud storage
 categories:
   - Nodejs
 url: nodejs/monitoring-nodejs-applications
-description: Discover why storing files in the database is considered bad practice. Learn about the downsides that impact performance, maintenance, and complexity. Explore alternative approaches for better file management.
 ---
 The popularity of the Nodejs framework has skyrocketed, making it a go-to choice for organizations aiming to create agile, lightweight and efficient applications across diverse devices. As organizations increasingly rely on Nodejs; its monitoring is essential. Technology teams must stay vigilant about declining app performance, customer abandonment during transactions, and the key factors contributing to overall poor performance. 
 
