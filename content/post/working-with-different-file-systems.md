@@ -12,7 +12,7 @@ url: 'nodejs/exploring-different-filesystems'
 
 Nodejs exposes various filesystem features, but not all filesystems share the same behaviors. Here are recommended guidelines to maintain simplicity and safety in your code when working with diverse filesystems.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1691221519/pexels-anete-lusina-4792288_lt95ab.jpg)
+![file system](https://res.cloudinary.com/dkiurfsjm/image/upload/v1691221519/pexels-anete-lusina-4792288_lt95ab.jpg)
 
 ### Understanding Filesystem Behavior
 

@@ -15,7 +15,7 @@ According to MDN, the [Object.freeze()](https://developer.mozilla.org/en-US/docs
 
 > Freezing an object is the highest integrity level that JavaScript provides.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676446736/deep-dive_y0omgf.jpg)
+![deep dive](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676446736/deep-dive_y0omgf.jpg)
 
 ## A Closer look at JavaScript Object
 
@@ -27,7 +27,7 @@ According to MDN, the [Object.freeze()](https://developer.mozilla.org/en-US/docs
 
 - An accessor property associates a key value with one or two accessor functions, and a set of Boolean attributes. The accessor functions are used to store or retrieve an ECMAScript language value that is associated with the property.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676451970/object-model_lje7ui.jpg)
+![object model](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676451970/object-model_lje7ui.jpg)
 
 *Image from ['JavaScript engine fundamentals: Shapes and Inline Caches'](https://mathiasbynens.be/notes/shapes-ics) by
  [Mathias Bynens](https://mathiasbynens.be)*

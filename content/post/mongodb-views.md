@@ -13,7 +13,7 @@ url: 'mongodb/mongodb-views-secure-data-access'
 
 Data access and sharing data across teams or third parties are a very common phenomenon. Sharing sensitive data is a strict no. However, why even share data which is irrelevant for the data consumer. Suppose a MongoDB collection contain sensitive information. To restrict the access to collection, MongoDB offers Role-Based Access Control (RBAC).
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1684323449/mongodb_views_ymdkdr.jpg)
+![mongodb views](https://res.cloudinary.com/dkiurfsjm/image/upload/v1684323449/mongodb_views_ymdkdr.jpg)
 
 However, there may be instances where you want to share your collection with a broader audience without exposing sensitive data or irrelevant information. For example, sharing collections with the marketing team for analytics purposes without divulging personally identifiable information (PII) or confidential data like credit card number etc. In this blog post, we will explore how to achieve this using MongoDB views in conjunction with MongoDB RBAC.
 

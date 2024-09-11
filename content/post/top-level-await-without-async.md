@@ -13,7 +13,7 @@ url: 'nodejs/harnessing-power-of-top-level-await'
 
 In the ever-evolving landscape of JavaScript and Nodejs, developers are constantly discovering new ways to write cleaner and more efficient code. One such innovation is the ability to use top-level `await()` without the need for an enclosing `async()` function. This feature, introduced in modern versions of Nodejs (14.8.0 and later), provides an elegant approach to handling asynchronous operations in your codebase. In this blog post, we'll delve into the mechanics of top-level `await()` and explore its benefits and use cases.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725520524/top-level-await_uhqes3.png)
+![top level await](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725520524/top-level-await_uhqes3.png)
 
 *Fig 1: Top level await()*
 

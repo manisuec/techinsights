@@ -18,7 +18,7 @@ People intermittently use the `finally` keyword for both the context and have th
 - to perform cleanup tasks after the promise has been settled
 - finally block is used to perform cleanup tasks post `try...catch` execution
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1687507931/finally_udjaiz.jpg)
+![finally block](https://res.cloudinary.com/dkiurfsjm/image/upload/v1687507931/finally_udjaiz.jpg)
 
 ## Promise.finally()
 

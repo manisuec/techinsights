@@ -12,7 +12,7 @@ url: 'mongodb/mongoose-discriminator-non-dry-way-inherit-properties'
 
 Mongoose Discriminator is another very useful and powerful  yet underused feature of Mongoose. It serves as a means of schema inheritance, allowing you to use multiple models with intersecting schemas on the same underlying MongoDB collection. You can store different entities in one collection, and you will still be able to discriminate between these entities. Unfortunately, the documentation of this feature is poor.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1677493083/mongoose-discriminator_c5elpt.png)
+![mongoose discriminator](https://res.cloudinary.com/dkiurfsjm/image/upload/v1677493083/mongoose-discriminator_c5elpt.png)
 
 ## Why use Discriminator?
 

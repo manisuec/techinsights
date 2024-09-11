@@ -26,7 +26,7 @@ Here are several measures you can take within your system environment to enhance
 6. [Use a reverse proxy](#ref-6)
 
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1686656287/expressjs_sgp464.jpg)
+![expressjs](https://res.cloudinary.com/dkiurfsjm/image/upload/v1686656287/expressjs_sgp464.jpg)
 
 ## Set NODE_ENV to “production” {#ref-1}
 

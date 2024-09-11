@@ -12,7 +12,7 @@ url: 'nodejs/pino-logger-express-http-context'
 
 Logging is an essential tool for debugging and understanding the behavior of your application. It allows developers to capture information about the state and flow of an application, which can be used to identify and fix bugs, improve performance, and monitor the overall health of the application.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676006659/pino-banner_fktunb.png)
+![pino logger](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676006659/pino-banner_fktunb.png)
 
 When setting up logging in application server based on Nodejs, it's important to choose an appropriate logging framework, such as pino, winston, or others, that supports the logging level and configuration that you need. <a name="ref_1"></a>Additionally, it's important to log information at the right level of detail and to write logs in a way that makes them easy to read and understand.
 

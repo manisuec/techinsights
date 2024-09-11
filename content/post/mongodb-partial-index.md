@@ -13,7 +13,7 @@ url: 'mongodb/mongodb-partial-index'
 
 MongoDB is a powerful NoSQL database designed for high performance, high availability, and easy scalability. Unlike traditional relational databases, MongoDB uses a flexible schema model, allowing for the storage of diverse data structures. Indexing is a critical feature of MongoDB, enhancing query performance by allowing the database to quickly locate and retrieve data without scanning every document in a collection.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1720545553/mongodb-partial-index_fpsr4a.jpg)
+![partial index](https://res.cloudinary.com/dkiurfsjm/image/upload/v1720545553/mongodb-partial-index_fpsr4a.jpg)
 
 ## What are Partial Indexes
 

@@ -15,7 +15,7 @@ MongoDB Compass, as of 2018, comes with an aggregation pipeline builder to help 
 
 The version 1.32.x series of Compass includes 'My Queries' tab features saved queries and aggregations which can be used to generate explain plans & perform aggregations on the entire collection. Additionally, the aggregation results can be exported for further use.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1675067686/myqueries_aukefs.png)
+![queries](https://res.cloudinary.com/dkiurfsjm/image/upload/v1675067686/myqueries_aukefs.png)
 
 ## My Queries Section
 
@@ -25,7 +25,7 @@ Previously, these saved aggregations were restricted to a single namespace. Henc
 
 The new "My Queries" screen makes it very convenient to find all the saved queries and aggregations as everything is located in a single place. One can easily filter them by namespaces or use the search bar to look for a specific query from amongst all of them.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1675067687/namespace_qda4bn.png)
+![namespace](https://res.cloudinary.com/dkiurfsjm/image/upload/v1675067687/namespace_qda4bn.png)
 
 ## Explain Plan for Aggregations
 

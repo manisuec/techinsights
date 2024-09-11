@@ -25,7 +25,7 @@ Here are few things to do during the development to enhance your application's p
 5. [Watch Out For Memory Leaks](#ref-5)
 
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1686211560/pexels-kevin-ku-577585_oi0vaa.jpg)
+![production best practices](https://res.cloudinary.com/dkiurfsjm/image/upload/v1686211560/pexels-kevin-ku-577585_oi0vaa.jpg)
 
 ## Use gzip compression {#ref-1}
 

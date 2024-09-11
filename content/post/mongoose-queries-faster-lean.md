@@ -12,7 +12,7 @@ url: 'mongodb/mongoose-queries-faster-lean'
 
 [Mongoose](https://mongoosejs.com) is a schema-based solution to model your application data in MongoDB. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676885262/mongoose-lean_m3xter.png)
+![mongoose lean](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676885262/mongoose-lean_m3xter.png)
 
 Mongoose offers various methods to retrieve documents from a collection, such as `find()`, `findOne()`, and `findById()`. Although `find()` is the most commonly used method and returns multiple documents based on a specified condition, it can lack performance when dealing with a large number of documents in a collection. To optimize the performance of `find()` when handling a large number of documents, Mongoose provides the `lean()` method. This method, when used with `find()`, retrieves documents more quickly than `find()` alone and is less memory intensive too. The result documents are plain old JavaScript objects (POJOs), not Mongoose documents. In this post, you'll learn more about the tradeoffs of using `lean()`.
 

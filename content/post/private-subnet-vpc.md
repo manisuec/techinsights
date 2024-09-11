@@ -14,7 +14,7 @@ Critical infrastructure like databases, application servers etc must be deployed
 
 ## Deployment diagram {#fig_1}
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1674130623/private_vpc_nat_ufnejw.png) 
+![private subnet](https://res.cloudinary.com/dkiurfsjm/image/upload/v1674130623/private_vpc_nat_ufnejw.png) 
 
 ## NAT Gateway: Short description
 

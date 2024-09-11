@@ -13,7 +13,7 @@ url: 'mongodb/mongodb-best-practices'
 
 MongoDB has revolutionized the database landscape with its NoSQL solution, offering flexibility, scalability, and user-friendliness. However, harnessing its full potential requires adherence to MongoDB best practices that guarantee top-notch performance and reliability. In this guide, we'll delve into essential MongoDB best practices that empower developers to construct robust applications that stand the test of time.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725274812/mongodb_h7owyy.jpg)
+![mongodb](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725274812/mongodb_h7owyy.jpg)
 
 ## Mastering Data Modeling for Optimal Performance
 

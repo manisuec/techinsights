@@ -12,7 +12,7 @@ url: 'nodejs/pino-with-logrotate-utility'
 
 Log files are very useful to troubleshoot, to track usage, improve performance, and monitor the overall health of the application. However, over time, they become large and use up valuable disk space. It not only makes debugging harder but also slows down the application as writing new log lines become expensive operation. This is where log rotation is required.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676284194/pino-logrotate_hhr0er.png)
+![pino logrotate](https://res.cloudinary.com/dkiurfsjm/image/upload/v1676284194/pino-logrotate_hhr0er.png)
 
 ## Stop using log-rotate npm libraries
 

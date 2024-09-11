@@ -28,7 +28,7 @@ not ${2 * a + b}.`);
 
 However, template literals creates issues and not recommended to build URLs with query params for fetch APIs.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1687259385/ts_url_jydkn8.png)
+![template string url](https://res.cloudinary.com/dkiurfsjm/image/upload/v1687259385/ts_url_jydkn8.png)
 
 ## Issue with building Query params with Template Literals
 

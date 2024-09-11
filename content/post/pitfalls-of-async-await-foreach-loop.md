@@ -13,7 +13,7 @@ url: 'nodejs/pitfalls-of-async-await-foreach-loop'
 
 When it comes to running asynchronous operations for each element in an array, the instinct is often to turn to the trusty `.forEach()` method. It seems like the perfect solution, right? However, there's a catch – a catch that might leave you scratching your head when things don't work as expected.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1692000996/foreach_cozdhs.png)
+![foreach loop](https://res.cloudinary.com/dkiurfsjm/image/upload/v1692000996/foreach_cozdhs.png)
 
 ### Why async/await Inside forEach May Catch You Off Guard
 
@@ -34,7 +34,7 @@ console.log(userNameArr);
 
 To truly grasp what's happening, let's dive into the inner workings of this code. And what better way to understand it than through an animated depiction of the JavaScript runtime as it meticulously executes each line of your program?
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725520524/asyn-for-each_yf2gkf.gif)
+![async for each](https://res.cloudinary.com/dkiurfsjm/image/upload/v1725520524/asyn-for-each_yf2gkf.gif)
 
 *Animation Courtesy: [Maxim Orlov](https://maximorlov.com/async-await-inside-foreach/)*
 

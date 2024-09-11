@@ -13,7 +13,7 @@ url: 'mongodb/mongodb-capped-collections'
 
 Capped collections provide fixed-size collections that enable high-throughput operations for inserting and retrieving documents based on their insertion order. They function similarly to circular buffers, where once a collection reaches its allocated space, new documents overwrite the oldest ones in the collection.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1685355100/ring_buffer_fjkx4t.jpg)
+![ring buffer](https://res.cloudinary.com/dkiurfsjm/image/upload/v1685355100/ring_buffer_fjkx4t.jpg)
 
 > **TIP:**
 > 

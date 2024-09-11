@@ -16,11 +16,11 @@ In the world of data handling and transfer, one common challenge that arises is 
 
 Backpressure occurs when there is a data transfer mismatch between the sender and receiver. The receiving end, due to its complexity or slow processing, cannot keep up with the data flow from the sender. As a result, data starts to pile up, causing inefficiency and potential memory exhaustion.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1691054457/backpressure-streams-1_y30lqc.png)
+![backpressure stream 1](https://res.cloudinary.com/dkiurfsjm/image/upload/v1691054457/backpressure-streams-1_y30lqc.png)
 
 *Fig 1: data pile up due to no backpressure*
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1691054457/backpressure-streams-2_lgs9zz.png)
+![backpressure stream 2](https://res.cloudinary.com/dkiurfsjm/image/upload/v1691054457/backpressure-streams-2_lgs9zz.png)
 
 *Fig 2: efficient handling with backpressure*
 
@@ -42,7 +42,7 @@ Nodejs offers various ways to optimize data transfer using streams. One common p
 
 To achieve a better understanding of backpressure, here is a flow-chart on the lifecycle of a Readable stream being piped into a Writable stream:
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1691055568/pipe-lifecycle_njpnif.png)
+![pipe lifecycle](https://res.cloudinary.com/dkiurfsjm/image/upload/v1691055568/pipe-lifecycle_njpnif.png)
 
 *Source: [Lifecycle of .pipe()](https://nodejs.org/en/docs/guides/backpressuring-in-streams#lifecycle-of-pipe)*
 

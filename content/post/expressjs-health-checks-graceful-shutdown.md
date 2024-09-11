@@ -17,7 +17,7 @@ Expressjs is a fast, unopinionated, minimalist web framework for Node.js. Few fu
 
 [Lightship](https://github.com/gajus/lightship) is an open-source project that adds health, readiness and liveness checks to your application. Lightship is a standalone HTTP-service that runs as a separate HTTP service; this allows having health-readiness-liveness HTTP endpoints without exposing them on the public interface.
 
-![](https://res.cloudinary.com/dkiurfsjm/image/upload/v1686135208/light_ship_ugp2qc.jpg)
+![light ship](https://res.cloudinary.com/dkiurfsjm/image/upload/v1686135208/light_ship_ugp2qc.jpg)
 
 ## Installation
 
