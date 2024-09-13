@@ -176,6 +176,9 @@ copyright = ""            # default: author.name ↓        #
     c-twitter = "https://twitter.com/lifeClicks25"
     g-github = "https://github.com/manisuec"
 
+  [params.subscribe]
+    enable = false
+
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
   [privacy.googleAnalytics]
