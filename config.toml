@@ -130,7 +130,7 @@ copyright = ""            # default: author.name ↓        #
     clientSecret = ""       # Your client secret
 
   [params.utterances]       # https://utteranc.es/
-    owner = "manisuec"      # Your GitHub ID
+    owner = ""              # Your GitHub ID
     repo = "techinsights"   # The repo to store comments
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
@@ -138,6 +138,10 @@ copyright = ""            # default: author.name ↓        #
     repo = ""               # The repo to store comments
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
+  
+  [params.mailerlite]       # mailerlite
+    enable = true           # 
+    accountId = "1101287"   # Your account ID
 
   # Valine.
   # You can get your appid and appkey from https://leancloud.cn
@@ -153,11 +157,11 @@ copyright = ""            # default: author.name ↓        #
     visitor = false
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
-    enable = true
+    enable = false
     options = ""
 
   [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
-    enable = true
+    enable = false
     options = ""            # default: "{theme: 'simple'}"
 
   [params.busuanzi]         # count web traffic by busuanzi                            
