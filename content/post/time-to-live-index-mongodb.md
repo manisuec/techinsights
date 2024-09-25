@@ -57,7 +57,7 @@ On replica set members, the TTL background thread only deletes documents when a 
 
 ## Conditional Delete
 
-A collection can be partially indexed using a specified filter expression, `partialFilterExpression`. TTL index can also be used with [partial indexes.](https://www.mongodb.com/docs/manual/core/index-partial/)
+A collection can be partially indexed using a specified filter expression, [partialFilterExpression](https://techinsights.manisuec.com/mongodb/mongodb-partial-index/). TTL index can also be used with [partial indexes.](https://www.mongodb.com/docs/manual/core/index-partial/)
 
 e.g.
 
