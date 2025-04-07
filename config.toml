@@ -23,7 +23,8 @@ copyright = ""            # default: author.name ↓        #
 
 [author]                  # essential                     #
   name = "Manish Prasad"
-
+  url = "https://manisuec.com"
+  
 [sitemap]                 # essential                     #
   changefreq = "weekly"
   priority = 0.5
