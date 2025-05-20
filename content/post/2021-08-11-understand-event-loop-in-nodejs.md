@@ -182,6 +182,14 @@ setTimeout 2
 nextTick 3
 ```
 
+## Related Articles
+- [Understanding Timers and process.nextTick() in Node.js](https://techinsights.manisuec.com/nodejs/timers-and-process-next-tick/) - Learn about the differences between timers and process.nextTick()
+- [Handling Backpressure in Node.js Streams](https://techinsights.manisuec.com/nodejs/nodejs-streams-backpressure/) - Master stream backpressure handling
+- [Working with Streams in Node.js](https://techinsights.manisuec.com/nodejs/streams-nodejs/) - Deep dive into Node.js streams
+- [Using Top-Level Await Without Async](https://techinsights.manisuec.com/nodejs/top-level-await-without-async/) - Modern async/await patterns
+- [Common Pitfalls with Async/Await in forEach Loops](https://techinsights.manisuec.com/nodejs/pitfalls-of-async-await-foreach-loop/) - Avoid common async/await mistakes
+- [Understanding AbortController in Node.js](https://techinsights.manisuec.com/nodejs/abort-controller-nodejs/) - Learn about request cancellation
+
 ## Conclusion
 
 Node.js processes are single threaded and simplifies the complexity that comes with writing multithreaded code.  Event Loop helps offloading I/O tasks to the C++ APIs and determines the callback function that would be executed next at every iteration.

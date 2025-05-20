@@ -180,6 +180,19 @@ Another use case can be to add additional field say `last_updatedMS` by default 
 
 Hooks have a multitude of use cases depending on your application and I hope you can identify potential use cases for your own application.
 
+## Best Practices for Using Hooks
+
+1. Keep hooks focused and single-purpose
+2. Avoid complex business logic in hooks
+3. Use async/await properly in hooks
+4. Handle errors appropriately
+5. Consider performance implications
+
+## Related Articles
+- [Faster Mongoose Queries with Lean](https://techinsights.manisuec.com/mongodb/mongoose-queries-faster-lean/) - Optimize your Mongoose queries
+- [Understanding Mongoose Discriminators](https://techinsights.manisuec.com/mongodb/mongoose-discriminator/) - Master Mongoose inheritance patterns
+- [Working with Subdocuments and Nested Documents](https://techinsights.manisuec.com/mongodb/understand-mongoose-subdoc-and-nesteddoc/) - Deep dive into document relationships
+- [MongoDB Performance Best Practices](https://techinsights.manisuec.com/mongodb/mongodb-best-practices/) - General MongoDB optimization tips
 
 ## Conclusion
 
