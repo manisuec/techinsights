@@ -14,6 +14,8 @@ url: 'nodejs/generate-api-docs-swagger-joi'
 
 API documentation is crucial for any backend service, and **Swagger/OpenAPI** has become the de facto standard for documenting REST APIs. However, maintaining documentation manually can be time-consuming and error-prone. This guide explores how to automatically generate Swagger documentation from Joi validation schemas using the `joi-to-swagger` library, ensuring your API documentation stays in sync with your validation logic.
 
+When implementing API documentation, it's important to consider [health checks and graceful shutdown](https://techinsights.manisuec.com/nodejs/expressjs-health-check-lightship/) for your Express application, especially in production environments.
+
 ![swagger documentation](https://res.cloudinary.com/dkiurfsjm/image/upload/v1748258366/swagger-doc_r7a2nb.jpg)
 
 ## Understanding the Components
@@ -295,6 +297,8 @@ const swaggerDocument = {
   }]
 };
 ```
+
+For production deployments, make sure to follow [best practices for production setup](https://techinsights.manisuec.com/nodejs/production-setup-best-practices/) and implement proper [health checks](https://techinsights.manisuec.com/nodejs/expressjs-health-check-lightship/) to ensure your API remains reliable and maintainable.
 
 ## Conclusion
 
