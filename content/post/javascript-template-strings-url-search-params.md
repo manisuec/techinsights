@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 'Avoid JavaScript Template Literals for Building URLs with Query Params'
-description: "Explore JavaScript template literals: Multi-line strings and string interpolation using backticks. Learn about this popular feature for flexible text handling"
+description: "Learn why template literals should be avoided for URL construction and how to properly handle query parameters using URLSearchParams. A comprehensive guide with practical examples."
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1687259385/ts_url_jydkn8.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2023-06-20 00:00:00 +0530
-tags: ['javascript', 'template literals','url']
+tags: ['javascript', 'template literals', 'url', 'best practices', 'web development']
 categories: ['Javascript']
 keywords: 'javascript,template literals,url search params,url,params,template strings,strings,query,query params'
 url: 'javascript/template-strings-url-search-params'
@@ -13,82 +13,212 @@ url: 'javascript/template-strings-url-search-params'
 
 [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
 
-Template literals are sometimes informally called template strings, because they are used most commonly for string interpolation (to create strings by doing substitution of placeholders) and has gained popularity very quickly.
+JavaScript template literals, introduced in ES6, are a powerful feature for string manipulation. They are delimited with backtick (`) characters and provide three main capabilities:
 
-> **String interpolation:** By using placeholders of the form ${expression} to perform  substitutions for embedded expressions:
+1. Multi-line strings
+2. String interpolation
+3. Tagged templates
 
+## Template Literals: Basic Usage
+
+### String Interpolation
+The most common use case is string interpolation using `${expression}` syntax:
+
+```javascript
+const name = "John";
+const age = 30;
+const greeting = `Hello, my name is ${name} and I am ${age} years old.`;
+console.log(greeting);
+// Output: "Hello, my name is John and I am 30 years old."
 ```
+
+### Multi-line Strings
+Template literals preserve whitespace and line breaks:
+
+```javascript
+const multiLine = `
+  First line
+  Second line
+  Third line
+`;
+console.log(multiLine);
+// Output:
+//   First line
+//   Second line
+//   Third line
+```
+
+### Expression Evaluation
+Template literals can evaluate expressions:
+
+```javascript
 const a = 5;
 const b = 10;
-console.log(`Fifteen is ${a + b} and
-not ${2 * a + b}.`);
-// "Fifteen is 15 and
-// not 20."
+console.log(`The sum of ${a} and ${b} is ${a + b}`);
+// Output: "The sum of 5 and 10 is 15"
 ```
 
-However, template literals creates issues and not recommended to build URLs with query params for fetch APIs.
+![template string url](https://res.cloudinary.com/dkiurfsjm/image/upload/v1687259385/
+ts_url_jydkn8.png)
 
-![template string url](https://res.cloudinary.com/dkiurfsjm/image/upload/v1687259385/ts_url_jydkn8.png)
+## The Problem with Template Literals in URLs
 
-## Issue with building Query params with Template Literals
+While template literals are convenient, they can cause significant issues when used for URL construction, especially with query parameters. Let's examine why:
 
-While going through React official documentation [When to use custom Hooks](https://react.dev/learn/reusing-logic-with-custom-hooks#when-to-use-custom-hooks); I saw below code snippet.
+### Common Anti-pattern
 
-```
-// This Effect fetches cities for a country
-  useEffect(() => {
-    let ignore = false;
-    fetch(`/api/cities?country=${country}`)
-      .then(response => response.json())
-      .then(json => {
-        if (!ignore) {
-          setCities(json);
-        }
-      });
-    return () => {
-      ignore = true;
-    };
-  }, [country]);
+```javascript
+// ❌ Bad Practice
+const country = "Trinidad & Tobago";
+const url = `/api/cities?country=${country}`;
+
+// Results in: /api/cities?country=Trinidad & Tobago
 ```
 
-I have also seen many juniors using the same way of building query params for fetch APIs.
+This approach has several problems:
 
-> Template literals aren’t designed for creating strings to serialize and pass to other systems.
+1. **Special Characters**: Characters like `&`, `?`, `=`, and spaces are not properly encoded
+2. **Array Handling**: Arrays are converted to comma-separated strings
+3. **Type Coercion**: Objects are converted to `[object Object]`
 
-Lets take example of country Trinidad and Tobago also sometimes written as Trinidad & Tobago. If we use template strings; then the query sent to the server will be `/api/cities?country=Trinidad & Tobago`. The server will parse the request query params as `country` with value `Trinidad` and ` Tobago`(note the leading space!) with an empty value. This kind of issues are very difficult to identify and debug.
+### Real-world Example of Issues
 
-Another issue can be due to how template literals interpret array of primitive types. e.g.
+```javascript
+// ❌ Problematic Implementation
+const params = {
+  country: "Trinidad & Tobago",
+  cities: ["Port of Spain", "San Fernando"],
+  page: 1,
+  limit: 10
+};
 
-```
-const arr = [1,2,3,4,5];
-`${arr}` ===> '1,2,3,4,5'
-```
+const badUrl = `/api/cities?country=${params.country}&cities=${params.cities}&page=${params.page}&limit=${params.limit}`;
 
-## URLSearchParams
-
-The [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) interface defines utility methods to work with the query string of a URL. Using built-in answer JavaScript `URLSearchParams`, which does take care of many problems. For example, instead of this:
-
-`/api/cities?country=${country}`
-
-```
-'/api/cities?' +
-  new URLSearchParams([
-    [ 'country', country ]
-  ])
-
+// Results in: 
+// /api/cities?country=Trinidad & Tobago&cities=Port of Spain,San Fernando&page=1&limit=10
 ```
 
-Resulting URL will be `'/api/cities?country=Trinidad+%26+Tobago'` and the request query params will be correctly interpreted by server.
+## The Solution: URLSearchParams
 
-URLSearchParams does have its own caveats but preferring it over template strings, you’ll be in good shape. Read more at [URLSearchParams.](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams#preserving_plus_signs) 
+`URLSearchParams` is the proper way to handle URL query parameters in JavaScript. It automatically handles:
+- URL encoding
+- Special characters
+- Array parameters
+- Multiple values for the same parameter
 
-> String formatting tools are for printing, not for serialization.
+### Basic Usage
 
-Best solution is definitely leveraging TypeScript or validation libraries like Joi.
+```javascript
+// ✅ Good Practice
+const params = new URLSearchParams({
+  country: "Trinidad & Tobago",
+  page: "1",
+  limit: "10"
+});
+
+const url = `/api/cities?${params.toString()}`;
+
+// Results in: 
+// /api/cities?country=Trinidad+%26+Tobago&page=1&limit=10
+```
+
+### Advanced Usage
+
+```javascript
+// ✅ Handling Complex Parameters
+const searchParams = new URLSearchParams();
+
+// Adding single parameters
+searchParams.append('country', 'Trinidad & Tobago');
+
+// Adding multiple values for the same parameter
+searchParams.append('cities', 'Port of Spain');
+searchParams.append('cities', 'San Fernando');
+
+// Adding numeric values
+searchParams.append('page', '1');
+searchParams.append('limit', '10');
+
+const url = `/api/cities?${searchParams.toString()}`;
+
+// Results in: 
+// /api/cities?country=Trinidad+%26+Tobago&cities=Port+of+Spain&cities=San+Fernando&page=1&limit=10
+```
+
+### Working with Arrays
+
+```javascript
+// ✅ Handling Arrays
+const cities = ['Port of Spain', 'San Fernando'];
+const searchParams = new URLSearchParams();
+
+cities.forEach(city => searchParams.append('cities', city));
+
+const url = `/api/cities?${searchParams.toString()}`;
+
+// Results in: 
+// /api/cities?cities=Port+of+Spain&cities=San+Fernando
+```
+
+## Best Practices for URL Construction
+
+1. **Always use URLSearchParams for query parameters**
+2. **Handle special characters properly**
+3. **Consider using a URL construction library for complex cases**
+4. **Validate parameters before construction**
+5. **Use TypeScript for type safety**
+
+### TypeScript Example
+
+```typescript
+interface CityParams {
+  country: string;
+  cities: string[];
+  page: number;
+  limit: number;
+}
+
+function constructCityUrl(params: CityParams): string {
+  const searchParams = new URLSearchParams();
+  
+  searchParams.append('country', params.country);
+  params.cities.forEach(city => searchParams.append('cities', city));
+  searchParams.append('page', params.page.toString());
+  searchParams.append('limit', params.limit.toString());
+  
+  return `/api/cities?${searchParams.toString()}`;
+}
+```
+
+## Common Pitfalls to Avoid
+
+1. **Direct string concatenation**
+   ```javascript
+   // ❌ Don't do this
+   const url = '/api/cities?country=' + country + '&page=' + page;
+   ```
+
+2. **Template literals for URLs**
+   ```javascript
+   // ❌ Don't do this
+   const url = `/api/cities?country=${country}&page=${page}`;
+   ```
+
+3. **Manual encoding**
+   ```javascript
+   // ❌ Don't do this
+   const url = '/api/cities?country=' + encodeURIComponent(country);
+   ```
 
 ## Conclusion
 
-I hope this article helps you understand about template literals a bit more. My main motivation of writing this article was mainly due to seeing many junior folks using template literals for building URLs with query params of fetch APIs.
+While template literals are a powerful feature in JavaScript, they should not be used for URL construction. `URLSearchParams` provides a robust, built-in solution that handles all the edge cases and special characters correctly. By following these best practices, you can avoid common pitfalls and create more maintainable, reliable code.
 
-✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
+Remember:
+- Use `URLSearchParams` for query parameter handling
+- Consider TypeScript for type safety
+- Validate parameters before construction
+- Test edge cases with special characters and arrays
+
+✨ Thank you for reading! If you found this guide helpful, please share it with others. Your feedback and suggestions are always welcome in the comments section.
 
