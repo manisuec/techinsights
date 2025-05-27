@@ -71,12 +71,6 @@ Deploy NAT gateways in multiple Availability Zones to ensure business continuity
 
 ## Conclusion
 
-I hope this post helps you in seting up your environment for deploying your applications in a VPC with public and private subnets. And helps you understand on how the ec2 instances in private subnet can connect to internet.
-
-✨ Thank you for reading and I hope you find it helpful. I sincerely request for your feedback in the comment's section.
-
-## Conclusion
-
 Implementing EC2 instances within private subnets with controlled internet access through NAT gateways represents a fundamental security architecture pattern that balances protection requirements with operational flexibility. This approach provides organizations with the ability to maintain strict network isolation for critical infrastructure while enabling necessary outbound connectivity for system maintenance, third-party integrations, and user communications.
 
 The architectural pattern described in this guide forms the foundation for enterprise-grade AWS deployments and should be considered a mandatory component of any production workload that handles sensitive data or requires regulatory compliance. I hope this post helps you in seting up your environment for deploying your applications in a VPC with public and private subnets. And helps you understand on how the ec2 instances in private subnet can connect to internet.
