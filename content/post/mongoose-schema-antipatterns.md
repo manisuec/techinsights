@@ -290,6 +290,10 @@ OrderSchema.index({ userId: 1, status: 1, createdAt: -1 });
 OrderSchema.index({ total: -1 }, { sparse: true });
 ```
 
+> **Related Reading:**
+> - [MongoDB Index Optimization Strategies](https://techinsights.manisuec.com/mongodb/mongodb-index-optimization) - Comprehensive guide to index optimization
+> - [Making Mongoose Queries Faster with Lean](https://techinsights.manisuec.com/mongodb/mongoose-queries-faster-lean) - Learn how to optimize query performance
+
 ## Schema Validation Best Practices
 
 ### Anti-Pattern: Weak Validation
@@ -351,6 +355,11 @@ UserSchema.pre('save', async function(next) {
 });
 ```
 
+> **Related Reading:**
+> - [Understanding Mongoose Pre and Post Hooks](https://techinsights.manisuec.com/mongodb/mongoose-pre-and-post-hooks-middlewares) - Learn more about validation hooks
+> - [Working with Mongoose Transactions](https://techinsights.manisuec.com/mongodb/mongoose-transactions) - Ensure data consistency with transactions
+
+
 ### Real-world Example: E-commerce Product Schema
 
 ```javascript
@@ -403,6 +412,10 @@ const ProductSchema = new mongoose.Schema({
 ProductSchema.index({ categories: 1, price: 1 });
 ProductSchema.index({ sku: 1 }, { unique: true });
 ```
+
+> **Further Reading:**
+> - [MongoDB Performance Optimization Guide](https://techinsights.manisuec.com/mongodb/mongodb-best-practices) - Advanced performance tuning techniques
+
 
 ## Conclusion
 
