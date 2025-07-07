@@ -3,6 +3,7 @@ layout: post
 title: "Setup logging with Pino and express-http-context in Expressjs"
 description: Effective logging is crucial for debugging and performance. Choose the right Nodejs logging framework like Pino or Winston for clear, useful logs.
 date: 2023-02-11 00:00:00 +0530
+lastmod: 2025-07-00 00:00:00 +0530
 images: ["https://res.cloudinary.com/dkiurfsjm/image/upload/v1676006659/pino-banner_fktunb.png"]
 thumbnail: "https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png"
 tags: ['pino', 'nodejs', 'expressjs']
@@ -20,6 +21,8 @@ When setting up logging in application server based on Nodejs, it's important to
 ## Why pino?
 
 [Pino](https://github.com/pinojs/pino) is a 'very low overhead' and uses minimum resources for logging. It is also the fastest logging framework and increases the performance of applications developed in Nodejs. Pino's idea is that faster the logger the less CPU it uses thereby increasing throughput and reducing the response latency. Compare the results in their [benchmarks document](https://github.com/pinojs/pino/blob/master/docs/benchmarks.md).
+
+***Performance tip:*** In high-traffic APIs, logging can be a hidden source of latency. Pino's architecture ensures your application spends more time serving requests and less time writing logs.
 
 ## Using pino in expressjs application
 
@@ -149,6 +152,16 @@ You will find `info.log` created with logs written as
 ```
 
 > Suggested Read: [Pino API reference](https://getpino.io/#/docs/api)
+
+## Performance Optimizations for Logging in Nodejs
+
+- **Use async loggers:** Avoid synchronous loggers (like the default console.log) in production. Pino is asynchronous by design.
+- **Log only what matters:** Excessive logging increases I/O and can slow down your app. Log at the appropriate level (info, warn, error) and avoid logging sensitive or verbose data in production.
+- **Leverage log rotation:** Use tools like logrotate or Pino's own log rotation strategies to prevent disk space issues.
+- **Batch and buffer logs:** For very high-throughput systems, consider buffering logs and writing in batches, or offloading to a log aggregation service (e.g., Loki, Elasticsearch, or cloud logging solutions).
+- **Avoid blocking operations in log mixins:** Keep the mixin function fast and non-blocking; never perform database or network calls here.
+- **Disable pretty printing in production:** Pretty printing is for humans, not machines. Disable it in production to maximize throughput.
+- **Monitor log file sizes:** Set up alerts for disk usage to avoid outages due to log file growth.
 
 ## Conclusion
 
