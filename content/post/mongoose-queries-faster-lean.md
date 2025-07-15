@@ -5,7 +5,7 @@ description: Optimize Mongoose find() performance with the lean() method. Learn 
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676885262/mongoose-lean_m3xter.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2023-02-20 00:00:00 +0530
-tags: ['mongoose', 'mongodb', 'javascript', 'database']
+tags: [mongoosejs, 'mongodb', 'javascript', 'database']
 categories: ['Mongodb']
 keywords: 'mongoose,mongodb,queries,mongoose queries,lean,faster,virtuals,populate,document,subdocument'
 url: 'mongodb/mongoose-queries-faster-lean'
@@ -24,7 +24,7 @@ Mongoose queries typically return an instance of the Mongoose Document class as 
 ```javascript
 # define the schemas as below
 
-const mongoose = require('mongoose');
+const mongoose = require(mongoosejs);
 
 // Create models
 // 1. Group Model

@@ -5,7 +5,7 @@ description: Mongoose is a popular schema-based tool for MongoDB. Explore the su
 date: 2021-11-24 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/e_improve/v1637747985/mongoose_djuhic.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
-tags: ['nodejs', 'mongoose', 'subdocument', 'nested', 'javascript']
+tags: ['nodejs', mongoosejs, 'subdocument', 'nested', 'javascript']
 keywords: 'nodejs,mongoose,subdocument,javascript,nested,schema'
 categories: ['Mongodb']
 url: 'mongodb/mongoose-subdocument'
@@ -23,7 +23,7 @@ A record in MongoDB is a document, which is a data structure composed of field a
 Let us take a describe a schema of a person as below:
 
 ```javascript
-const mongoose = require('mongoose');
+const mongoose = require(mongoosejs);
 
 /**
  * @class Person

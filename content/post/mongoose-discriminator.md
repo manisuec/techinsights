@@ -5,7 +5,7 @@ description: Unlock the power of Mongoose Discriminators for schema inheritance.
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1677493083/mongoose-discriminator_c5elpt.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2023-02-27 00:00:00 +0530
-tags: ['mongoose', 'mongodb', 'javascript']
+tags: [mongoosejs, 'mongodb', 'javascript']
 categories: ['Mongodb']
 keywords: 'mongoose,discriminator,dry,polymorphism,mongodb'
 url: 'mongodb/mongoose-discriminator-non-dry-way-inherit-properties'

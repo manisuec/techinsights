@@ -6,7 +6,7 @@ images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1751455478/data-val
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2025-07-02 00:00:00 +0530
 lastmod: 2025-07-02T00:00:30
-tags: ['mongoose', 'mongodb', 'schema']
+tags: [mongoosejs, 'mongodb', 'schema']
 categories: ['Mongodb']
 keywords: 'mongoose,schema validation,mongodb,schema,anti-patterns'
 url: 'mongodb/mongoose-schema-validation'

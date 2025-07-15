@@ -5,7 +5,7 @@ images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1751455478/data-val
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2025-07-07 00:00:00 +0530
 lastmod: 2025-07-00 00:00:00 +0530
-tags: ["mongoose", "mongodb", "nodejs", "database"]
+tags: ["mongoosejs", "mongodb", "nodejs", "database"]
 categories: ['Mongodb']
 keywords: 'mongoose,data population,mongodb,schema'
 url: 'mongodb/mongoose-data-population'
@@ -31,7 +31,7 @@ The primary method for population in Mongoose is the `.populate()` function. You
 Suppose you have two schemas:
 
 ```js
-const mongoose = require('mongoose');
+const mongoose = require(mongoosejs);
 
 const AuthorSchema = new mongoose.Schema({
   name: String

@@ -27,7 +27,7 @@ MongoDB transactions operate through sessions, which provide a context for group
 A MongoDB session acts as a logical container for related operations. In Mongoose, you create a session using `mongoose.startSession()`, then use this session to group operations within a transaction boundary.
 
 ```javascript
-const mongoose = require('mongoose');
+const mongoose = require(mongoosejs);
 
 // Start a new session
 const session = await mongoose.startSession();

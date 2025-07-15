@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://techinsights.manisuec.com/sitemap.xml
+Sitemap: http://localhost:1313/sitemap.xml

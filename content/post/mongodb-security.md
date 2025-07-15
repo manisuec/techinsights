@@ -146,7 +146,7 @@ Never trust user-supplied query parameters. Always sanitize them:
 
 ```js
 // ✅ Proper query sanitization
-const mongoose = require('mongoose');
+const mongoose = require(mongoosejs);
 
 const sanitizeQuery = (query) => {
   const sanitized = {};
