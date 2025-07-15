@@ -9,7 +9,7 @@ lastmod: 2025-07-15T00:00:30
 tags: ['mongoosejs', 'mongodb', 'nodejs', 'plugins', 'schema']
 categories: ['Mongodb']
 keywords: 'mongoose,plugins,mongodb,nodejs,schema,validation,audit,soft delete'
-url: 'mongoose/mongoose-plugins-guide'
+url: 'mongodb/mongoose-plugins-guide'
 ---
 
 Mongoose plugins are like add-ons for your database models. They let you reuse features (like timestamps, soft deletes or validation) across different parts of your app, so you don’t have to write the same code over and over. They also promote code reusability, simplicity and maintaining consistency across your application. This guide will show you, step by step, how to use and create Mongoose plugins; even if you are new to Mongoose or MongoDB.
