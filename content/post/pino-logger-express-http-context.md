@@ -3,7 +3,7 @@ layout: post
 title: "Setup logging with Pino and express-http-context in Expressjs"
 description: Effective logging is crucial for debugging and performance. Choose the right Nodejs logging framework like Pino or Winston for clear, useful logs.
 date: 2023-02-11 00:00:00 +0530
-lastmod: 2025-07-00 00:00:00 +0530
+lastmod: 2025-07-16 00:00:00 +0530
 images: ["https://res.cloudinary.com/dkiurfsjm/image/upload/v1676006659/pino-banner_fktunb.png"]
 thumbnail: "https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png"
 tags: ['pino', 'nodejs', 'expressjs']

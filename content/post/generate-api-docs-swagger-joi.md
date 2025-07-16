@@ -3,7 +3,7 @@ layout: post
 title: 'Generating API Documentation with Swagger using joi-to-swagger'
 description: A comprehensive guide to automatically generating Swagger/OpenAPI documentation from Joi validation schemas in Nodejs Expressjs applications.
 date: 2025-05-26 00:00:00 +0530
-lastmod: 2025-05-26T00:00:00 +0530
+lastmod: 2025-05-26 00:00:00 +0530
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1748258366/swagger-doc_r7a2nb.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'swagger', 'expressjs', 'joi']

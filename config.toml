@@ -15,15 +15,12 @@ pygmentsCodefences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
 
-hasCJKLanguage = false
-paginate = 5                                            
-disqusShortname = ""      # disqus_shortname
-googleAnalytics = "G-YZX0J3052R"      # UA-XXXXXXXX-X
+hasCJKLanguage = false                          
 copyright = ""            # default: author.name ↓        #
 
-[author]                  # essential                     #
-  name = "Manish Prasad"
-  url = "https://manisuec.com"
+[pagination]
+  disableAliases = false
+  pagerSize = 5
   
 [sitemap]                 # essential                     #
   changefreq = "weekly"
@@ -45,6 +42,10 @@ copyright = ""            # default: author.name ↓        #
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
+  author = "Manish Prasad"
+  url = "https://manisuec.com"
+  googleAnalytics = "G-YZX0J3052R"
+  disqusShortname = ""
 
   since = "2019"            # Site creation time          
   # use public git repo url to link lastmod git commit, enableGitInfo should be true.
@@ -200,4 +201,3 @@ copyright = ""            # default: author.name ↓        #
   page = ["HTML"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
