@@ -4,7 +4,7 @@ title: "Promise.all() Is Fine... Until It Isn’t!"
 description: "Learn why Promise.all() can fail at scale and how a promise batch batch executor ensures controlled concurrency with timeouts & graceful error handling in Nodejs."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-08-22 00:00:00 +0530
-lastmod: 2025-08-22T00:00:30
+lastmod: 2025-09-05T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1755859269/nodejs-concurrency_bq1fkm.jpg']
 tags: ['nodejs', 'javascript', 'promise', 'concurrency']
 keywords: 'nodejs,javascript,async,concurrency,batch executor,promise.all,performance'
@@ -12,7 +12,7 @@ categories: ['Nodejs']
 url: 'nodejs/nodejs-batch-executor'
 ---
 
-Node.js developers often reach for `Promise.all()` when handling multiple asynchronous operations. However, this seemingly innocent approach can cause serious performance issues in production environments. Understanding the limitations of `Promise.all()` and implementing proper batch execution strategies is crucial for building robust, scalable Node.js applications.
+Nodejs developers often reach for `Promise.all()` when handling multiple asynchronous operations. However, this seemingly innocent approach can cause serious performance issues in production environments. Understanding the limitations of `Promise.all()` and implementing proper batch execution strategies is crucial for building robust, scalable Nodejs applications.
 
 ![nodejs batch execution](https://res.cloudinary.com/dkiurfsjm/image/upload/v1755859269/nodejs-concurrency_bq1fkm.jpg)
 
@@ -261,14 +261,14 @@ function createProgressTracker(total) {
 ```
 
 ## Related Articles
-- [Understanding Node.js Event Loop](https://techinsights.manisuec.com/nodejs/nodejs-event-loop/) - Master the event loop for better async handling
+- [Understanding Nodejs Event Loop](https://techinsights.manisuec.com/nodejs/nodejs-event-loop/) - Master the event loop for better async handling
 - [Working with Streams in Nodejs](https://techinsights.manisuec.com/nodejs/nodejs-streams) - Process large datasets efficiently
-- [Handling Backpressure in Node.js Streams](https://techinsights.manisuec.com/nodejs/backpressure-stream-optimization) - Manage data flow control
+- [Handling Backpressure in Nodejs Streams](https://techinsights.manisuec.com/nodejs/backpressure-stream-optimization) - Manage data flow control
 - [Common Pitfalls with Async/Await in forEach Loops](https://techinsights.manisuec.com/nodejs/pitfalls-of-async-await-foreach-loop) - Avoid async/await mistakes
 
 ## Final Thoughts: Use batch executor instead of `Promise.all()`
 
-Batch execution provides a robust alternative to `Promise.all()` for production Node.js applications. By implementing controlled concurrency, proper timeout handling, and graceful error recovery, developers can build applications that scale efficiently while maintaining stability under load.
+Batch execution provides a robust alternative to `Promise.all()` for production Nodejs applications. By implementing controlled concurrency, proper timeout handling, and graceful error recovery, developers can build applications that scale efficiently while maintaining stability under load.
 
 The batch executor pattern is particularly valuable for:
 
