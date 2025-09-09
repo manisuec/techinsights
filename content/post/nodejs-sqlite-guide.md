@@ -6,8 +6,8 @@ thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs
 date: 2025-09-09 00:00:00 +0530
 lastmod: 2025-09-09T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1757420416/sqlite-database_l7pn6f.png']
-tags: ['nodejs', 'javascript', 'security']
-keywords: 'nodejs,javascript,security,security checklist'
+tags: ['nodejs', 'sqlite', 'database']
+keywords: 'nodejs,sqlite,database,native module'
 categories: ['Nodejs']
 url: 'nodejs/nodejs-sqlite-guide'
 ---
