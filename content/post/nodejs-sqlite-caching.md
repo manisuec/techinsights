@@ -45,6 +45,8 @@ Nodejs 22.5.0 introduced native SQLite support through the `node:sqlite` module.
 4. **Persistent Storage** - Data survives application restarts
 5. **Built-in** - No external dependencies to maintain
 
+> Read about [SQLite Nodejs Guide: Native Module Tutorial & Examples](https://techinsights.manisuec.com/nodejs/nodejs-sqlite-guide)
+
 ## Building the SQLite Cache Layer
 
 Let's start by creating a robust caching class that leverages SQLite's strengths:
