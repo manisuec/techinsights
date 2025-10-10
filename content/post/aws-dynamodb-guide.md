@@ -5,7 +5,7 @@ description: "Master Amazon DynamoDB's architecture, performance characteristics
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-10-10 00:00:00 +0530
 lastmod: 2025-10-10T00:00:00
-images: [https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png']
+images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1760081467/aws-dynamodb_nbys4y.jpg']
 tags: ['aws', 'dynamodb', 'nosql', 'nodejs', 'database', 'scalability']
 keywords: 'aws dynamodb,nosql database,serverless database,dynamodb nodejs,aws sdk,scalable database,partition keys,global secondary indexes,dynamodb performance'
 categories: ['Nodejs']
