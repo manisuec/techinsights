@@ -1,0 +1,100 @@
+# Tech Insights
+
+> A personal tech blog exploring NodeJS, MongoDB, JavaScript, ReactJS, and modern development practices. Focused on backend excellence, cloud infrastructure, performance optimization, and emerging technologies with practical, solution-oriented content for developers committed to technical excellence.
+
+Tech Insights is a technical development hub dedicated to empowering developers with actionable implementations across the complete ecosystem of modern application development. The content spans from AI-powered product innovation to foundational technologies that enable scalable applications.
+
+**Core Areas of Expertise:**
+- Backend development with Node.js, MongoDB, and Mongoose
+- Cloud & infrastructure optimization (AWS)
+- Frontend development with React
+- Performance tuning and memory management
+- Production-ready best practices and security
+
+## Node.js Core
+
+- [Node.js 24: The Game Changer Release](https://techinsights.manisuec.com/nodejs/nodejs-24/): Comprehensive guide to Node.js 24's production-ready security features, V8 13.6 performance improvements, permission model, and enterprise-grade capabilities
+- [Understanding Node.js Event Loop](https://techinsights.manisuec.com/nodejs/nodejs-event-loop/): Deep dive into event loop internals, phases, and optimization techniques for async workflows
+- [Working with Streams in Node.js](https://techinsights.manisuec.com/nodejs/nodejs-streams/): Production patterns for memory-efficient data processing using streams
+- [Streams and Backpressure in Node.js](https://techinsights.manisuec.com/nodejs/backpressure-stream-optimization/): Advanced stream handling and backpressure management
+- [Node.js Timers](https://techinsights.manisuec.com/nodejs/nodejs-timers/): Understanding the Node.js timer system and microtask queue
+- [AbortController and AbortSignal in Node.js](https://techinsights.manisuec.com/nodejs/nodejs-async-operations-abortcontroller-abortsignal/): Canceling async operations with AbortController
+- [Express.js Health Check with Lightship](https://techinsights.manisuec.com/nodejs/expressjs-health-check-lightship/): Production patterns for robust application lifecycle management
+- [Express.js Middlewares Deep Dive](https://techinsights.manisuec.com/nodejs/nodejs-expressjs-middlewares/): Comprehensive guide to middleware architecture and implementation
+- [Node.js Security Checklist](https://techinsights.manisuec.com/nodejs/nodejs-security-checklist/): Essential security practices for production Node.js applications
+- [Monitoring Node.js Applications](https://techinsights.manisuec.com/nodejs/monitoring-nodejs-applications/): Observability patterns and monitoring strategies
+
+## MongoDB & Mongoose
+
+- [Mastering Mongoose Transactions](https://techinsights.manisuec.com/mongodb/mongoose-transactions/): Comprehensive guide to ACID transactions, atomic operations, concurrency control, and error recovery in Mongoose
+- [MongoDB Best Practices](https://techinsights.manisuec.com/mongodb/mongodb-best-practices/): Advanced query optimization and performance tuning techniques
+- [MongoDB Index Optimization](https://techinsights.manisuec.com/mongodb/mongodb-index-optimization/): Strategic indexing for query performance
+- [MongoDB Partial Index](https://techinsights.manisuec.com/mongodb/mongodb-partial-index/): Using partial indexes to boost performance and reduce storage
+- [Mongoose Data Population](https://techinsights.manisuec.com/mongodb/mongoose-data-population/): Advanced population patterns and performance considerations
+- [Mongoose Schema Validation](https://techinsights.manisuec.com/mongodb/mongoose-schema-validation/): Comprehensive schema validation strategies
+- [Mongoose Schema Anti-Patterns](https://techinsights.manisuec.com/mongodb/mongoose-schema-antipatterns/): Common mistakes and best practices for schema design
+- [Mongoose Pre and Post Hooks](https://techinsights.manisuec.com/mongodb/mongoose-pre-and-post-hooks-middlewares/): Middleware patterns for data transformation and validation
+- [Mongoose Discriminators](https://techinsights.manisuec.com/mongodb/mongoose-discriminator-non-dry-way-inherit-properties/): Implementing single collection inheritance
+- [Make Mongoose Queries Faster with Lean](https://techinsights.manisuec.com/mongodb/mongoose-queries-faster-lean/): Performance optimization with lean queries
+- [Understanding Mongoose Subdocuments](https://techinsights.manisuec.com/mongodb/mongoose-subdocument/): Working with embedded documents
+- [Mongoose Plugins Guide](https://techinsights.manisuec.com/mongodb/mongoose-plugins-guide/): Plugin development and best practices
+- [Mongoose Plugins Pitfalls](https://techinsights.manisuec.com/mongodb/mongoose-plugins-pitfalls/): Common pitfalls when working with plugins
+- [MongoDB Security Best Practices](https://techinsights.manisuec.com/mongodb/mongodb-security-best-practices/): Securing MongoDB deployments
+- [MongoDB Queryable Encryption](https://techinsights.manisuec.com/mongodb/mongodb-queryable-encryption/): Implementing encrypted search capabilities
+
+## JavaScript Core & Advanced Concepts
+
+- [JavaScript Object Memory Management](https://techinsights.manisuec.com/javascript/object-memory-management/): Understanding heap allocation, garbage collection, hidden classes, and memory leak prevention
+- [JavaScript Object and Bracket Notation](https://techinsights.manisuec.com/javascript/object-and-bracket-notation/): Modern object patterns and best practices
+- [ES6 Destructuring in JavaScript](https://techinsights.manisuec.com/javascript/es6-destructuring/): Advanced destructuring patterns
+- [Currying in JavaScript](https://techinsights.manisuec.com/javascript/currying-javascript/): Functional programming with currying
+- [JavaScript Object.freeze() Deep Dive](https://techinsights.manisuec.com/javascript/object-freeze-deep-dive/): Immutability patterns and use cases
+- [JavaScript finally Block and Method](https://techinsights.manisuec.com/javascript/finally-method-and-block/): Error handling with finally
+- [Demystifying for...of and for...in Loops](https://techinsights.manisuec.com/javascript/demystifying-choice-between-for-loops/): Understanding iteration patterns
+- [Template Strings and URL Search Params](https://techinsights.manisuec.com/javascript/template-strings-url-search-params/): Modern string manipulation
+
+## React & Frontend Development
+
+- [React Hooks Anti-Patterns](https://techinsights.manisuec.com/reactjs/react-hooks-antipatterns/): Comprehensive guide to avoiding common pitfalls, memory leaks, stale closures, and improper hook usage
+- [Image Grid with Material-UI in React](https://techinsights.manisuec.com/reactjs/react-materialui-imagegrid/): Building responsive image grids
+
+## Async Patterns & Best Practices
+
+- [Common Pitfalls with Async/Await in forEach Loops](https://techinsights.manisuec.com/nodejs/pitfalls-of-async-await-foreach-loop/): Avoiding race conditions in async iterations
+- [Node.js Batch Executor](https://techinsights.manisuec.com/nodejs/nodejs-batch-executor/): Advanced concurrent execution patterns and error handling
+- [Harnessing the Power of Top-Level Await](https://techinsights.manisuec.com/nodejs/harnessing-power-of-top-level-await/): Modern ES module patterns
+
+## Production Best Practices
+
+- [Production Setup Best Practices](https://techinsights.manisuec.com/nodejs/production-setup-best-practices/): Deployment, configuration, and infrastructure patterns
+- [Production Development Best Practices](https://techinsights.manisuec.com/nodejs/production-development-best-practices/): Advanced production patterns and monitoring
+- [Pino Logger with Express HTTP Context](https://techinsights.manisuec.com/nodejs/pino-logger-express-http-context/): Structured logging with request context
+- [Pino with Logrotate Utility](https://techinsights.manisuec.com/nodejs/pino-with-logrotate-utility/): Log management in production
+
+## Cloud & Infrastructure
+
+- [DynamoDB Complete Guide](https://techinsights.manisuec.com/nodejs/dynamodb-complete-guide/): Working with DynamoDB in Node.js applications
+- [DB in EC2 Private Subnet VPC](https://techinsights.manisuec.com/mongodb/db-ec2-private-subnet-vpc/): Network architecture and security
+
+## Tools & Development Setup
+
+- [Web Development Setup](https://techinsights.manisuec.com/javascript/web-development-setup/): Complete development environment configuration
+- [NVM, Node.js, and .nvmrc](https://techinsights.manisuec.com/nodejs/nvm-nodejs-nvmrc/): Node version management
+- [ESLint and Prettier VS Code Setup](https://techinsights.manisuec.com/javascript/eslint-prettier-vscode-setup/): Code quality tooling
+- [Generate API Documentation with Swagger and Joi](https://techinsights.manisuec.com/nodejs/generate-api-docs-swagger-joi/): API documentation automation
+- [Clustering and IPC in Node.js](https://techinsights.manisuec.com/nodejs/clustering-and-ipc/): Multi-process architecture
+
+## Optional
+
+- [MongoDB Installation on AWS EC2](https://techinsights.manisuec.com/mongodb/mongodb-installation-aws-ec2/): Complete MongoDB setup and configuration
+- [MongoDB Capped Collections](https://techinsights.manisuec.com/mongodb/mongodb-capped-collections/): Using fixed-size collections
+- [My Queries Aggregation in MongoDB Compass](https://techinsights.manisuec.com/mongodb/my-queries-aggregation-mongodb-compass/): Visual aggregation pipeline development
+- [MongoDB Views for Secure Data Access](https://techinsights.manisuec.com/mongodb/mongodb-views-secure-data-access/): Creating and using database views
+- [Time to Live (TTL) Index in MongoDB](https://techinsights.manisuec.com/mongodb/time-to-live-ttl-index-mongodb/): Automatic document expiration
+- [Node.js SQLite Guide](https://techinsights.manisuec.com/nodejs/nodejs-sqlite-guide/): Working with SQLite databases
+- [Express.js SQLite Caching](https://techinsights.manisuec.com/nodejs/expressjs-sqlite-caching/): Using SQLite as a cache layer
+- [Exploring Different File Systems](https://techinsights.manisuec.com/nodejs/exploring-different-filesystems/): File system operations in Node.js
+- [Storing Files in Database](https://techinsights.manisuec.com/javascript/storing-files-in-database/): Binary data storage strategies
+- [OTP Generator in Node.js](https://techinsights.manisuec.com/nodejs/otp-generator-nodejs/): Implementing one-time passwords
+- [AI with Node.js and TensorFlow.js](https://techinsights.manisuec.com/nodejs/ai-with-nodejs-and-tensorflowjs/): Machine learning in Node.js applications
+
