@@ -1,12 +1,15 @@
 name: Post message to X
-on: [push]
+on: 
+  push:
+    branches:
+      - main
 jobs:
   tweet:
     runs-on: ubuntu-latest
     steps:
       - uses: rg-wood/send-tweet-action@v1
         with:
-          status: "Hi, this is a test!"
+          status: 'https://techinsights.manisuec.com/${{ github.event.head_commit.message }}'
           consumer-key: ${{ secrets.CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.CONSUMER_API_SECRET }}
           access-token: ${{ secrets.ACCESS_TOKEN }}
