@@ -7,9 +7,13 @@ jobs:
   tweet:
     runs-on: ubuntu-latest
     steps:
+      - name: Sleep for 300s
+        uses: juliangruber/sleep-action@v1
+        with:
+          time: 300s
       - uses: rg-wood/send-tweet-action@v1
         with:
-          status: 'https://techinsights.manisuec.com/${{ github.event.head_commit.message }}'
+          status: 'Read my latest blog 👉🏼👉🏼👉🏼 https://techinsights.manisuec.com/${{ github.event.head_commit.message }}'
           consumer-key: ${{ secrets.CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.CONSUMER_API_SECRET }}
           access-token: ${{ secrets.ACCESS_TOKEN }}
