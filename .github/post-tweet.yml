@@ -1,1 +1,14 @@
-
+name: Post message to X
+continue-on-error: true
+on: [push]
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: rg-wood/send-tweet-action@v1
+        with:
+          status: "Hi, this is a test!"
+          consumer-key: ${{ secrets.CONSUMER_API_KEY }}
+          consumer-secret: ${{ secrets.CONSUMER_API_SECRET }}
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          access-token-secret: ${{ secrets.ACCESS_TOKEN_SECRET }}
