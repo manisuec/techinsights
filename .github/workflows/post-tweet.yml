@@ -2,7 +2,7 @@ name: Post message to X
 on: 
   push:
     branches:
-      - main
+      - master
 jobs:
   tweet:
     runs-on: ubuntu-latest
