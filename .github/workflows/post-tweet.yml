@@ -1,5 +1,4 @@
 name: Post message to X
-continue-on-error: true
 on: [push]
 jobs:
   tweet:
