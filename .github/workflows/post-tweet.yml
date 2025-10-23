@@ -7,10 +7,10 @@ jobs:
   tweet:
     runs-on: ubuntu-latest
     steps:
-      - name: Sleep for 300s
+      - name: Sleep for 180s
         uses: juliangruber/sleep-action@v1
         with:
-          time: 300s
+          time: 180s
       - uses: rg-wood/send-tweet-action@v1
         with:
           status: 'Read my latest blog 👉🏼👉🏼👉🏼 https://techinsights.manisuec.com/${{ github.event.head_commit.message }}'
