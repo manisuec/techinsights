@@ -13,7 +13,7 @@ aliases:
     - /post/2021-08-11-understand-event-loop-in-nodejs/
 ---
 
-[Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop) is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible.
+[Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop) is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible. Understanding the event loop is crucial for mastering [Node.js streams](/nodejs/streams-nodejs/) and [asynchronous programming patterns](/javascript/pitfalls-of-async-await-foreach-loop/).
 
 Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background. When one of these operations completes, the kernel tells Node.js so that the appropriate callback will eventually be executed.
 
@@ -183,12 +183,14 @@ nextTick 3
 ```
 
 ## Related Articles
-- [Understanding Timers and process.nextTick() in Node.js](https://techinsights.manisuec.com/nodejs/timers-and-process-next-tick/) - Learn about the differences between timers and process.nextTick()
-- [Handling Backpressure in Node.js Streams](https://techinsights.manisuec.com/nodejs/nodejs-streams-backpressure/) - Master stream backpressure handling
-- [Working with Streams in Node.js](https://techinsights.manisuec.com/nodejs/streams-nodejs/) - Deep dive into Node.js streams
-- [Using Top-Level Await Without Async](https://techinsights.manisuec.com/nodejs/top-level-await-without-async/) - Modern async/await patterns
-- [Common Pitfalls with Async/Await in forEach Loops](https://techinsights.manisuec.com/nodejs/pitfalls-of-async-await-foreach-loop/) - Avoid common async/await mistakes
-- [Understanding AbortController in Node.js](https://techinsights.manisuec.com/nodejs/abort-controller-nodejs/) - Learn about request cancellation
+
+### Node.js Core Concepts
+- [Understanding Timers and process.nextTick() in Node.js](/nodejs/nodejs-timers/) - Deep dive into timers and process.nextTick() differences
+- [Working with Streams in Node.js](/nodejs/nodejs-streams/) - Master Node.js streams for data processing
+
+### Advanced Node.js Topics
+- [Understanding AbortController in Node.js](/nodejs/nodejs-async-operations-abortcontroller-abortsignal/) - Request cancellation and timeout handling
+- [Node.js Performance Monitoring](/nodejs/monitoring-nodejs-applications/) - Production monitoring and optimization
 
 ## Conclusion
 

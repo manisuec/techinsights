@@ -43,7 +43,7 @@ Indexes play a pivotal role in query performance and are essential for mongodb p
 Combine multiple fields into a single index to support multi-field queries. A compound index can significantly speed up queries involving multiple fields.
 
 - **Partial Indexes**
-Partial indexes are a specialized type of index that index only the documents in a collection that meet a specified filter condition. It is a space-efficient technique to index only those documents that are most frequently queried. Read more at [Boost Performance Using Mongodb Partial Index](https://techinsights.manisuec.com/mongodb/mongodb-partial-index/)
+Partial indexes are a specialized type of index that index only the documents in a collection that meet a specified filter condition. It is a space-efficient technique to index only those documents that are most frequently queried. Read more at [Boost Performance Using Mongodb Partial Index](/mongodb/mongodb-partial-index/)
 
 - **Covering Indexes**
 Include all necessary fields in an index to eliminate the need for additional data fetching. This approach can dramatically improve query performance.
@@ -103,13 +103,16 @@ Back up your data regularly to safeguard against data loss. Utilize tools like m
 Employ MongoDB's built-in monitoring and profiling tools to identify and address performance bottlenecks.
 
 ## Related Articles
-- [MongoDB Index Optimization](https://techinsights.manisuec.com/mongodb/mongodb-index-optimization/) - Learn how to optimize your MongoDB indexes
-- [Using Partial Indexes in MongoDB](https://techinsights.manisuec.com/mongodb/mongodb-partial-index/) - Create efficient partial indexes
-- [Working with MongoDB Views](https://techinsights.manisuec.com/mongodb/mongodb-views/) - Leverage MongoDB views for complex queries
-- [MongoDB Compass Aggregations](https://techinsights.manisuec.com/mongodb/mongodb-compass-aggregations/) - Master MongoDB Compass for query analysis
-- [Understanding Capped Collections](https://techinsights.manisuec.com/mongodb/mongodb-capped-collections/) - Use capped collections for performance
-- [Time-to-Live Indexes in MongoDB](https://techinsights.manisuec.com/mongodb/time-to-live-index-mongodb/) - Implement TTL indexes for data expiration
-- [Storing Files in MongoDB](https://techinsights.manisuec.com/mongodb/storing-files-in-database/) - Best practices for file storage
+
+### MongoDB Performance & Optimization
+- [MongoDB Index Optimization](/mongodb/mongodb-index-optimization/) - Advanced indexing strategies for maximum performance
+- [Using Partial Indexes in MongoDB](/mongodb/mongodb-partial-index/) - Create space-efficient partial indexes
+
+### Mongoose & Schema Design
+- [Mongoose Schema Anti-Patterns](/mongodb/mongoose-schema-antipatterns/) - Avoid common schema design mistakes
+- [Advanced Mongoose Patterns](/mongodb/mongoose-uncommon-patterns/) - Complex data modeling techniques
+- [Mongoose Schema Validation](/mongodb/mongoose-schema-validation/) - Comprehensive validation strategies
+- [Mongoose Transactions](/mongodb/mongoose-transactions/) - Ensure data consistency with transactions
 
 ## Conclusion
 

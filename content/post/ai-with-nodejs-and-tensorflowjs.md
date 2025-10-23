@@ -300,9 +300,18 @@ WASM is ~ 3× slower than tfjs-node but < 3 MB runtime.
 - WebGPU compute will merge into Node via Dawn native.
 - LangChain.js already supports TensorFlow embeddings; perfect for RAG apps.
 
+## Related Articles
+
+- [Node.js Event Loop Deep Dive](/nodejs/nodejs-event-loop/) - Understanding async operations for ML workloads
+- [Node.js Performance Monitoring](/nodejs/monitoring-nodejs-applications/) - Monitor ML model performance in production
+- [JavaScript Object Memory Management](/javascript/object-memory-management/) - Optimize memory usage for ML models
+- [ES6 Destructuring in JavaScript](/javascript/es6-destructuring/) - Clean data extraction from ML results
+- [JavaScript V8 JIT Optimization](/javascript/v8-jit-compiler-optimization-techniques) - Optimize JavaScript performance for ML
+- [Node.js Security Checklist](/nodejs/nodejs-security-checklist/) - Secure ML APIs and data
+
 ## Final Thoughts: AI with Tensorflowjs and Nodejs
 
-Master ML with Nodejs & TensorFlowjs; build, train, deploy AI models in JavaScript, no Python switch needed. Whether you’re building simple prediction APIs or complex neural networks, TensorFlowjs provides the tools you need while leveraging the familiar JavaScript ecosystem. As the library continues to evolve, we can expect even more powerful features and better performance optimizations.
+Master ML with Nodejs & TensorFlowjs; build, train, deploy AI models in JavaScript, no Python switch needed. Whether you're building simple prediction APIs or complex neural networks, TensorFlowjs provides the tools you need while leveraging the familiar JavaScript ecosystem. As the library continues to evolve, we can expect even more powerful features and better performance optimizations.
 
 ---
 
