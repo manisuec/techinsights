@@ -1,10 +1,12 @@
 name: Post message to X
-on: 
-  push:
+on:
+  pull_request:
+    types: [closed]
     branches:
       - master
 jobs:
   tweet:
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'blog')
     runs-on: ubuntu-latest
     steps:
       - name: Sleep for 180s
