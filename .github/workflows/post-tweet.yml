@@ -11,10 +11,17 @@ jobs:
         uses: juliangruber/sleep-action@v1
         with:
           time: 180s
-      - uses: rg-wood/send-tweet-action@v1
+      - name: Post tweet
+        uses: rg-wood/send-tweet-action@v1
         with:
           status: 'Read my latest blog 👉🏼👉🏼👉🏼 https://techinsights.manisuec.com/${{ github.event.head_commit.message }}'
           consumer-key: ${{ secrets.CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.CONSUMER_API_SECRET }}
           access-token: ${{ secrets.ACCESS_TOKEN }}
           access-token-secret: ${{ secrets.ACCESS_TOKEN_SECRET }}
+      - name: indexnow-action
+        uses: bojieyang/indexnow-action@v2
+        with:
+          sitemap-location: 'https://techinsights.manisuec.com/sitemap.xml'
+          key: ${{ secrets.INDEXNOW_KEY }}
+          since: 2
