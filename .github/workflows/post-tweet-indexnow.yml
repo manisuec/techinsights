@@ -16,7 +16,7 @@ jobs:
       - name: Post tweet
         uses: rg-wood/send-tweet-action@v1
         with:
-          status: 'Read my latest blog 👉👉 https://techinsights.manisuec.com/${{ github.event.pull_request.title }}'
+          status: 'Read my latest blog 👉👉 ${{ github.event.pull_request.body }} https://techinsights.manisuec.com/${{ github.event.pull_request.title }}'
           consumer-key: ${{ secrets.CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.CONSUMER_API_SECRET }}
           access-token: ${{ secrets.ACCESS_TOKEN }}
