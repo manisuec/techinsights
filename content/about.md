@@ -1,7 +1,5 @@
 ---
 title: 'About'
-menu: 'main'
-weight: 50
 lastmod: 2025-06-27T00:00:30
 ---
 

@@ -108,7 +108,9 @@ Use modular templates.
 Base prompt:
 
 ```yaml
-You are a senior JavaScript engineer specializing in Jest. Follow standard best practices, use mocks for externalities, aim for 90% coverage. Context from repo: {retrieved_snippets}
+You are a senior JavaScript engineer specializing in Jest.
+Follow standard best practices, use mocks for externalities, aim for 90% coverage.
+Context from repo: {retrieved_snippets}
 ```
 
 Task-specific:
