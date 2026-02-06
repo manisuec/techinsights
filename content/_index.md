@@ -18,4 +18,5 @@ categories:
       description: ""
       thumbnail: "https://res.cloudinary.com/dkiurfsjm/image/upload/v1692621749/general-tech_nou1q6.jpg"
       url: "/general"
+images: ["/img/hero-image.svg"]
 ---
