@@ -7,9 +7,9 @@ thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/React-
 date: 2025-06-22 00:00:00 +0530
 lastmod: 2025-06-22T00:00:30
 tags: ['reactjs', 'hooks', 'javascript', 'frontend']
-categories: ['Reactjs']
+categories: ['Javascript']
 keywords: 'reactjs,hooks,javascript,frontend,anti-patterns,performance'
-url: 'reactjs/react-hooks-antipatterns'
+url: 'javascript/react-hooks-antipatterns'
 ---
 
 React Hooks fundamentally transformed how we write functional components, introducing a more intuitive and powerful way to manage state and side effects. However, this power comes with significant responsibility. After extensive experience with hooks in production environments, I've identified critical anti-patterns that consistently lead to bugs, performance degradation, and maintenance nightmares.

@@ -1,7 +1,7 @@
 ---
-title: 'About'
-menu: 'main'
-weight: 50
+title: 'About Me'
+type: 'page'
+layout: 'about'
 lastmod: 2025-06-27T00:00:30
 ---
 
@@ -11,7 +11,7 @@ My life has been largely driven by the philosphy of: *"In character, in manners,
 
 My name is Manish Prasad. I am part of **'Founding Team'** at [Powerplay](https://www.getpowerplay.in). I am a movie buff and a big fan of Penelope Cruz and Kangana Ranaut. I love to watch F1. An avid traveller and my soul just feels at home in mountains and forest.
 
-Welcome to my technical development hub, where I dive deep into the ever evolving world of software engineering and modern application development.I am dedicated to empowering developers with practical, solution oriented content that transforms complex technical concepts into actionable implementations. My work spans the complete ecosystem of modern development, from AI powered product innovation to the foundational technologies that enable scalable applications.
+Welcome to my technical development hub, where I dive deep into the ever evolving world of software engineering and modern application development. I am dedicated to empowering developers with practical, solution oriented content that transforms complex technical concepts into actionable implementations. My work spans the complete ecosystem of modern development, from AI powered product innovation to the foundational technologies that enable scalable applications.
 
 ### Areas of Expertise
 
@@ -48,12 +48,3 @@ I recognize the unique pressures of modern software development; from managing a
 ***Note:** The opinions or views expressed here are my own personal opinions/views and do not represent my employer's view in anyway.*
 
 -----
-
-> *If you the blog posts and find them helpful, you can [buy me a coffee](https://www.buymeacoffee.com/manisuec) to keep me energized for writing blogs for you.*
-[![buy me a coffee](https://cdn-images-1.medium.com/max/1600/0*dMZ0BEHDv4MJYYGW.png)](https://www.buymeacoffee.com/manisuec)
-
-
-|  |
-| --- |
-| [![medium](https://img.shields.io/badge/Medium-black?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@manisuec) |
-| [manisuec.com ![website](/img/profile.jpg)](https://manisuec.com) |

@@ -1,201 +1,118 @@
+# Editorial Magazine Theme Configuration
 baseURL = "https://techinsights.manisuec.com/"
 languageCode = "en"
-defaultContentLanguage = "en"                            
-title = "Tech Insights on NodeJS, Javascript, Mongodb"
-preserveTaxonomyNames = true
+defaultContentLanguage = "en"
+title = "Tech Insights on Nodejs, Javascript, Mongodb"
+theme = "editorial-theme"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "even"
-enableGitInfo = false # use git commit log to generate lastmod record
+enableGitInfo = false
 summaryLength = 30
 
-# Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
-pygmentsOptions = "linenos=table"
+# Syntax highlighting
+pygmentsOptions = ""
 pygmentsCodefences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
 
-hasCJKLanguage = false                          
-copyright = ""            # default: author.name ↓        #
+hasCJKLanguage = false
 
+# Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Pagination
 [pagination]
-  disableAliases = false
-  pagerSize = 5
-  
-[sitemap]                 # essential                     #
+  pagerSize = 6
+
+# Sitemap
+[sitemap]
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]
-  name = "Home"
-  weight = 20
-  identifier = "home"
-  url = "/"
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
-[[menu.main]]
-  name = "Blogs"
-  weight = 25
-  identifier = "archives"
-  url = "/post/"
+# Menu
+[menu]
+  [[menu.main]]
+    name = "Articles"
+    url = "/post/"
+    weight = 1
 
+  [[menu.main]]
+    name = "Topics"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
+    name = "About Me"
+    url = "/about/"
+    weight = 3
+
+# Params
 [params]
-  version = "4.x"           # Used to give a friendly message when you have an incompatible update
-  debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
   author = "Manish Prasad"
-  url = "https://manisuec.com"
-  googleAnalytics = "G-YZX0J3052R"
-  disqusShortname = ""
-
-  since = "2019"            # Site creation time          
-  # use public git repo url to link lastmod git commit, enableGitInfo should be true.
-  gitRepo = ""
-
-  # site info (optional)                                  
-  logoTitle = "Tech Insights"        # default: the title value
-  keywords = ["tech","blog","manisuec"]
   description = "A personal tech blog exploring NodeJS, ExpressJS, MongoDB, ReactJS, and more. Offering consultancy services in the MERN stack"
+  keywords = ["tech", "blog", "manisuec", "nodejs", "javascript", "mongodb"]
+  googleAnalytics = "G-YZX0J3052R"
 
-  # paginate of posts, tags and categories             
-  archivePaginate = 10
+  # Hero section
+  heroTitle = "Deep Tech Wisdom"
+  heroSubtitle = "For backend developers who care about craft"
 
-  # show 'xx Posts In Total' in archive page ?           
-  showArchiveCount = false
+  # Featured section
+  featuredTitle = "Deep Technical Insights"
+  featuredDescription = "Empowering developers with practical, solution oriented content that bridges the gap between complex technical concepts and real world implementation."
 
-  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+  # Stats
+  [[params.stats]]
+    label = "Articles"
+    value = "100+"
+
+  [[params.stats]]
+    label = "Experience"
+    value = "18+ yrs"
+
+  # Social links
+  [params.social]
+    github = "https://github.com/manisuec"
+    twitter = "https://twitter.com/lifeClicks25"
+    linkedin = "https://linkedin.com/in/manish-prasad-64448614/"
+    medium = "https://medium.com/@manisuec"
+    email = "mailto:manishvaishu25@gmail.com"
+
+  # Support Author / Buy Me a Coffee
+  [params.supportAuthor]
+    text = "Enjoyed the story? Support more contents like this by buying me a coffee"
+    url = "https://www.buymeacoffee.com/manisuec"
+    imageUrl = "https://res.cloudinary.com/dkiurfsjm/image/upload/v1770031915/buymeacoffee_amggrj.png"
+
+  # Date format
   dateFormatToUse = "Jan 2, 2006"
 
-  # show word count and read time ?                       
-  moreMeta = true
-
-  # Syntax highlighting by highlight.js
-  highlightInClient = false
-
-  # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
-  toc = true                                                                           
-  autoCollapseToc = true   # Auto expand and collapse toc                             
-  fancybox = true         # Disable fancybox for better performance  
-  fontawesome = true           
-
-  # mathjax
-  mathjax = false           # see https://www.mathjax.org/                             
-  mathjaxEnableSingleDollar = false                                                    
-  mathjaxEnableAutoNumber = false                                                      
-  mathjaxUseLocalFiles = false  # You should install mathjax in `your-site/static/lib/mathjax`
-
-  postMetaInFooter = true   # contain author, lastMod, markdown link, license           
-  linkToMarkDown = false    # Only effective when hugo will output .md files.          
-  contentCopyright = ''     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
-
-  changyanAppid = ""        # Changyan app id             
-  changyanAppkey = ""       # Changyan app key
-
-  livereUID = ""            # LiveRe UID                 
-
-  baiduPush = false        # baidu push                 
-  baiduAnalytics = ""      # Baidu Analytics
-  baiduVerification = ""   # Baidu Verification
-  googleVerification = ""  # Google Verification        
-
-  # Link custom CSS and JS assets
-  #   (relative to /static/css and /static/js respectively)
-  customCSS = ["lazyload.css"]
-  customJS = []
-
-  uglyURLs = false          # please keep same with uglyurls setting
-
-  # Enable image lazy loading
-  lazyLoading = true
-
-  # Image optimization settings
-  imageOptimization = false
-
+  # Images for social sharing
   images = ["https://d33wubrfki0l68.cloudfront.net/2aa8902b2448ad8845e4ee05a99416b76fa8c1d8/f9a85/img/bg-about.jpg"]
 
-  [params.publicCDN]        # load these files from public cdn                          
+  # MailerLite configuration
+  [params.mailerlite]
     enable = true
-    jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" defer></script>'
-    # slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous" defer></script>'
-    fontawesome = """<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>"""
-    timeagoJS = '<script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous" defer></script>'
-    timeagoLocalesJS = '<script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous" defer></script>'
-    sequenceDiagramsCSS = """<link rel="preload" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous"><noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous"></noscript>"""
+    groupId = "132339907027797486"
+    apiKey = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiMzdjZDM4ODA5MWRiOTRiZDkwMTlhZTgzMzdjNjRlYmJiNTNkYWJkYmYwYzg2YzU2Nzc2YjIxYzJjNDYyNzk5MTU1ZWVmZjU0NGY0ZDMxYzIiLCJpYXQiOjE3NzAzNjkzNzEuMTI0MTU2LCJuYmYiOjE3NzAzNjkzNzEuMTI0MTYsImV4cCI6NDkyNjA0Mjk3MS4xMDk1OTQsInN1YiI6IjExMTEzNzkiLCJzY29wZXMiOltdfQ.Oku-ycCkCeFStBCO_fliJWFtyXalF_pn8z6i1l2b92YwzZ7AXe0QzfRXkz_LZBvRSEluH5MuqkwK3os1sqPxWo-RuWO_YF1MzzM87xY0dVWWdLsxcRtV-9IoR2xtlkUrUSE4mmIkfpkuZAww-jt8OyI9N2XvFeEZ-dL_P4xViyMJugSdL4sHjRk4TIYKOAT_6P-a_kD2b34LNDDQ1F4r5oAzfOnOncYPPHcmw2fIvtDA6H4wdGkt5yh3x-nTelry-ya7MY5UwKyPReAFrACfSEgaPU5OirWrT2_qBUHRn5oOKIdo58GqY_kqsTzK-MGzCqAamz9AE1EGix5ClQL53wv-MP-H2cFkUyRmQpCRH46VZfl8VX1nDzcnuY-saDuV5K1yUeNj1CHHfnDhZjOPIfe-o9hea2VUJA_Y_XJHcSKcbbl5Dkg1oBSTm3dRGntU67qOxCKkghEE5PnORiBHwFy8fwE_CtNKZLEVIfT9vlnX9LjwFGEQ8t6n3z1zsKTgD38vaI5n06uRe94THLDqXXgjckfCtXD8iSzu1XB1bpJ3VkTXKjYfvG3hCilGk7_KIXYQ1iDatYmg4Cx525eWIzwDbd0h-3QTHWn2H2t0fMNtN7tzEjrjzqc3tqiP_puJiUY3yojHEapxpn17UaMMnrsvf4oCbZbRnov10fGg4ek"
 
-  # Display a message at the beginning of an article to warn the readers that it's content may be outdated.
-  [params.outdatedInfoWarning]
-    enable = false
-    hint = 30               # Display hint if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示提醒
-    warn = 180              # Display warning if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示警告
-
-  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
-
-  [params.utterances]       # https://utteranc.es/
-    owner = ""              # Your GitHub ID
-    repo = "techinsights"   # The repo to store comments
-
-  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
-  
-  [params.mailerlite]       # mailerlite
-    enable = true           # 
-    accountId = "1101287"   # Your account ID
-    defer = true            # Defer the loading of mailerlite script
-
-  # Valine.
-  # You can get your appid and appkey from https://leancloud.cn
-  # more info please open https://valine.js.org
-  [params.valine]
-    enable = false
-    appId = '你的appId'
-    appKey = '你的appKey'
-    notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
-    verify = false # Verification code
-    avatar = 'mm' 
-    placeholder = '说点什么吧...'
-    visitor = false
-
-  [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
-    enable = false
-    options = ""
-
-  [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
-    enable = false
-    options = ""            # default: "{theme: 'simple'}"
-
-  [params.busuanzi]         # count web traffic by busuanzi                            
-    enable = false
-    siteUV = false
-    sitePV = false
-    pagePV = false
-
-  [params.reward]                                        
-    enable = false
-    wechat = "/path/to/your/wechat-qr-code.png"           
-    alipay = "/path/to/your/alipay-qr-code.png"          
-
-  [params.social]                                        
-    a-email = "mailto:manishvaishu25@gmail.com"
-    c-twitter = "https://twitter.com/lifeClicks25"
-    g-github = "https://github.com/manisuec"
-
-  [params.subscribe]
-    enable = false
-
-# See https://gohugo.io/about/hugo-and-gdpr/
+# Privacy settings
 [privacy]
   [privacy.googleAnalytics]
-    anonymizeIP = true      # 12.214.31.144 -> 12.214.31.0
+    anonymizeIP = true
   [privacy.youtube]
     privacyEnhanced = true
 
-# Output options (https://gohugo.io/content-management/formats/) 
+# Output options
 [outputs]
   home = ["HTML", "RSS"]
   page = ["HTML"]

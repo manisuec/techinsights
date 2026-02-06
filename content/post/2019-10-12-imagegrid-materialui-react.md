@@ -7,8 +7,8 @@ title: "Build a Scrollable Image Grid in ReactJS Using MaterialUI: Easy Guide"
 description: Learn how to create a scrollable image grid in ReactJS using Material UI. Discover the power of lazy loading to enhance your web performance.
 tags: ['reactjs', 'material-ui', 'image grid', 'grid']
 keywords: 'reactjs,material-ui,image grid,grid,javascript'
-categories: ['Reactjs']
-url: 'reactjs/react-materialui-imagegrid'
+categories: ['Javascript']
+url: 'javascript/react-materialui-imagegrid'
 aliases:
     - /post/2019-10-12-imagegrid-materialui-react/
 ---
