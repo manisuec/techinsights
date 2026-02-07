@@ -4,7 +4,7 @@ title: "Advanced Authentication Patterns in Node.js & Express.js"
 description: "Master advanced Node.js/Express authentication: JWT + HttpOnly cookies, refresh token rotation, passkeys, magic links & more secure patterns with code."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-11-25 00:00:00 +0530
-lastmod: 2025-11-25T16:30:00
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1764061180/authentication_jlmr8f.jpg']
 tags: ['nodejs', 'security', 'expressjs', 'authentication']
 categories: ['Nodejs']

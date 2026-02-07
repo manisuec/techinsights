@@ -4,6 +4,7 @@ title: "Boost Performance Using Mongodb Partial Index"
 description: Partial indexes in MongoDB efficiently index only documents meeting specific conditions, speeding up queries and saving space, ideal for frequent searches.
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2024-07-09 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1720545553/mongodb-partial-index_fpsr4a.jpg']
 tags: ['mongodb','indexing','database']
 keywords: 'mongodb,indexing,partial,database,performance'

@@ -5,7 +5,7 @@ description: "Explore how JavaScript manages object memory: learn about heap all
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1748936387/pexels-jorge-jesus-137537-614117_ezmo3s.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2025-06-03 00:00:00 +0530
-lastmod: 2025-06-03T00:00:30
+lastmod: 2026-02-07T00:00:30
 tags: ['javascript', 'memory', 'JS Object', 'performance']
 categories: ['Javascript']
 keywords: 'javascript,memory management,JS Object,heap,garbage collection,hidden class,leak,optimization'

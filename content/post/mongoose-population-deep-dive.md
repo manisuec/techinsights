@@ -4,7 +4,7 @@ description: 'A comprehensive guide to Mongoose schema validation, including bui
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1751455478/data-validation_z00sre.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2025-07-07 00:00:00 +0530
-lastmod: 2025-07-16 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 tags: ["mongoosejs", "mongodb", "nodejs", "database"]
 categories: ['Mongodb']
 keywords: 'mongoose,data population,mongodb,schema'

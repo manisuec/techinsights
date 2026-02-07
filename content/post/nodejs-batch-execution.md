@@ -4,7 +4,7 @@ title: "Promise.all() Is Fine... Until It Isn’t!"
 description: "Learn why Promise.all() can fail at scale and how a promise batch batch executor ensures controlled concurrency with timeouts & graceful error handling in Nodejs."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-08-22 00:00:00 +0530
-lastmod: 2025-09-05T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1755859269/nodejs-concurrency_bq1fkm.jpg']
 tags: ['nodejs', 'javascript', 'promise', 'concurrency']
 keywords: 'nodejs,javascript,async,concurrency,batch executor,promise.all,performance'

@@ -3,7 +3,7 @@ layout: post
 title: 'Why Storing Files in the Database is a Bad Practice: Best Alternatives'
 description: Discover why storing files in a database is considered a bad practice. Explore the downsides and learn about alternative industry best practices methods
 date: 2023-08-21 00:00:00 +0530
-lastmod: 2026-01-06T00:00:00
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1692621172/file-storage-in-database_xbwidi.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1692621749/general-tech_nou1q6.jpg'
 tags: ['database', 'tech']

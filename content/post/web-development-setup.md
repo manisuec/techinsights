@@ -4,7 +4,7 @@ title: "The Complete MacBook Setup Guide for Web Development"
 description: A comprehensive guide to setting up your MacBook for professional web development. Learn essential tools, configurations, and best practices for an efficient development environment.
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2023-01-18 00:00:00 +0530
-lastmod: 2025-05-27T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1674035486/macbook_development_b0rlfv_vi6k9t.jpg']
 tags: ['nodejs', 'javascript', 'development', 'macos', 'tools']
 keywords: 'nodejs,nvm,macbook,web development,javascript,vs code,git,zsh,m1,apple,development setup,homebrew,docker,postman'

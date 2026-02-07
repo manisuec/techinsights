@@ -5,7 +5,7 @@ description: "Learn why template literals should be avoided for URL construction
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1687259385/ts_url_jydkn8.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2023-06-20 00:00:00 +0530
-lastmod: 2025-05-27T00:00:30
+lastmod: 2026-02-07T00:00:30
 tags: ['javascript', 'template literals', 'url', 'best practices', 'web development']
 categories: ['Javascript']
 keywords: 'javascript,template literals,url search params,url,params,template strings,strings,query,query params'

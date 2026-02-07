@@ -4,7 +4,7 @@ title: "Bring AI to Javascript with Nodejs and Tensorflowjs"
 description: "Master ML with Nodejs & TensorFlowjs; build, train, deploy AI models in JavaScript, no Python switch needed."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-10-07 00:00:00 +0530
-lastmod: 2025-10-07T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1759829929/ai-with-nodejs-tensorflowjs_elv2rj.jpg']
 tags: ['nodejs', 'javascript', 'tensorflowjs', 'artificial intelligence', 'machine learning']
 keywords: 'nodejs,javascript,tensorflowjs,artificial intelligence,machine learning'

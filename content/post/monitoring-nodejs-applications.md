@@ -3,7 +3,7 @@ layout: post
 title: Monitoring Tips for Nodejs Applications
 description: Learn essential nodejs application monitoring strategies. Discover how to monitor nodejs apps for optimal performance, track response times & prevent issues.
 date: 2024-02-26 00:00:00 +0530
-lastmod: 2025-07-23T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1708952649/pexels-josh-sorenson-1714208_qexmpg.jpg']
 thumbnail: https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png
 tags: ['monitoring', 'nodejs']

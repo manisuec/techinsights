@@ -4,7 +4,7 @@ title: "Master Input Validation & Sanitization in Node.js/Expressjs"
 description: "Boost Express.js security against injections through effective input sanitization. Includes step-by-step code snippets for immediate implementation."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2026-01-19 00:00:00 +0000
-lastmod: 2026-01-19T00:00:00
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1768824552/input-validation-sanitization_toexya.png']
 tags: ['nodejs', 'express', 'security', 'validation']
 keywords: 'input validation, sanitization, injection attacks, xss prevention'

@@ -2,9 +2,8 @@
 layout: post
 title: 'Mongoose Discriminator: The non DRY way to inherit schema properties'
 description: Unlock the power of Mongoose Discriminators for schema inheritance. Learn how to use multiple models with overlapping schemas in a single MongoDB collection
-images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1677493083/mongoose-discriminator_c5elpt.png']
-thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2023-02-27 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 tags: [mongoosejs, 'mongodb', 'javascript']
 categories: ['Mongodb']
 keywords: 'mongoose,discriminator,dry,polymorphism,mongodb'

@@ -3,6 +3,7 @@ layout: post
 title: "Enhance MongoDB Aggregation Experience with MongoDB Compass Queries"
 description: MongoDB Compass offers an aggregation pipeline builder and query saving features. Export aggregations, generate explain plans, and streamline debugging.
 date: 2023-01-30 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1675067686/aggregation_g1ra8g.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 tags: ['mongodb', 'mongodb compass', 'aggregation pipeline']

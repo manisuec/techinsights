@@ -4,6 +4,7 @@ title: "MongoDB Index Optimization: Boost Performance & Reduce Overhead"
 description: "Learn how to identify and remove unnecessary MongoDB indexes to improve write performance, reduce storage needs, and optimize database efficiency."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2025-05-20 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1747742073/lnyixzho3mucjc1v9-Hero-image_mzdnh1.svg']
 tags: ['mongodb','database', 'performance', 'indexing']
 keywords: 'mongodb,database,performance, indexing, optimisation'

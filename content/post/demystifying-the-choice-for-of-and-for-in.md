@@ -3,6 +3,7 @@ layout: post
 title: 'Javascript Loops: Simplify Choice between for...of and for...in loop'
 description: Struggling to differentiate between for...in and for...of loops in JavaScript? Learn a simple memory trick to master them once and for all.
 date: 2023-08-18 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1692354808/loop_n3lz2r.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 tags: ['javascript', 'loops', 'nodejs']

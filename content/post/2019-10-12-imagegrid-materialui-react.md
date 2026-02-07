@@ -1,7 +1,7 @@
 ---
 background: /img/posts/04.jpg
 date: '2019-10-12T00:00:00Z'
-lastmod: 2024-09-05T00:00:30
+lastmod: 2026-02-07T00:00:30
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/React-Dark_trdwyz.jpg'
 title: "Build a Scrollable Image Grid in ReactJS Using MaterialUI: Easy Guide"
 description: Learn how to create a scrollable image grid in ReactJS using Material UI. Discover the power of lazy loading to enhance your web performance.

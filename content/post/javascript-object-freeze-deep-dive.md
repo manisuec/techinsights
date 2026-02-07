@@ -2,9 +2,8 @@
 layout: post
 title: 'Deep dive into Object.freeze() in Javascript'
 description: "Discover Object.freeze() in JavaScript: Learn how it creates immutable objects, preventing modifications and ensuring the highest level of data integrity"
-images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1676446736/deep-dive_y0omgf.jpg']
-thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2023-02-15 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 tags: ['javascript', 'es6','object']
 categories: ['Javascript']
 keywords: 'javascript,object,object.freeze(),es6,deep dive,object seal,object freeze,freeze,seal'

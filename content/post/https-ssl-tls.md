@@ -4,7 +4,7 @@ title: "HTTPS and SSL/TLS: Securing Node.js Applications in 2025"
 description: "A complete authoritative guide to implementing modern HTTPS/TLS in Node.js ;  certificates, best practices, code examples, and why plain HTTP is no longer acceptable."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-11-17 00:00:00 +0530
-lastmod: 2025-11-17T16:30:00
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1763378826/https-tls-security_zt8ag3.jpg']
 tags: ['nodejs', 'security', 'https', 'tls', 'express', 'letsencrypt']
 categories: ['Nodejs']

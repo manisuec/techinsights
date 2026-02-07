@@ -4,7 +4,7 @@ title: "Amazon DynamoDB: The Complete Production Guide to NoSQL at Scale"
 description: "Master Amazon DynamoDB's architecture, performance characteristics, and production patterns. From single-digit millisecond latency to global distribution, learn how to build infinitely scalable applications with Node.js."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-10-10 00:00:00 +0530
-lastmod: 2025-10-10T00:00:00
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1760081467/aws-dynamodb_nbys4y.jpg']
 tags: ['aws', 'dynamodb', 'nosql', 'nodejs', 'database', 'scalability']
 keywords: 'aws dynamodb,nosql database,serverless database,dynamodb nodejs,aws sdk,scalable database,partition keys,global secondary indexes,dynamodb performance'

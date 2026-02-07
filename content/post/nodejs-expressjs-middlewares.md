@@ -3,7 +3,7 @@ layout: post
 title: 7 Powerful Nodejs Middleware Patterns for Cleaner Expressjs Apps
 description: Master Express middleware with 7 reusable patterns for cleaner, scalable Nodejs apps. Includes code & best practices checklist.
 date: 2025-08-19 00:00:00 +0530
-lastmod: 2025-08-19T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1755597644/middlewares_sasnzv.jpg']
 thumbnail: https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png
 tags: ['monitoring', 'nodejs']

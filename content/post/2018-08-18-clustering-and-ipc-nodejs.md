@@ -1,6 +1,7 @@
 ---
 background: /img/posts/01.png
 date: '2018-08-18T00:00:00Z'
+lastmod: 2026-02-07T00:00:30
 title: Clustering & Inter Process Communication (IPC) in NodeJS
 description: Optimize Nodejs performance by using the cluster module. Clustering enhances app efficiency, enables zero downtime deployments, and is essential for production
 tags: ['nodejs', 'ipc', 'clustering']

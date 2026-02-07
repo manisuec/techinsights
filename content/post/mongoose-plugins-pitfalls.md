@@ -5,7 +5,7 @@ description: 'Learn the costly mistakes with Mongoose plugins and how to avoid t
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1747742073/lnyixzho3mucjc1v9-Hero-image_mzdnh1.svg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2025-07-21 00:00:00 +0530
-lastmod: 2025-07-21T00:00:30
+lastmod: 2026-02-07T00:00:30
 tags: ['mongoosejs', 'mongodb', 'nodejs', 'plugins', 'schema']
 categories: ['Mongodb']
 keywords: 'mongoose,plugins,mongodb,nodejs,pitfalls'

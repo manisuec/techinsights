@@ -5,7 +5,7 @@ title: "Puppeteer Mastery: Complete Guide to Headless Browser Automation"
 description: "Master Puppeteer for web automation: advanced techniques, performance optimization, real-world examples, and production-ready patterns for testing, scraping, and PDF generation."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-10-23 00:00:00 +0530
-lastmod: 2025-10-23T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1761196494/browser_n862td.jpg']
 tags: ['puppeteer', 'automation', 'testing', 'web-scraping']
 keywords: 'puppeteer,automation,testing,web scraping,headless browser'

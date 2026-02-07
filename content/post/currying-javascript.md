@@ -3,7 +3,7 @@ layout: post
 title: 'Is Currying in JavaScript Just A Chain of Functions?'
 description: Discover best practices for handling diverse filesystems in Nodejs ensuring simplicity and safety in your code.
 date: 2025-04-14T00:00:30
-lastmod: 2025-04-14T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1744631547/javascript-currying_p16jgq.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 tags: ['javascript']

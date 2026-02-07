@@ -5,7 +5,7 @@ description: "MongoDB security best practices and anti-patterns. Learn to protec
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1751003156/mongodb-security_ronkbc.webp']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2025-06-27 00:00:00 +0530
-lastmod: 2025-06-27T00:00:30
+lastmod: 2026-02-07T00:00:30
 tags: ['mongodb', 'database', 'security']
 categories: ['Mongodb']
 keywords: 'mongodb,database,security,mongoose,anti-patterns'

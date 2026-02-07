@@ -3,7 +3,7 @@ layout: post
 title: 'Mastering Filesystem Operations in Nodejs: A Comprehensive Guide'
 description: A detailed exploration of filesystem handling in Nodejs with practical examples and best practices for cross-platform compatibility.
 date: 2023-08-04 00:00:00 +0530
-lastmod: 2025-05-26T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1691221519/pexels-anete-lusina-4792288_lt95ab.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'filesystem', 'cross-platform']

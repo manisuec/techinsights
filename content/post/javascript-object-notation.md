@@ -5,7 +5,7 @@ description: 'Learn when to use dot vs. bracket notation to keep your JavaScript
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1754396758/javascript-dot-vs-bracket-notation_bmyh2x.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2025-08-05 00:00:00 +0530
-lastmod: 2025-08-05T00:00:30
+lastmod: 2026-02-07T00:00:30
 tags: ['javascript', 'Javascript Object', 'JS Object', 'object']
 categories: ['Javascript']
 keywords: 'javascript,JS Object,javascript object,bracket notation'

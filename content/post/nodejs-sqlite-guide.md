@@ -4,7 +4,7 @@ title: "SQLite Nodejs Guide: Native Module Tutorial & Examples"
 description: "Learn to use Nodejs v22+ native SQLite module: setup, prepared statements, custom functions, real-world examples, performance tips, and zero-dependency code snippets."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-09-09 00:00:00 +0530
-lastmod: 2025-09-09T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1757420416/sqlite-database_l7pn6f.png']
 tags: ['nodejs', 'sqlite', 'database']
 keywords: 'nodejs,sqlite,database,native module'

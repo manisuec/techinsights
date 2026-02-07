@@ -4,7 +4,7 @@ title: "Ship Safer Nodejs APIs: Validate & Sanitize (Joi vs Zod)"
 description: "Secure Node.js APIs: Master Input Validation & Sanitization with Zod, Joi & class-validator (Defense Against Injection & Flaws)."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-11-04 00:00:00 +0530
-lastmod: 2025-11-04T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1762253900/input-validation_f0lire.jpg']
 tags: ['nodejs', 'security', 'validation', 'zod', 'joi', 'express', 'typescript']
 categories: ['Nodejs']

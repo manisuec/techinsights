@@ -4,7 +4,7 @@ title: "MongoDB Queryable Encryption: Secure Data Queries in Nodejs"
 description: "Learn how to implement MongoDB Queryable Encryption in Nodejs applications. Encrypt sensitive data while maintaining query capabilities for healthcare, fintech, and government applications."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2025-08-29 00:00:00 +0530
-lastmod: 2025-08-29T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1756449953/data-security-encryption_kanljv.jpg']
 tags: ['mongodb', 'nodejs', 'security', 'encryption']
 keywords: 'mongodb,nodejs,queryable encryption,security,data protection,encryption'

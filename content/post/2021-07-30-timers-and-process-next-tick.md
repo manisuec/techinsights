@@ -3,6 +3,7 @@ layout: post
 title: "Nodejs Timers Explained: A Guide to setTimeout, setImmediate & nextTick"
 description: Explore Node.js timers and process.nextTick with this simplified guide. Understand how to use setTimeout, setImmediate, and nextTick effectively.
 date: 2021-07-30 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 images: ['/img/posts/timers.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'javascript', 'timers']

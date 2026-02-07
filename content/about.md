@@ -3,6 +3,7 @@ title: 'About Me'
 type: 'page'
 layout: 'about'
 lastmod: 2025-06-27T00:00:30
+date: 2020-05-30T00:56:03+05:30
 ---
 
 My life has been largely driven by the philosphy of: *"In character, in manners, in style, in all things;  the supreme excellence is Simplicity!"*

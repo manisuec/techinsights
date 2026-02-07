@@ -4,7 +4,7 @@ title: "MongoDB Views: A Guide to Secure Data Access and Sharing"
 description: Learn how to share MongoDB collections securely using views and RBAC, ensuring sensitive data remains protected while enabling access for analytics and broader use.
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2023-05-17 00:00:00 +0530
-lastmod: 2025-04-16T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1684323449/mongodb_views_ymdkdr.jpg']
 tags: ['mongodb','security','database','access','schema']
 keywords: 'mongodb,views,secure,database,nodejs,access,no sql'

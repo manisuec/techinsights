@@ -5,7 +5,7 @@ description: "Explore how JavaScript manages object memory: learn about heap all
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1748936387/pexels-jorge-jesus-137537-614117_ezmo3s.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2025-06-10 00:00:00 +0530
-lastmod: 2025-08-25T00:00:30
+lastmod: 2026-02-07T00:00:30
 tags: ['mongodb', 'transactions', 'database']
 categories: ['Mongodb']
 keywords: 'mongodb,transactions,database,mongoose,atomic operations,concurrency,error recovery'

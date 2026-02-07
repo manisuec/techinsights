@@ -1,6 +1,7 @@
 ---
 background: /img/posts/02.png
 date: '2018-08-24T00:00:00Z'
+lastmod: 2026-02-07T00:00:30
 title: 'Love thy fellow programmer as thyself: Setup ESLint and Prettier in VSCode'
 description: Discover how ESLint, the open source JavaScript linting utility, ensures clean code by identifying issues and enforcing coding standards.
 tags: ['javascript', 'eslint', 'prettier', 'vscode']

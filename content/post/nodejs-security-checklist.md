@@ -4,7 +4,7 @@ title: "Nodejs Security Checklist To Prevent Common Vulnerabilities"
 description: "Stop SQL injection, prototype pollution & supply-chain attacks. Copy-paste code, 12-step checklist, and CI/CD automation for bullet-proof Nodejs apps in 2025."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-09-05 00:00:00 +0530
-lastmod: 2025-09-05T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1757079951/nodejs-security-checklist_ny71ku.jpg']
 tags: ['nodejs', 'javascript', 'security']
 keywords: 'nodejs,javascript,security,security checklist'

@@ -5,7 +5,7 @@ description: Learn how small code changes can dramatically improve JavaScript pe
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1760525471/javscript-v8-engine_cylskp.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2025-10-16 00:00:00 +0530
-lastmod: 2025-10-16T00:00:30
+lastmod: 2026-02-07T00:00:30
 tags: ['javascript', 'performance', 'v8', 'optimization']
 categories: ['Javascript']
 keywords: 'javascript,performance,v8,jit,optimization,benchmarking'

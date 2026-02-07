@@ -3,7 +3,7 @@ layout: post
 title: 'Harnessing the Power of Top-Level await() without async()'
 description: "Discover the power of top-level await() in modern Node.js. Learn how it simplifies asynchronous code and explore its benefits for cleaner, efficient development."
 date: 2023-08-08 00:00:00 +0530
-lastmod: 2024-09-05T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1725520524/top-level-await_uhqes3.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'async']

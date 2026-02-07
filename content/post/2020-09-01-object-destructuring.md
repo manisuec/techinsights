@@ -4,6 +4,7 @@ title: 'Unlock the Power of ES6: Streamline JavaScript with Destructuring'
 description: Streamline your JavaScript code with ES6 destructuring feature. Extract values from arrays and objects effortlessly, reducing redundancy and boosting clarity.
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2020-09-01 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 tags: ['javascript', 'es6', 'destructuring']
 categories: ['Javascript']
 keywords: 'javascript,object,destructuring,es6,array destructuring,object destructuring'

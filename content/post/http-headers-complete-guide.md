@@ -4,7 +4,7 @@ title: "HTTP Headers: Complete Guide to Secure & Optimize Your APIs"
 description: "A definitive guide to HTTP headers; from security headers that block attacks to performance headers that speed up apis;  with production-ready code examples."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2026-01-20 00:00:00 +0000
-lastmod: 2026-01-20T00:00:00
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1768909662/http-headers_ctxfaj.png']
 tags: ['nodejs', 'security', 'http', 'performance', 'express', 'cors', 'headers']
 categories: ['Nodejs']

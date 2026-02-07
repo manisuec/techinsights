@@ -4,7 +4,7 @@ title: "High Performance Expressjs APIs with Native SQLite Caching"
 description: "Learn to use Nodejs v22+ native SQLite module: setup, prepared statements, custom functions, real-world examples, performance tips, and zero-dependency code snippets."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-09-18 00:00:00 +0530
-lastmod: 2025-09-18T00:00:30
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1757420416/sqlite-database_l7pn6f.png']
 tags: ['nodejs', 'sqlite', 'caching']
 keywords: 'nodejs,sqlite,caching,native module,expressjs'

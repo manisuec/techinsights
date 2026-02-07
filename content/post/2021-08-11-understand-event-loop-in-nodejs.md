@@ -3,6 +3,7 @@ layout: post
 title: 'A Deep Dive into Nodejs Event Loop: Key to Non-Blocking I/O'
 description: Explore how the Node.js Event Loop enables non-blocking I/O operations in a single-threaded environment by leveraging the system kernel.
 date: 2021-08-11 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 images: ['https://d33wubrfki0l68.cloudfront.net/5ae98f0d504223b0d1b0ab438a19ba988b9529d4/dc0a3/img/posts/eventloop.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'javascript', 'eventloop']

@@ -4,7 +4,7 @@ title: "Node.js Error Handling: Strategies for Production Applications"
 description: "Modern, production grade error handling patterns in Node.js. Error classification, global handlers, async context, monitoring & testing."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-10-29 00:00:00 +0530
-lastmod: 2025-10-29T00:00:00
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1761644257/error-handling-nodejs_lpymih.jpg']
 tags: ['nodejs', 'javascript', 'production']
 keywords: 'nodejs,error handling,async hooks,AsyncLocalStorage,express,error middleware,best practices,node 24'

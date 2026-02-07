@@ -3,6 +3,7 @@ layout: post
 title: 'Understanding Backpressure and Stream Optimization in Nodejs'
 description: Learn about backpressure in data handling and how Nodejs streams provide an efficient solution. Learn how to prevent data overload ensuring smooth data transfer
 date: 2023-08-03 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1691054457/backpressure-streams-2_lgs9zz.png', 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1691054457/backpressure-streams-1_y30lqc.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'streams']

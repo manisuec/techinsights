@@ -2,6 +2,7 @@
 background: /img/posts/04.jpg
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: '2020-03-02T00:00:00Z'
+lastmod: 2026-02-07T00:00:30
 title: 'Unlock the Power of Streams: An Underrated Feature in NodeJS'
 description: Demystifying Streams in Nodejs. Explore the power of streams learn how to work with and effectively use streaming data in your applications.
 tags: ['nodejs', 'streams', 'data processing']

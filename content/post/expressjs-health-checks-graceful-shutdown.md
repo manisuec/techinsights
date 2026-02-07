@@ -3,6 +3,7 @@ layout: post
 title: 'Health Checks and Graceful Shutdown of Expressjs App using Lightship'
 description: Expressjs is a fast, minimalist Node.js framework. Learn why graceful shutdowns and health checks are essential for deploying production applications.
 date: 2023-06-07 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1686135208/light_ship_ugp2qc.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 tags: ['nodejs', 'javascript', 'expressjs']

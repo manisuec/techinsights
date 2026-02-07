@@ -2,9 +2,8 @@
 layout: post
 title: 'What is finally method and finally block in Javascript?'
 description: Explore the differences between 'finally' in JavaScript Promises and try-catch blocks. Learn their unique behaviors and common purpose for cleanup tasks.
-images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1687507931/finally_udjaiz.jpg']
-thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 date: 2023-06-23 00:00:00 +0530
+lastmod: 2026-02-07T00:00:30
 tags: ['javascript', 'finally']
 categories: ['Javascript']
 keywords: 'javascript,finally,finally method,finally block, try catch,try,catch'

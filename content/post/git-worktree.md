@@ -4,7 +4,7 @@ title: "Master Git Worktrees: Ditch the Stash & Boost Your Workflow"
 description: "Use Git worktrees to avoid stashing, run multiple branches simultaneously and streamline interruptions."
 thumbnail: "https://res.cloudinary.com/dkiurfsjm/image/upload/v1692621749/general-tech_nou1q6.jpg"
 date: 2026-01-06 00:00:00 +0000
-lastmod: 2026-01-06T00:00:00
+lastmod: 2026-02-07T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1767677911/git-worktree_mruvum.png']
 tags: ['git', 'worktree', 'workflow']
 keywords: 'git worktree,git workflow,stash alternative,git tips'
