@@ -2,10 +2,10 @@
 layout: post
 title: "TypeScript 6.0 Breaking Changes & New Features Explained"
 description: "A practical guide to the breaking changes and DX improvements in TypeScript 6.0: paths, rootDir, modules, types, performance, and async JSX."
-thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1700000000/typescript6_banner.png'
+thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/React-Dark_trdwyz.jpg'
 date: 2026-02-10 00:00:00 +0530
 lastmod: 2026-02-10 00:00:00 +0530
-images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1700000000/typescript6_hero.jpg']
+images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1770727436/timothy-cuenat-NH0pmKaZeuk-unsplash_aoevor.jpg']
 tags: ['typescript', 'tsconfig', 'performance', 'react', 'tooling']
 categories: ['Javascript']
 keywords: 'typescript,tsconfig,performance,2025,react,tsc'
