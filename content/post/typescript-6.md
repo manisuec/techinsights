@@ -9,7 +9,7 @@ images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1700000000/typescri
 tags: ['typescript', 'tsconfig', 'performance', 'react', 'tooling']
 categories: ['Javascript']
 keywords: 'typescript,tsconfig,performance,2025,react,tsc'
-url: 'typescript/navigating-waves-of-change-typescript-6'
+url: 'javascript/navigating-waves-of-change-typescript-6'
 ---
 
 If you've spent hours tweaking tsconfig.json files and wondering why your build times feel slow, TypeScript 6.0 has some real improvements for you. No flashy new syntax—that's coming in 7.0—but this release pays off long-standing technical debt through some breaking changes.
