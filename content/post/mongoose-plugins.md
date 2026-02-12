@@ -69,7 +69,7 @@ Now, every `User` will have `createdAt` and `updatedAt` fields that update autom
 
 ## Example: Soft Delete (Don’t Really Delete)
 
-Sometimes you want to "delete" something, but not really remove it from the database—just hide it. This is called a "soft delete."
+Sometimes you want to "delete" something, but not really remove it from the database; just hide it. This is called a "soft delete."
 
 **Step 1: Make the Plugin**
 

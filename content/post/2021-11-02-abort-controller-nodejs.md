@@ -61,7 +61,7 @@ This is where `AbortController` and `AbortSignal`, now part of Nodejs core API c
 
 `abortController.signal`: Type: AbortSignal
 
-`AbortSignal` extends `EventTarget` with a single type of event that it emits — the `abort` event. It also has an additional boolean property, `aborted` which is true if the AbortSignal has already been triggered.
+`AbortSignal` extends `EventTarget` with a single type of event that it emits ;  the `abort` event. It also has an additional boolean property, `aborted` which is true if the AbortSignal has already been triggered.
 
 Let us modify our code:
 

@@ -63,7 +63,7 @@ export default async function batchExecutor({
   tasks,               // Array<() => Promise<any>>
   maxConcurrency = 5,  // How many run at once
   maxTimeout,          // Milliseconds before a task is aborted
-  onError              // (err, index) => void  — optional centralized logger
+  onError              // (err, index) => void  ;  optional centralized logger
 }) {
   if (!Array.isArray(tasks) || tasks.length === 0) return [];
 

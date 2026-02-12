@@ -359,7 +359,7 @@ const ProfileSchema = z.object({
 
 ### 3. Prototype Pollution Protection
 
-Prototype pollution is a critical class of vulnerabilities—see the prevention items in the [Nodejs Security Checklist](/nodejs/nodejs-security-checklist/).
+Prototype pollution is a critical class of vulnerabilities; see the prevention items in the [Nodejs Security Checklist](/nodejs/nodejs-security-checklist/).
 
 ```javascript
 // middleware/prototype-pollution.js

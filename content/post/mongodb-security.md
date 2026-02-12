@@ -18,7 +18,7 @@ MongoDB is a leading NoSQL database and Mongoose is the de facto ODM (Object Doc
 
 ## Understanding the Security Landscape
 
-Securing a Mongoose application is a multi-layered challenge. Each layer—database connection, query construction, data validation and authentication/authorization—presents unique risks and opportunities for exploitation. A robust security posture requires vigilance at every level.
+Securing a Mongoose application is a multi-layered challenge. Each layer; database connection, query construction, data validation and authentication/authorization; presents unique risks and opportunities for exploitation. A robust security posture requires vigilance at every level.
 
 > ***Always err on the side of caution when it comes to security!***
 
@@ -559,4 +559,4 @@ Securing your Mongoose and MongoDB applications demands a multi-layered, proacti
 - Data validation
 - Authentication/Authorization mechanisms
 
-Each layer presents unique challenges and opportunities for both protection and exploitation. By following the best practices outlined above and rigorously avoiding common anti-patterns, you can dramatically reduce your application's attack surface and protect your users' data. The investment in robust security pays dividends in trust, compliance and peace of mind. Always err on the side of caution—security is a journey, not a destination.
+Each layer presents unique challenges and opportunities for both protection and exploitation. By following the best practices outlined above and rigorously avoiding common anti-patterns, you can dramatically reduce your application's attack surface and protect your users' data. The investment in robust security pays dividends in trust, compliance and peace of mind. Always err on the side of caution; security is a journey, not a destination.

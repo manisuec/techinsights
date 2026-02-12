@@ -92,7 +92,7 @@ By removing the `|| 0` operator, we tell V8 that we expect `arr[i]` to always be
 
 **These tiny changes reduced execution time by almost 40% in benchmarks.**
 
-This isn't just theory—real-world applications see measurable improvements from these patterns. When you multiply this across thousands of function calls in a production application, the cumulative effect is significant.
+This isn't just theory; real-world applications see measurable improvements from these patterns. When you multiply this across thousands of function calls in a production application, the cumulative effect is significant.
 
 ## JIT-Friendly Coding Patterns
 
@@ -355,7 +355,7 @@ console.log(%GetOptimizationStatus(sumArray));
 
 ## Conclusion
 
-JavaScript performance optimization isn't about memorizing tricks—it's about understanding how the V8 engine works. By writing JIT-friendly code, you help the compiler generate efficient machine code.
+JavaScript performance optimization isn't about memorizing tricks; it's about understanding how the V8 engine works. By writing JIT-friendly code, you help the compiler generate efficient machine code.
 
 Key takeaways:
 

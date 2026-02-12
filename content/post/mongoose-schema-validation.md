@@ -166,7 +166,7 @@ const userSchema = new mongoose.Schema({
 
 ### Asynchronous Custom Validators
 
-For validation scenarios that require asynchronous operations—such as database lookups or API calls—Mongoose supports async custom validators. These are indispensable for enforcing uniqueness, verifying external resources, or performing any check that cannot be completed synchronously:
+For validation scenarios that require asynchronous operations; such as database lookups or API calls; Mongoose supports async custom validators. These are indispensable for enforcing uniqueness, verifying external resources, or performing any check that cannot be completed synchronously:
 
 ```javascript
 const User = require('./User'); // Assuming User model exists

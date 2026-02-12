@@ -120,7 +120,7 @@ Generate comprehensive unit tests for this function:
 
 {function_code}
 
-Include: happy path, edges, errors. Output as Jest file format only—no explanations.
+Include: happy path, edges, errors. Output as Jest file format only; no explanations.
 ```
 
 #### Step 4: Implement CLI and CI
@@ -201,7 +201,7 @@ Use local LLMs to minimize risks.
 
 ### Code Snippets & Resources Roundup
 
-- **VS Code Extension Example**: Use Continue.dev—add to `~/.continue/config.json`:
+- **VS Code Extension Example**: Use Continue.dev; add to `~/.continue/config.json`:
   ```json
   {
     "models": [{"title": "Local Llama", "provider": "ollama", "model": "llama3"}],

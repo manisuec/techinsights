@@ -162,7 +162,7 @@ Node.js 24 delivers quantifiable performance gains across the entire runtime sta
 
 ### V8 13.6: Cold Start Optimization
 
-The V8 JavaScript engine upgrade to version 13.6 introduces significant improvements to code deserialization and snapshot loading. These optimizations specifically target "cold start" scenarios—the critical path for CLI tools, serverless functions, and CI/CD pipelines.
+The V8 JavaScript engine upgrade to version 13.6 introduces significant improvements to code deserialization and snapshot loading. These optimizations specifically target "cold start" scenarios; the critical path for CLI tools, serverless functions, and CI/CD pipelines.
 
 **Startup Performance Benchmarks:**
 
@@ -515,7 +515,7 @@ matcher.test('admin-12345.json'); // false
 
 ### Error.isError(): Cross-Realm Error Detection
 
-The `Error.isError()` static method provides reliable error detection across JavaScript realms, VM contexts, and worker threads—scenarios where `instanceof Error` fails.
+The `Error.isError()` static method provides reliable error detection across JavaScript realms, VM contexts, and worker threads; scenarios where `instanceof Error` fails.
 
 **Worker Thread Error Handling:**
 

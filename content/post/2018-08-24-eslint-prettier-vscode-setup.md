@@ -19,14 +19,14 @@ This is a short guide to configure VS Code for a consistent and reusable develop
 
 ESLint is an open source JavaScript linting utility. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable.
 
-Install ESLint locally and create a .eslintrc.json config file by running the below commands in the workspace folder —
+Install ESLint locally and create a .eslintrc.json config file by running the below commands in the workspace folder ; 
 
 ```
 $ npm install eslint --save-dev
 $ ./node_modules/.bin/eslint --init
 ```
 
-I prefer local setup for each project however, it can be installed globally too. Run the below commands for a global installation and generating a .eslintrc.json config file —
+I prefer local setup for each project however, it can be installed globally too. Run the below commands for a global installation and generating a .eslintrc.json config file ; 
 
 ```
 $ npm install -g eslint

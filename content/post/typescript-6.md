@@ -12,7 +12,7 @@ keywords: 'typescript,tsconfig,performance,2025,react,tsc'
 url: 'javascript/navigating-waves-of-change-typescript-6'
 ---
 
-If you've spent hours tweaking tsconfig.json files and wondering why your build times feel slow, TypeScript 6.0 has some real improvements for you. No flashy new syntax—that's coming in 7.0—but this release pays off long-standing technical debt through some breaking changes.
+If you've spent hours tweaking tsconfig.json files and wondering why your build times feel slow, TypeScript 6.0 has some real improvements for you. No flashy new syntax; that's coming in 7.0; but this release pays off long-standing technical debt through some breaking changes.
 
 ## 1. Module Paths Without baseUrl
 
@@ -125,7 +125,7 @@ This is a significant change. Previously, TypeScript auto-included all @types pa
 The types array now defaults to [], including only what you specify. Package-name imports still auto-resolve, but globals like Node's fs won't unless you list them.
 
 **Before (TS 5.x):**
-Everything in @types loaded automatically—great for small projects, but a nightmare for large ones with unused types.
+Everything in @types loaded automatically; great for small projects, but a nightmare for large ones with unused types.
 
 **After (TS 6.0):**
 ```typescript
@@ -197,7 +197,7 @@ This streamlines server-side rendering patterns and reduces runtime errors from 
 
 ## 8. Explicit Resource Management
 
-The new `using` keyword ensures automatic cleanup for resources like database connections, file handles, or even React hooks—preventing leaks without verbose try/finally blocks.
+The new `using` keyword ensures automatic cleanup for resources like database connections, file handles, or even React hooks; preventing leaks without verbose try/finally blocks.
 
 ```tsx
 function useDataStream(url: string) {
@@ -221,6 +221,6 @@ These changes work with popular tools:
 
 ## Summary
 
-TypeScript 6.0 might sound like a "breaking changes" release, but think of it as the setup for 7.0's native compiler port. These changes—simpler paths, predictable roots, modern modules, explicit types, better performance, smarter inference, native async JSX, and resource management—make your codebases more maintainable, builds quicker, and dev loops tighter.
+TypeScript 6.0 might sound like a "breaking changes" release, but think of it as the setup for 7.0's native compiler port. These changes; simpler paths, predictable roots, modern modules, explicit types, better performance, smarter inference, native async JSX, and resource management; make your codebases more maintainable, builds quicker, and dev loops tighter.
 
 Migrate by running `tsc --strict` and following the official migration guide. Most fixes are one-liners.

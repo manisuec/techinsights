@@ -26,7 +26,7 @@ According to the [ECMA specification](https://tc39.es/ecma262/multipage/ecmascri
 
 Every JS Object maintains two primary storage mechanisms:
 
-- **Properties Storage**: Named keys like `obj.name` or `obj['color']` are stored in a property backing store. JavaScript engines use advanced optimization techniques—beyond simple hash tables—to make property access extremely fast.
+- **Properties Storage**: Named keys like `obj.name` or `obj['color']` are stored in a property backing store. JavaScript engines use advanced optimization techniques; beyond simple hash tables; to make property access extremely fast.
 - **Elements Storage**: Indexed values like `arr[0]` or `arr[42]` are stored separately in an elements backing store, optimized for numeric indices and dense arrays.
 
 ```javascript
@@ -70,7 +70,7 @@ Understanding the journey from creation to destruction helps you write more memo
 
 ### Creation and Usage
 
-Every JS Object starts life when your code executes a creation statement—whether it's an object literal, constructor function, or class instantiation. The engine immediately allocates heap memory and begins tracking the object for future garbage collection.
+Every JS Object starts life when your code executes a creation statement; whether it's an object literal, constructor function, or class instantiation. The engine immediately allocates heap memory and begins tracking the object for future garbage collection.
 
 ```javascript
 // Creation triggers heap allocation
@@ -94,7 +94,7 @@ Modern engines also implement **generational collection**, dividing the heap int
 - **Young Generation**: Newly created objects (collected frequently)
 - **Old Generation**: Long-lived objects (collected less frequently)
 
-This optimization recognizes that most objects die young—they're created, used briefly, and become unreachable quickly.
+This optimization recognizes that most objects die young; they're created, used briefly, and become unreachable quickly.
 
 ## Common Memory Issues That Bite
 

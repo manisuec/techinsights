@@ -24,7 +24,7 @@ Many developers confuse currying with other functional programming patterns. Let
 log(a, b, c) => log(a)(b)(c)
 ```
 
-Named after mathematician **Haskell Curry**, who formalized this concept in the 1930s, currying doesn't actually call a function—it transforms it. While many developers assume currying automatically executes a function, it's important to note that currying merely restructures how arguments are passed.
+Named after mathematician **Haskell Curry**, who formalized this concept in the 1930s, currying doesn't actually call a function; it transforms it. While many developers assume currying automatically executes a function, it's important to note that currying merely restructures how arguments are passed.
 
 ## How Currying Works in JavaScript
 
@@ -346,4 +346,4 @@ As JavaScript continues to embrace functional programming paradigms, understandi
 
 While currying might seem complex at first, its principles are straightforward, and with practice, it becomes a natural part of functional programming in JavaScript. The next time you find yourself repeating similar function calls with shared arguments, consider whether currying might offer a more elegant solution.
 
-So, is currying in JavaScript a chain of functions? Yes, but it's a chain with purpose—a transformation that unlocks new patterns of composition, reuse, and abstraction in your code.
+So, is currying in JavaScript a chain of functions? Yes, but it's a chain with purpose; a transformation that unlocks new patterns of composition, reuse, and abstraction in your code.
