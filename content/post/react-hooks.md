@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 'React Hooks Anti-Patterns: A Comprehensive Guide to Avoiding Common Pitfalls'
-description: "Learn to avoid common React Hooks anti-patterns that cause bugs, performance issues and maintenance headaches. Fix memory leaks, stale closures and improper hook usage."
+description: "Avoid common React Hooks anti-patterns that cause bugs and performance issues. Fix memory leaks, stale closures, and improper hook usage with solutions."
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1750072871/react-hooks_aij37f.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/React-Dark_trdwyz.jpg'
 date: 2025-06-22 00:00:00 +0530
-lastmod: 2026-02-07T00:00:30
+lastmod: 2026-02-14T00:00:30
 tags: ['reactjs', 'hooks', 'javascript', 'frontend']
 categories: ['Javascript']
 keywords: 'reactjs,hooks,javascript,frontend,anti-patterns,performance'

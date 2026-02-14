@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Best Practices for Production setup of Nodejs Application: Part I'
-description: Learn best practices to optimize performance and ensure reliability for Express apps in production. Explore DevOps strategies to handle high loads and maintain stability.
-lastmod: 2026-02-07T00:00:30
+description: "Best practices to optimize performance and ensure reliability Express apps in production. Explore DevOps strategies to handle loads and maintain stability"
+lastmod: 2026-02-14T00:00:30
 date: 2023-06-08T13:36:46+05:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1686656287/expressjs_sgp464.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'

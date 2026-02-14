@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Mongoose Advanced Patterns: 7 Uncommon Techniques for Complex Data Modeling"
-description: "Master advanced Mongoose patterns including discriminators, dynamic references, custom casting, and transaction retry logic. Learn uncommon techniques to solve complex MongoDB data modeling challenges in Nodejs applications."
+description: "Master advanced Mongoose patterns: discriminators, dynamic references, custom casting, and transaction retry logic. Solve complex MongoDB data challenges."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/MongoDB_jeatlj.jpg'
 date: 2025-10-14 00:00:00 +0530
-lastmod: 2026-02-07T00:00:30
+lastmod: 2026-02-14T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1637747985/mongoose_djuhic.png']
 tags: ['mongoose', 'mongodb', 'nodejs', 'data-modeling']
 keywords: 'mongoose,mongodb,nodejs,discriminators,refPath,transactions,schema patterns,advanced mongoose'

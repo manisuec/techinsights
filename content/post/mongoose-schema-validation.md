@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 'Mongoose Schema Validation: Best Practices and Anti-Patterns'
-description: 'A comprehensive guide to Mongoose schema validation, including built-in rules, custom validators, middleware hooks and advanced patterns for robust data integrity.'
+description: "A guide to Mongoose schema validation with built-in rules, custom validators, middleware hooks, and advanced patterns for robust data integrity."
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1751455478/data-validation_z00sre.jpg']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676956718/mongoose_logo_hr3blb.jpg'
 date: 2025-07-02 00:00:00 +0530
-lastmod: 2026-02-07T00:00:30
+lastmod: 2026-02-14T00:00:30
 tags: [mongoosejs, 'mongodb', 'schema']
 categories: ['Mongodb']
 keywords: 'mongoose,schema validation,mongodb,schema,anti-patterns'

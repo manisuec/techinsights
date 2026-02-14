@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Node.js 24: The Game Changer Release You've Been Waiting For"
-description: "Discover Node.js 24's production-ready security features, V8 13.6 performance improvements, built-in resource management, and developer experience upgrades that eliminate boilerplate code."
+description: "Discover Node.js 24's production-ready security, V8 13.6 performance, built-in resource management, and developer experience upgrades."
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1676698473/nodejs_dark_cjoudy.png'
 date: 2025-10-09 00:00:00 +0530
-lastmod: 2026-02-07T00:00:30
+lastmod: 2026-02-14T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1759994852/nodejs_yfv3vf.jpg']
 tags: ['nodejs', 'javascript', 'performance', 'security']
 keywords: 'nodejs,node.js 24,v8 13.6,permission model,web crypto,undici,performance,security,lts'

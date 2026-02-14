@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Integrate LLMs into Dev Pipelines: Practical Guide"
-description: "Boost developer productivity with AI-assisted tools. Explore patterns like RAG and HITL, integration tips, and a step-by-step unit test generator to automate routines safely."
+description: "Boost developer productivity with AI tools. Learn patterns like RAG, HITL, and build a step-by-step unit test generator to automate routines safely."
 thumbnail: "https://res.cloudinary.com/dkiurfsjm/image/upload/v1692621749/general-tech_nou1q6.jpg"
 date: 2026-01-08 00:00:00 +0000
-lastmod: 2026-02-07T00:00:30
+lastmod: 2026-02-14T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1767871700/ai-assisted-development_htshhn.jpg']
 tags: ['ai', 'development']
 keywords: 'ai,artificial intelligence,development'

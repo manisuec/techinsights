@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'The Pitfalls of Using Async/Await Inside forEach() Loops'
-description: "Running async operations with .forEach() can be tricky. Sometimes it might not work as expected. Explore better alternatives for handling async tasks in arrays"
+description: "Running async operations with .forEach() can be tricky. Sometimes it might not work as expected. Explore better alternatives for async tasks in arrays"
 date: 2023-08-14 00:00:00 +0530
-lastmod: 2026-02-07T00:00:30
+lastmod: 2026-02-14T00:00:30
 images: ['https://res.cloudinary.com/dkiurfsjm/image/upload/v1692000996/foreach_cozdhs.png']
 thumbnail: 'https://res.cloudinary.com/dkiurfsjm/image/upload/v1675429691/JavaScript_v4qblf.jpg'
 tags: ['nodejs', 'async', 'javascript']
